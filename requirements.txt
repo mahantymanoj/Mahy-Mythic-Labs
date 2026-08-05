@@ -1,0 +1,48 @@
+# Mahy Mythic Labs — Python dependencies
+# Python 3.10+ recommended
+
+# AI clients
+openai>=1.0.0,<3.0.0
+requests>=2.31.0,<3.0.0
+
+# Configuration, validation, Markdown, and data models
+python-dotenv>=1.0.0,<2.0.0
+pydantic>=2.0.0,<3.0.0
+PyYAML>=6.0.0,<7.0.0
+python-frontmatter>=1.1.0,<2.0.0
+markdown>=3.6,<4.0
+
+# Automation, CLI tools, retries, progress, and logging
+typer>=0.12.0,<1.0.0
+rich>=13.0.0,<15.0.0
+tenacity>=8.0.0,<10.0.0
+schedule>=1.2.0,<2.0.0
+
+# File, image, and media metadata processing
+Pillow>=10.0.0,<12.0.0
+imageio>=2.34.0,<3.0.0
+imageio-ffmpeg>=0.5.0,<1.0.0
+
+# Data science and analytics
+numpy>=1.26.0,<3.0.0
+pandas>=2.2.0,<3.0.0
+scipy>=1.12.0,<2.0.0
+scikit-learn>=1.4.0,<2.0.0
+
+# Charts, reporting, and dashboards
+matplotlib>=3.8.0,<4.0.0
+seaborn>=0.13.0,<1.0.0
+plotly>=5.20.0,<7.0.0
+openpyxl>=3.1.0,<4.0.0
+
+# YouTube upload and analytics
+google-api-python-client>=2.0.0,<3.0.0
+google-auth-oauthlib>=1.2.0,<2.0.0
+google-auth-httplib2>=0.2.0,<1.0.0
+
+# MCP servers
+mcp[cli]>=1.0.0,<2.0.0
+
+# Optional local API and dashboard support
+fastapi>=0.110.0,<1.0.0
+uvicorn[standard]>=0.27.0,<1.0.0
