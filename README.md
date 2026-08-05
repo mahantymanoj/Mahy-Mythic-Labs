@@ -1,90 +1,401 @@
-# Mahy Mythic Labs Studio OS
+# 🌌 Mahy Mythic Labs
 
-> **Explore with Curiosity. Create with Integrity. Inspire through Truth.**
-
-Mahy Mythic Labs Studio OS is an AI-first YouTube production system for creating cinematic, fact-based videos about mythology, history, science, astronomy, mystery, and human curiosity.
-
-This repository brings together research, storytelling, production standards, templates, prompts, assets, and automation into one reusable workflow.
-
-## Purpose
-
-The studio transforms complex subjects into visually immersive and accessible stories while respecting scientific evidence, historical records, and cultural traditions.
-
-The aim is not to automate creativity, but to build a structured system that helps create high-quality videos consistently.
-
-## Content Pillars
-
-- Mythology
-- History and ancient civilizations
-- Science and technology
-- Astronomy and space
-- Mysteries and unexplained phenomena
-- Thought experiments and fictional stories inspired by real concepts
-
-## Repository Structure
-
-| Path | Purpose |
-| --- | --- |
-| `docs/` | Mission, vision, architecture, roadmap, setup, glossary, and technical documentation |
-| `production_bible/` | Creative, research, visual, narration, editing, quality, and publishing standards |
-| `templates/` | Reusable templates for research, episodes, scripts, storyboards, prompts, assets, and reviews |
-| `prompts/` | Prompt library for AI image, video, narration, thumbnail, research, and scripting workflows |
-| `knowledge_base/` | Organized research material for mythology, history, science, astronomy, and references |
-| `projects/` | Active and completed video episode workspaces |
-| `assets/` | Images, video clips, audio, music, thumbnails, and other production assets |
-| `automation/` | Automated production pipelines and AI-agent workflow documentation |
-| `tools/` | Supporting scripts and utilities |
-| `PROJECT_BOARD.md` | Current roadmap, milestones, and task progress |
-
-## Production Workflow
-
-Every episode should follow this sequence:
-
-1. Select a topic.
-2. Research using credible sources.
-3. Validate facts and distinguish evidence from interpretation or speculation.
-4. Develop the story structure and script.
-5. Create a storyboard and visual plan.
-6. Generate images, video, narration, music, and other assets.
-7. Edit the episode according to studio standards.
-8. Complete quality review.
-9. Prepare the title, description, thumbnail, SEO, and upload details.
-10. Publish, review performance, and record lessons learned.
-
-## Getting Started
-
-1. Read [`docs/mission.md`](docs/mission.md) to understand the studio’s editorial principles.
-2. Review [`PROJECT_BOARD.md`](PROJECT_BOARD.md) to see the current milestone.
-3. Follow [`docs/setup.md`](docs/setup.md) for workspace conventions.
-4. Use the appropriate file in [`templates/`](templates/) when starting a new task or episode.
-5. Follow the standards in [`production_bible/`](production_bible/) throughout production.
-
-## Editorial Principles
-
-- Curiosity before conclusion.
-- Facts before assumptions.
-- Respect before debate.
-- Transparency when uncertainty or multiple interpretations exist.
-- Cinematic quality in service of the story.
-- No misinformation, cultural disrespect, or misleading sensationalism.
-
-## Current Status
-
-The repository foundation and most production documentation are in place. The next focus is completing the remaining documentation, automation workflows, prompts, and planning templates before starting Episode 001.
-
-See [`PROJECT_BOARD.md`](PROJECT_BOARD.md) for the detailed roadmap.
-
-## Continuous Improvement
-
-Every completed video should improve the system:
-
-1. Update templates when a better workflow is discovered.
-2. Refine prompts based on output quality.
-3. Record production lessons and quality issues.
-4. Add verified research to the knowledge base.
-5. Keep the production bible current.
+> **Where Mythology, Science, History, Astronomy, and Artificial Intelligence converge to create cinematic storytelling.**
 
 ---
 
+# 📖 Overview
 
-**Think like a Creator. Work like an Engineer.**
+**Mahy Mythic Labs** is an AI-first content production platform designed to research, write, generate, review, and publish high-quality educational and cinematic videos for YouTube.
+
+The platform combines multiple AI agents, structured knowledge bases, reusable prompt engineering, and automated production workflows into a single modular system capable of producing both short-form and long-form content.
+
+---
+
+# 🎯 Vision
+
+To build a fully autonomous AI-powered production studio capable of creating:
+
+- Cinematic documentaries
+- Mythological stories
+- Scientific explainers
+- Historical narratives
+- Astronomy videos
+- AI & future technology content
+
+while maintaining professional storytelling, factual accuracy, visual consistency, and scalable automation.
+
+---
+
+# 🚀 Project Goals
+
+- Build a reusable AI production pipeline
+- Automate research to publishing
+- Maintain a centralized knowledge base
+- Ensure consistent branding and storytelling
+- Support multiple AI providers
+- Scale from 15-second Shorts to 30+ minute documentaries
+
+---
+
+# 🏗 Repository Architecture
+
+```
+Mahy-Mythic-Labs/
+
+├── assets/
+├── automation/
+├── docs/
+├── knowledge_base/
+├── production_bible/
+├── prompts/
+├── templates/
+├── projects/
+├── src/
+├── tests/
+├── config/
+├── cache/
+└── logs/
+```
+
+---
+
+# 📂 Repository Structure
+
+## docs/
+
+Project documentation
+
+- Architecture
+- Roadmap
+- Technology Stack
+- Development Workflow
+- Deployment
+- Repository Guidelines
+
+---
+
+## production_bible/
+
+Creative standards
+
+- Brand Identity
+- Style Guide
+- Voice Identity
+- Storytelling
+- Research Standards
+- Cinematography
+- Copyright Policy
+- AI Generation Rules
+
+---
+
+## knowledge_base/
+
+Central knowledge repository
+
+- Astronomy
+- Mythology
+- History
+- Science
+- References
+
+---
+
+## prompts/
+
+Reusable AI prompts
+
+- Research Agent
+- Script Writer
+- Storyboard Generator
+- Image Generator
+- Video Generator
+- Narration Generator
+- SEO Optimizer
+- Thumbnail Generator
+
+---
+
+## templates/
+
+Reusable production templates
+
+- Episode
+- Research
+- Script
+- Storyboard
+- Asset Tracking
+- SEO
+- Quality Check
+- Upload Metadata
+
+---
+
+## automation/
+
+Automation workflows
+
+- Agent orchestration
+- API integrations
+- MCP architecture
+- Workflow definitions
+
+---
+
+## src/
+
+Production runtime
+
+- Engine
+- AI Agents
+- Providers
+- Services
+- Utilities
+
+---
+
+## projects/
+
+Runtime workspace
+
+Each episode is generated inside an isolated project folder.
+
+Example:
+
+```
+projects/
+
+EP001/
+EP002/
+EP003/
+```
+
+---
+
+# 🤖 AI Production Pipeline
+
+```
+Topic Selection
+        │
+        ▼
+Research Agent
+        │
+        ▼
+Script Agent
+        │
+        ▼
+Storyboard Agent
+        │
+        ▼
+Image Prompt Agent
+        │
+        ▼
+Image Generation
+        │
+        ▼
+Video Prompt Agent
+        │
+        ▼
+Video Generation
+        │
+        ▼
+Narration Generation
+        │
+        ▼
+Video Editing
+        │
+        ▼
+Quality Review
+        │
+        ▼
+SEO Optimization
+        │
+        ▼
+Publishing Package
+```
+
+---
+
+# 🧠 AI Agent Architecture
+
+The platform is designed around specialized AI agents.
+
+| Agent | Responsibility |
+|---------|----------------|
+| Master Director | Controls production workflow |
+| Research Agent | Collects verified information |
+| Script Agent | Creates narration-ready scripts |
+| Storyboard Agent | Builds scene sequence |
+| Image Agent | Generates image prompts |
+| Video Agent | Generates video prompts |
+| Narration Agent | Produces narration |
+| Quality Agent | Reviews production quality |
+| SEO Agent | Optimizes discoverability |
+| Publishing Agent | Prepares upload assets |
+
+---
+
+# 📚 Knowledge Domains
+
+Current supported domains:
+
+- Astronomy
+- Mythology
+- Ancient History
+- Archaeology
+- Physics
+- Biology
+- Artificial Intelligence
+- Future Technology
+
+Additional domains can be added without changing the production engine.
+
+---
+
+# ⚙ Technology Stack
+
+## Languages
+
+- Python
+- Markdown
+- YAML
+- JSON
+
+## AI Providers
+
+- OpenAI
+- Anthropic
+- Google Gemini
+- xAI Grok
+
+## Development
+
+- Git
+- GitHub
+- VS Code
+- Cursor IDE
+
+---
+
+# 📁 Production Workflow
+
+1. Select topic
+2. Research
+3. Fact verification
+4. Script writing
+5. Storyboard creation
+6. Asset generation
+7. Narration
+8. Editing
+9. Quality review
+10. SEO optimization
+11. Publish
+
+---
+
+# 📊 Current Project Status
+
+| Phase | Status |
+|---------|--------|
+| Repository Structure | ✅ Complete |
+| Documentation | ✅ Complete |
+| Production Bible | ✅ Complete |
+| Knowledge Base | ✅ Complete |
+| Prompt Library | ✅ Complete |
+| Runtime Engine | 🚧 In Progress |
+| AI Agents | 🚧 Planned |
+| Automation | 🚧 Planned |
+| Production Pipeline | 🚧 Planned |
+
+---
+
+# 🛣 Roadmap
+
+## Phase 1
+
+Repository Foundation
+
+✅ Completed
+
+---
+
+## Phase 2
+
+Production Engine
+
+🚧 In Progress
+
+---
+
+## Phase 3
+
+AI Agent Implementation
+
+⬜ Planned
+
+---
+
+## Phase 4
+
+Automation & Orchestration
+
+⬜ Planned
+
+---
+
+## Phase 5
+
+End-to-End Video Production
+
+⬜ Planned
+
+---
+
+## Phase 6
+
+Multi-platform Publishing
+
+⬜ Planned
+
+---
+
+# 📖 Documentation
+
+| Document | Purpose |
+|-----------|---------|
+| docs/architecture.md | System architecture |
+| docs/roadmap.md | Project roadmap |
+| docs/tech_stack.md | Technology overview |
+| docs/automation_architecture.md | Automation design |
+| production_bible/ | Creative standards |
+| knowledge_base/ | Domain knowledge |
+| prompts/ | AI prompts |
+| templates/ | Production templates |
+
+---
+
+# 🤝 Contributing
+
+Future contributors should follow:
+
+- Coding Standards
+- Repository Guidelines
+- Production Bible
+- Documentation Standards
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for details.
+
+---
+
+# 🌟 Long-Term Vision
+
+Mahy Mythic Labs aims to become a fully autonomous AI-powered production platform capable of generating professional-quality educational and cinematic content from a single topic with minimal human intervention.
+
+The architecture emphasizes modularity, reproducibility, factual accuracy, and scalable automation so that new AI models, content domains, and production workflows can be integrated without redesigning the system.
