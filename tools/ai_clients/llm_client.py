@@ -1,6 +1,3 @@
-
-### `tools/ai_clients/llm_client.py`
-
 """Client for text-generation tasks in the Mahy Mythic Labs pipeline."""
 
 from __future__ import annotations

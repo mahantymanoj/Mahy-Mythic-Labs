@@ -13,7 +13,7 @@ class VideoClient:
     """Minimal REST client for asynchronous video-generation jobs."""
 
     API_BASE_URL = "https://api.openai.com/v1"
-
+   
     def __init__(self, model: str | None = None) -> None:
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:

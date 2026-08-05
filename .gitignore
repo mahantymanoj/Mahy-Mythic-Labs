@@ -1,4 +1,3 @@
-```gitignore
 # Operating system files
 .DS_Store
 Thumbs.db
@@ -79,4 +78,3 @@ projects/**/drafts/
 *.7z
 *.bak
 *.backup
-```
