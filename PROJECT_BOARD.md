@@ -46,10 +46,10 @@ Status: 🟡 In Progress
 
 ### Documentation
 
-- [ ] docs/mission.md
-- [ ] docs/vision.md
-- [ ] docs/architecture.md
-- [ ] docs/roadmap.md
+- [x] docs/mission.md
+- [x] docs/vision.md
+- [x] docs/architecture.md
+- [x] docs/roadmap.md
 
 ### Production Bible
 
