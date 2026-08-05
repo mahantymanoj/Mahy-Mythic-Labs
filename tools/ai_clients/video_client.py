@@ -41,6 +41,9 @@ class VideoClient:
         files = None
         if reference_image:
             image_path = Path(reference_image)
+            if not image_path.exists():
+                raise FileNotFoundError(f"Reference image not found: {image_path}")
+
             files = {
                 "input_reference": (
                     image_path.name,
@@ -57,7 +60,13 @@ class VideoClient:
             timeout=120,
         )
         response.raise_for_status()
-        return response.json()
+
+        try:
+            return response.json()
+        except ValueError as error:
+            raise RuntimeError(
+                "Video API returned invalid JSON response."
+            ) from error
 
     def get_job(self, video_id: str) -> dict[str, Any]:
         """Return the latest job status and metadata."""
