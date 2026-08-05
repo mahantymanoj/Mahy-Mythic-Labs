@@ -1,650 +1,375 @@
-# Mahy Mythic Labs Quality Standards Handbook
+# ✅ Quality Standards
 
-**Document Version:** 1.0
-
-**Category:** Production Bible
-
-**Status:** Active
-
-**Last Updated:** 05-Aug-2026
+> **Mahy Mythic Labs Quality Standards & Review Framework**
+>
+> Version: 1.0
+>
+> This document defines the quality standards, review process, acceptance criteria, quality gates, scoring methodology, and continuous improvement framework for all Mahy Mythic Labs productions.
 
 ---
 
-# Preface
+# 1. Purpose
 
-Quality is the difference between generated content and professional storytelling.
+Quality is the final safeguard before content reaches the audience.
 
-Artificial Intelligence allows creators to generate:
+These standards ensure every production is:
 
-* Images.
-* Videos.
-* Voices.
-* Music.
-* Scripts.
+- Accurate
+- Consistent
+- Educational
+- Cinematic
+- Legally compliant
+- Brand aligned
+- Ready for publication
 
-However, generation does not guarantee quality.
-
-Quality comes from:
-
-* Creative judgment.
-* Review processes.
-* Attention to detail.
-* Continuous improvement.
-
-Mahy Mythic Labs follows a simple principle:
-
-> "AI creates possibilities. Human direction creates quality."
+Every episode, regardless of duration or production method, must satisfy these standards.
 
 ---
 
-# Book I — Quality Philosophy
+# 2. Scope
+
+These standards apply to:
+
+- Research
+- Scripts
+- Storyboards
+- Images
+- Videos
+- Narration
+- Music
+- Sound Effects
+- Thumbnails
+- Metadata
+- Publishing
+- Automation Outputs
+
+They apply to both AI-generated and manually created content.
 
 ---
 
-# Chapter 1 — The Purpose of Quality Control
+# 3. Quality Principles
 
-Quality control ensures every published video meets Mahy Mythic Labs standards.
+Every deliverable should be:
 
-The purpose is to verify:
+✓ Accurate
 
-* Story quality.
-* Visual quality.
-* Audio quality.
-* Technical quality.
-* Audience value.
+✓ Complete
 
----
+✓ Consistent
 
-# Chapter 2 — The Mahy Mythic Labs Quality Principles
+✓ Reproducible
 
-Every production should satisfy five principles.
+✓ Educational
 
----
+✓ Cinematic
 
-# 1. Story Excellence
+✓ Professional
 
-A video must have:
-
-* Clear purpose.
-* Strong narrative.
-* Logical flow.
-* Emotional connection.
-
-A beautiful video without a story is only a collection of visuals.
+Quality should never be sacrificed for speed.
 
 ---
 
-# 2. Visual Excellence
-
-Visuals should communicate:
-
-* The world.
-* The emotion.
-* The story.
-
-Every frame should have a purpose.
-
----
-
-# 3. Audio Excellence
-
-Audio quality directly affects viewer experience.
-
-The audience may tolerate average visuals.
-
-They rarely tolerate poor audio.
-
----
-
-# 4. Accuracy Excellence
-
-Content should maintain:
-
-* Research integrity.
-* Responsible storytelling.
-* Clear separation between facts and speculation.
-
----
-
-# 5. Audience Excellence
-
-Every video should respect:
-
-* Viewer time.
-* Viewer intelligence.
-* Viewer curiosity.
-
----
-
-# Book II — Production Quality Gates
-
----
-
-# Chapter 3 — Quality Gate System
-
-Every episode passes through:
+# 4. Quality Lifecycle
 
 ```
-Concept Review
+Generate
 
 ↓
 
-Research Review
+Self Review
 
 ↓
 
-Script Review
+Automated Validation
 
 ↓
 
-Visual Review
+Quality Agent Review
 
 ↓
 
-Audio Review
+Manual Review (if required)
 
 ↓
 
-Editing Review
+Approval
 
 ↓
 
-Final Publishing Review
+Publish
 
+↓
+
+Retrospective
 ```
+
+Each stage must pass before progressing.
 
 ---
 
-# Chapter 4 — Concept Quality Gate
+# 5. Quality Dimensions
 
-Before production begins:
+Every production is evaluated across:
+
+1. Research Quality
+2. Script Quality
+3. Storytelling
+4. Visual Quality
+5. Audio Quality
+6. Technical Quality
+7. Brand Consistency
+8. Copyright Compliance
+9. SEO Quality
+10. Viewer Experience
+
+---
+
+# 6. Research Quality
+
+Checklist:
+
+✓ Reliable sources
+
+✓ Cross verification
+
+✓ Evidence documented
+
+✓ Citations complete
+
+✓ Uncertainty identified
+
+Research should support every major claim.
+
+---
+
+# 7. Script Quality
 
 Review:
 
-```
-Topic:
+- Strong hook
+- Logical flow
+- Accurate facts
+- Educational clarity
+- Memorable conclusion
+- Natural pacing
+- Voice Identity compliance
 
-Audience Interest:
-
-Story Potential:
-
-Visual Potential:
-
-Educational Value:
-
-Uniqueness:
-
-```
-
-Questions:
-
-* Is this topic worth exploring?
-* Can it create curiosity?
-* Can AI visuals enhance the story?
+Avoid repetition and unsupported claims.
 
 ---
 
-# Chapter 5 — Research Quality Gate
-
-Research must verify:
-
-## Accuracy
-
-Are facts supported?
-
----
-
-## Context
-
-Are events explained properly?
-
----
-
-## Balance
-
-Are different perspectives considered?
-
----
-
-## Sources
-
-Are references documented?
-
----
-
-# Chapter 6 — Script Quality Gate
-
-The script should contain:
-
-## Strong Opening
-
-The first 30 seconds must create curiosity.
-
----
-
-## Clear Structure
-
-The audience should understand:
-
-* Beginning.
-* Middle.
-* Conclusion.
-
----
-
-## Emotional Journey
-
-The script should create:
-
-* Curiosity.
-* Discovery.
-* Reflection.
-
----
-
-## Natural Narration
-
-The script should sound spoken, not written.
-
----
-
-# Book III — Visual Quality Standards
-
----
-
-# Chapter 7 — Image Quality Checklist
-
-Every generated image should be reviewed.
-
-Check:
-
-## Composition
-
-Is the subject positioned correctly?
-
----
-
-## Lighting
-
-Does lighting match the scene?
-
----
-
-## Realism
-
-Does the image feel believable?
-
----
-
-## Consistency
-
-Does the character/environment remain consistent?
-
----
-
-## Story Connection
-
-Does the image support narration?
-
----
-
-# Chapter 8 — AI Image Quality Problems
-
-Common issues:
-
----
-
-## Wrong Anatomy
-
-Examples:
-
-* Incorrect hands.
-* Strange faces.
-* Unnatural expressions.
-
-Solution:
-
-Review and regenerate.
-
----
-
-## Style Inconsistency
-
-Problem:
-
-Different scenes feel like different worlds.
-
-Solution:
-
-Maintain visual references.
-
----
-
-## Unrealistic Details
-
-Problem:
-
-AI artifacts reduce immersion.
-
-Solution:
-
-Perform manual review.
-
----
-
-# Chapter 9 — Video Generation Quality Checklist
-
-Review:
-
-## Motion
-
-Does movement feel natural?
-
----
-
-## Camera
-
-Does camera movement support storytelling?
-
----
-
-## Continuity
-
-Does the scene remain consistent?
-
----
-
-## Timing
-
-Does motion match narration?
-
----
-
-## Cinematic Feel
-
-Does it feel like a film scene?
-
----
-
-# Book IV — Audio Quality Standards
-
----
-
-# Chapter 10 — Narration Quality
-
-Check:
-
-* Clear pronunciation.
-* Natural emotion.
-* Appropriate speed.
-* Correct pauses.
-* Consistent voice identity.
-
----
-
-# Chapter 11 — Music Quality
-
-Check:
-
-* Matches emotion.
-* Supports narration.
-* Does not overpower voice.
-* Creates atmosphere.
-
----
-
-# Chapter 12 — Sound Design Quality
-
-Check:
-
-* Realistic environment.
-* Appropriate effects.
-* Clean mixing.
-
----
-
-# Book V — Editing Quality Standards
-
----
-
-# Chapter 13 — Timeline Review
-
-Check:
-
-## Pacing
-
-Does the video maintain attention?
-
----
-
-## Transitions
-
-Are transitions meaningful?
-
----
-
-## Visual Rhythm
-
-Does the sequence feel natural?
-
----
-
-## Story Flow
-
-Does every scene contribute?
-
----
-
-# Chapter 14 — Retention Review
-
-Analyze:
-
-* Opening strength.
-* Slow sections.
-* Emotional peaks.
-* Viewer questions.
-
-Ask:
-
-"Would I continue watching this video?"
-
----
-
-# Book VI — Technical Quality Standards
-
----
-
-# Chapter 15 — Video Export Standards
-
-Minimum recommended:
-
-```
-Resolution:
-
-1920x1080 Minimum
-
-3840x2160 Preferred
-
-
-Frame Rate:
-
-24 FPS / 30 FPS
-
-
-Audio:
-
-High quality stereo
-
-
-Format:
-
-MP4
-
-Codec:
-
-H.264 / H.265
-
-```
-
----
-
-# Chapter 16 — File Quality Standards
-
-Before publishing:
+# 8. Storytelling Quality
 
 Verify:
 
-* Correct filename.
-* Correct version.
-* Correct thumbnail.
-* Correct subtitles.
-* Correct metadata.
+- Narrative arc
+- Emotional progression
+- Viewer curiosity
+- Smooth transitions
+- Clear explanations
+- Effective ending
+
+The story should remain engaging from beginning to end.
 
 ---
 
-# Book VII — Final Publishing Checklist
+# 9. Visual Quality
+
+Check:
+
+- Cinematic composition
+- Consistent lighting
+- Correct aspect ratio
+- Character consistency
+- Environment continuity
+- High-resolution assets
+- Absence of visible AI artifacts
+
+Every frame should support the story.
 
 ---
 
-# Chapter 17 — Final Approval Checklist
+# 10. Audio Quality
 
-## Story
+Verify:
 
-☐ Clear message
+- Clear narration
+- Consistent volume
+- Natural pacing
+- Balanced music
+- Appropriate sound effects
+- No clipping or distortion
 
-☐ Interesting journey
-
-☐ Strong ending
-
----
-
-## Visual
-
-☐ Cinematic quality
-
-☐ Consistent style
-
-☐ No AI artifacts
+Audio should enhance—not distract from—the viewing experience.
 
 ---
 
-## Audio
+# 11. Technical Quality
 
-☐ Clear narration
+Confirm:
 
-☐ Balanced music
+- Correct file formats
+- Stable rendering
+- Frame consistency
+- Subtitle synchronization
+- Asset organization
+- Naming conventions
 
-☐ Good sound design
-
----
-
-## YouTube
-
-☐ Strong title
-
-☐ Strong thumbnail
-
-☐ Description complete
-
-☐ SEO complete
+Technical issues should be resolved before approval.
 
 ---
 
-# Chapter 18 — Quality Score System
+# 12. Brand Consistency
 
-Every episode receives a quality score.
+Ensure alignment with:
 
-Example:
+- Brand Identity
+- Voice Identity
+- Style Guide
+- Storytelling Framework
+- AI Generation Rules
 
-```
-Story            /10
-
-Research         /10
-
-Visuals          /10
-
-Audio            /10
-
-Editing          /10
-
-Thumbnail        /10
-
-Overall          /60
-
-```
+Every episode should feel unmistakably like Mahy Mythic Labs.
 
 ---
 
-# Chapter 19 — Improvement Documentation
+# 13. Copyright Compliance
 
-After every episode:
+Verify:
 
-Record:
+- Original script
+- Licensed or original assets
+- Music rights
+- Font licenses
+- Required attribution
+- Provider commercial-use compliance
 
-```
-What Worked:
-
-What Failed:
-
-Viewer Feedback:
-
-Technical Problems:
-
-Future Improvements:
-
-```
+Refer to `COPYRIGHT_POLICY.md`.
 
 ---
 
-# Book VIII — Quality Culture
+# 14. SEO Quality
+
+Review:
+
+- Accurate title
+- Effective description
+- Relevant tags
+- Appropriate chapters
+- Thumbnail alignment
+- Search optimization
+
+Metadata should accurately represent the content.
 
 ---
 
-# Chapter 20 — Continuous Improvement
+# 15. Viewer Experience
 
-Quality is not achieved once.
+Evaluate:
 
-It is improved continuously.
+- Watchability
+- Clarity
+- Educational value
+- Visual engagement
+- Emotional impact
+- Overall pacing
 
-Each video should make the next video better.
-
-The Production Bible should evolve based on:
-
-* Experience.
-* Analytics.
-* Viewer feedback.
-* New technology.
+The audience should remain engaged throughout.
 
 ---
 
-# Chapter 21 — The Professional Standard
+# 16. Quality Gates
 
-Mahy Mythic Labs should always aim for:
+A production cannot proceed unless:
 
-Not the fastest production.
+✓ Research approved
 
-Not the easiest production.
+✓ Script approved
 
-But the most meaningful production.
+✓ Storyboard approved
 
----
+✓ Assets approved
 
-# Closing Reflection
+✓ Narration approved
 
-Technology can generate content.
+✓ Copyright review passed
 
-Quality creates experiences.
+✓ Metadata completed
 
-The mission of Mahy Mythic Labs is not to produce unlimited AI videos.
+✓ Final review passed
 
-The mission is to create memorable cinematic stories.
-
-Every episode should educate.
-
-Every episode should inspire.
-
-Every episode should represent the standard of the studio.
+Automation should enforce these gates wherever practical.
 
 ---
 
-*End of Quality Standards Handbook — Book I*
+# 17. Quality Scoring
+
+Suggested scoring:
+
+| Category | Weight |
+|----------|-------:|
+| Research | 15% |
+| Script | 20% |
+| Storytelling | 15% |
+| Visuals | 15% |
+| Audio | 10% |
+| Technical | 10% |
+| Brand | 5% |
+| Copyright | 5% |
+| SEO | 5% |
+
+Passing score:
+
+**90% or higher**
+
+Anything below should be revised before publication.
+
+---
+
+# 18. AI Quality Review
+
+The Quality Agent should verify:
+
+- Prompt compliance
+- Style Guide compliance
+- Voice Identity compliance
+- Research quality
+- Hallucination detection
+- Asset consistency
+- Metadata quality
+
+The Quality Agent cannot modify outputs directly; it should report issues for correction.
+
+---
+
+# 19. Continuous Improvement
+
+Every completed project should contribute to improving:
+
+- Prompts
+- Templates
+- Automation
+- Knowledge Base
+- Production Bible
+- Agent behavior
+
+Quality metrics should be tracked over time to identify recurring issues.
+
+---
+
+# 20. Related Documents
+
+| Document | Purpose |
+|----------|---------|
+| `production_bible/AI_GENERATION_RULES.md` | AI generation standards |
+| `production_bible/COPYRIGHT_POLICY.md` | Copyright compliance |
+| `production_bible/STYLE_GUIDE.md` | Visual standards |
+| `production_bible/VOICE_IDENTITY.md` | Narration standards |
+| `production_bible/STORYTELLING_FRAMEWORK.md` | Narrative quality |
+| `_EPISODE_TEMPLATE/quality/quality_report.md` | Episode review report |
+
+---
+
+# 21. Summary
+
+The Mahy Mythic Labs Quality Standards define the acceptance criteria for every production artifact. By combining structured quality gates, measurable scoring, AI-assisted validation, and continuous improvement, the platform ensures that every published episode meets a consistent standard of educational value, cinematic presentation, and technical excellence.

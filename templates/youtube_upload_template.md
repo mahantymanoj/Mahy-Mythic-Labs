@@ -1,10 +1,6 @@
-# Mahy Mythic Labs YouTube Upload Template
+# YouTube Upload Template
 
-**Document Version:** 1.0
-
-**Document Type:** YouTube Publishing & Optimization Workflow
-
-**Purpose:** Complete publishing checklist for every Mahy Mythic Labs episode.
+Version: 1.0
 
 ---
 
@@ -12,892 +8,595 @@
 
 ## Episode ID
 
-```text
-EP###
 ```
-
-Example:
-
-```text
-EP001
+EP-0001
 ```
-
----
-
-## Episode Title
-
-```text
-```
-
----
-
-## Upload ID
-
-Format:
-
-```text
-YT###
-```
-
-Example:
-
-```text
-YT001
-```
-
----
-
-## Upload Status
-
-```text
-NOT_STARTED
-
-PREPARING
-
-UPLOADING
-
-SCHEDULED
-
-PUBLISHED
-
-MONITORING
-```
-
----
 
 ## Upload Version
 
-```text
-v1.0
+```
+1.0
+```
+
+## Upload Status
+
+```
+Draft
+Ready
+Scheduled
+Published
+Archived
 ```
 
 ---
 
-# Book I — Pre Upload Verification
+# Episode Information
 
-Before uploading:
-
-## Production Complete
-
-Checklist:
-
-☐ Final video approved
-
-☐ Quality check completed
-
-☐ Thumbnail approved
-
-☐ SEO completed
-
-☐ Copyright check completed
-
-☐ Assets backed up
-
-Status:
-
-```
-READY / NOT READY
-```
-
----
-
-# Book II — Video File Information
-
-## Final Video File
-
-Location:
+## Title
 
 ```
 ```
 
----
-
-## File Name
-
-Naming format:
-
-```
-EP###_episode_title_final.mp4
-```
-
-Example:
-
-```
-EP001_lost_civilization_final.mp4
-```
-
----
-
-## Video Specifications
-
-Resolution:
-
-```
-1080p
-
-1440p
-
-4K
-```
-
----
-
-Frame Rate:
-
-```
-24 FPS
-
-30 FPS
-
-60 FPS
-```
-
----
-
-Duration:
-
-```
-minutes
-```
-
----
-
-File Size:
-
-```
-GB
-```
-
----
-
-# Book III — YouTube Title Optimization
-
-Reference:
-
-```
-templates/seo_template.md
-```
-
----
-
-## Final Title
+## Series
 
 ```
 ```
-
----
-
-## Title Character Count
-
-```
-/60
-```
-
----
-
-## Title Checklist
-
-☐ Contains keyword
-
-☐ Creates curiosity
-
-☐ Matches thumbnail
-
-☐ Clear meaning
-
-☐ No misleading claims
-
----
-
-# Book IV — Description Management
-
----
-
-## First Two Lines
-
-Important search preview:
-
-```
-```
-
----
-
-## Full Description
-
-Structure:
-
-```
-Hook
-
-↓
-
-Episode Summary
-
-↓
-
-Key Topics
-
-↓
-
-Sources
-
-↓
-
-Call To Action
-
-↓
-
-Social Links
-
-↓
-
-Subscribe Message
-```
-
----
-
-Description:
-
-```
-```
-
----
-
-# Book V — Chapters
-
-Format:
-
-```
-00:00 Introduction
-
-00:00 Chapter 1
-
-00:00 Chapter 2
-
-00:00 Conclusion
-```
-
----
-
-Chapter Checklist:
-
-☐ Correct timestamps
-
-☐ Logical sections
-
-☐ Keyword friendly
-
----
-
-# Book VI — Tags & Keywords
-
-Reference:
-
-```
-templates/seo_template.md
-```
-
----
-
-## Primary Tags
-
-```
-```
-
----
-
-## Secondary Tags
-
-```
-```
-
----
-
-## Channel Tags
-
-Always include:
-
-```
-Mahy Mythic Labs
-
-Cinematic Documentary
-
-AI Storytelling
-
-```
-
----
-
-# Book VII — Thumbnail Upload
-
-Reference:
-
-```
-templates/thumbnail_template.md
-```
-
----
-
-Thumbnail File:
-
-```
-```
-
----
-
-Thumbnail Checklist:
-
-☐ 1280x720
-
-☐ High contrast
-
-☐ Mobile readable
-
-☐ Matches title
-
-☐ Creates curiosity
-
----
-
-Thumbnail Version:
-
-```
-v1.0
-```
-
----
-
-# Book VIII — Playlist Management
-
----
-
-## Primary Playlist
-
-```
-```
-
----
-
-## Additional Playlists
-
-```
-```
-
----
-
-Examples:
-
-```
-Ancient Mysteries
-
-AI Documentary
-
-Cosmic Stories
-
-Mythology Explained
-```
-
----
-
-# Book IX — YouTube Settings
-
----
-
-## Visibility
-
-Select:
-
-```
-Private
-
-Unlisted
-
-Public
-
-Premiere
-```
-
----
-
-## Audience
-
-Select:
-
-```
-Made for Kids
-
-Not Made for Kids
-```
-
----
 
 ## Category
 
-Select:
-
 ```
-Education
-
-Science & Technology
-
-Entertainment
-
-Film & Animation
+Astronomy
+History
+Science
+Mythology
+Technology
+Special
 ```
-
----
 
 ## Language
 
 ```
+English
+```
+
+## Duration
+
+```
+10:00
 ```
 
 ---
 
-## Subtitles
+# YouTube Title
 
-Status:
+Maximum recommended:
+
+70 characters
 
 ```
-Not Added
-
-Generated
-
-Reviewed
-
-Approved
 ```
 
 ---
 
-# Book X — End Screen Setup
-
----
-
-## End Screen Elements
-
-Add:
-
-☐ Subscribe button
-
-☐ Related video
-
-☐ Playlist
-
-☐ Latest upload
-
----
-
-## End Screen Timing
-
-```
-Last 20 seconds
-```
-
----
-
-## Linked Videos
+# Alternative Titles
 
 1.
 
-```
-```
-
 2.
 
-```
-```
+3.
+
+4.
+
+5.
 
 ---
 
-# Book XI — Cards Setup
-
----
-
-## Card 1
-
-Time:
-
-```
-```
-
-Link:
+# Description
 
 ```
 ```
 
 ---
 
-## Card 2
+# Chapters
 
-Time:
+| Time | Chapter |
+|------|---------|
+| 00:00 | |
+| | |
+| | |
+| | |
+
+---
+
+# Tags
+
+```
+tag1, tag2, tag3
+```
+
+---
+
+# Hashtags
+
+```
+#history #science #documentary
+```
+
+---
+
+# Keywords
+
+Primary Keyword
 
 ```
 ```
 
-Link:
+Secondary Keywords
+
+```
+```
+
+Long-tail Keywords
 
 ```
 ```
 
 ---
 
-## Card Checklist
+# Thumbnail
 
-☐ Relevant
-
-☐ Not interrupting story
-
-☐ Encourages watching more
-
----
-
-# Book XII — Copyright & Compliance
-
----
-
-## Music Copyright
-
-Status:
+File
 
 ```
-CLEARED
+assets/images/thumbnails/
+```
 
-LICENSED
+Version
 
-ORIGINAL
+```
+```
+
+Approved
+
+```
+Yes
 ```
 
 ---
 
-## Image Rights
+# Playlist
 
-Status:
-
-```
-CLEARED
-```
-
----
-
-## AI Disclosure
-
-Required?
+Primary Playlist
 
 ```
-YES / NO
 ```
 
----
-
-## Copyright Check
-
-Status:
-
-```
-PASSED
-
-ISSUE FOUND
-```
-
----
-
-# Book XIII — Community Launch
-
----
-
-## Community Post
-
-Draft:
+Secondary Playlist
 
 ```
 ```
 
 ---
 
-## Launch Message
+# Audience
+
+```
+General Audience
+```
+
+Made for Kids
+
+```
+No
+```
+
+Age Restriction
+
+```
+None
+```
+
+---
+
+# Visibility
+
+```
+Private
+Unlisted
+Public
+Scheduled
+```
+
+Publish Date
+
+```
+YYYY-MM-DD
+```
+
+Publish Time
+
+```
+HH:MM
+```
+
+Timezone
+
+```
+UTC
+```
+
+---
+
+# End Screen
+
+Video Recommendation
+
+```
+```
+
+Playlist
+
+```
+```
+
+Subscribe Element
+
+☐ Yes
+
+Website
+
+```
+```
+
+Duration
+
+```
+20 sec
+```
+
+---
+
+# Cards
+
+| Time | Type | Destination |
+|------|------|-------------|
+| | Video | |
+| | Playlist | |
+| | Link | |
+
+---
+
+# Pinned Comment
 
 ```
 ```
 
 ---
 
-## Poll Question
+# Community Post
 
 ```
 ```
 
 ---
 
-## Social Promotion
+# Social Media Posts
 
-Platforms:
-
-☐ Instagram
-
-☐ X/Twitter
-
-☐ LinkedIn
-
-☐ Reddit
-
-☐ Facebook
-
----
-
-# Book XIV — Publishing Schedule
-
----
-
-Upload Date:
-
-```
-DD-MM-YYYY
-```
-
----
-
-Upload Time:
+## X
 
 ```
 ```
 
 ---
 
-Premiere:
-
-```
-YES / NO
-```
-
----
-
-Premiere Date:
+## LinkedIn
 
 ```
 ```
 
 ---
 
-# Book XV — First 24 Hour Monitoring
-
-Track:
-
----
-
-Views:
+## Facebook
 
 ```
 ```
 
 ---
 
-CTR:
-
-```
-%
-```
-
----
-
-Average View Duration:
+## Instagram
 
 ```
 ```
 
 ---
 
-Audience Retention:
-
-```
-%
-```
-
----
-
-Likes:
+## Threads
 
 ```
 ```
 
 ---
 
-Comments:
+# Attribution
+
+Music
+
+```
+```
+
+Images
+
+```
+```
+
+Video
+
+```
+```
+
+Fonts
+
+```
+```
+
+References
 
 ```
 ```
 
 ---
 
-Subscribers Gained:
+# Copyright Checklist
+
+- [ ] Music licensed
+- [ ] Images licensed
+- [ ] Video licensed
+- [ ] Fonts licensed
+- [ ] AI assets verified
+- [ ] Attribution complete
+
+---
+
+# Monetization
+
+Ads
+
+☐ Enabled
+
+Mid-roll Ads
+
+☐ Enabled
+
+Affiliate Links
+
+☐ Included
+
+Sponsors
+
+☐ Included
+
+Paid Promotion
+
+☐ Declared
+
+---
+
+# Localization
+
+Translated Title
+
+```
+```
+
+Translated Description
+
+```
+```
+
+Subtitles
+
+☐ English
+
+☐ Hindi
+
+☐ Other
+
+---
+
+# Accessibility
+
+Closed Captions
+
+☐ Uploaded
+
+Manual Review
+
+☐ Completed
+
+Chapter Markers
+
+☐ Added
+
+---
+
+# Analytics Baseline
+
+Target CTR
+
+```
+8%+
+```
+
+Target Average View Duration
+
+```
+50%+
+```
+
+Target Watch Time
+
+```
+```
+
+Target Likes
+
+```
+```
+
+Target Comments
+
+```
+```
+
+Target Subscribers
 
 ```
 ```
 
 ---
 
-# Book XVI — First Week Analysis
+# Publishing Checklist
 
-After 7 days:
+## Production
 
-Views:
+- [ ] Video rendered
+- [ ] Thumbnail approved
+- [ ] Metadata approved
+- [ ] Description reviewed
+- [ ] Chapters added
+
+## Quality
+
+- [ ] QA approved
+- [ ] Copyright approved
+- [ ] Final review complete
+
+## Upload
+
+- [ ] Upload complete
+- [ ] Thumbnail uploaded
+- [ ] Playlist assigned
+- [ ] Cards added
+- [ ] End screen added
+- [ ] Visibility verified
+
+---
+
+# Post Publish Checklist
+
+- [ ] Verify HD processing
+- [ ] Verify thumbnail
+- [ ] Verify chapters
+- [ ] Verify subtitles
+- [ ] Verify cards
+- [ ] Verify end screens
+- [ ] Verify comments enabled
+- [ ] Pin comment
+- [ ] Share to social media
+- [ ] Add to website/blog
+- [ ] Monitor first 24 hours
+
+---
+
+# Initial Performance Review
+
+24 Hours
+
+Views
+
+```
+```
+
+CTR
+
+```
+```
+
+Watch Time
+
+```
+```
+
+Average View Duration
+
+```
+```
+
+Subscribers
 
 ```
 ```
 
 ---
 
-CTR:
+# 7 Day Review
+
+Views
 
 ```
-%
 ```
 
----
-
-Retention:
+CTR
 
 ```
-%
 ```
 
----
-
-Traffic Sources:
+Retention
 
 ```
-Browse
-
-Search
-
-Suggested
-
-External
-
-Other
 ```
 
----
+Watch Time
 
-# Book XVII — Optimization Actions
+```
+```
 
-Changes after publishing:
+Top Traffic Sources
 
 ```
 ```
 
 ---
 
-Examples:
+# Lessons Learned
 
-* Thumbnail update
-* Title improvement
-* Description optimization
-* New tags
-
----
-
-# Book XVIII — File Organization
-
-Episode publishing folder:
+What worked well?
 
 ```
-EP001/
-
-├── final_video/
-
-├── thumbnail/
-
-├── metadata/
-
-│   ├── title.md
-│   ├── description.md
-│   └── tags.md
-
-├── subtitles/
-
-└── analytics/
 ```
 
----
-
-# Book XIX — Version History
-
-| Version | Change         | Date | Owner |
-| ------- | -------------- | ---- | ----- |
-| v1.0    | Initial Upload |      |       |
-| v1.1    | Optimization   |      |       |
-| v2.0    | Final Archive  |      |       |
-
----
-
-# Final Publishing Approval
-
-## Status
+What should improve?
 
 ```
-PUBLISHED
 ```
 
----
-
-## YouTube URL
+Ideas for future episodes
 
 ```
 ```
 
 ---
 
-## Published Date
+# Final Sign-off
 
-```
-DD-MM-YYYY
-```
+SEO
 
----
+☐ Approved
 
-## Approved By
+Thumbnail
 
-```
-```
+☐ Approved
 
----
+Quality
 
-# Final Upload Summary
+☐ Approved
 
-## Episode
+Publishing
 
-```
-```
+☐ Approved
 
----
+Release
 
-## Final Title
-
-```
-```
-
----
-
-## Thumbnail Strategy
-
-```
-```
-
----
-
-## SEO Strategy
-
-```
-```
-
----
-
-## Performance Notes
-
-```
-```
-
----
-
-*End of Mahy Mythic Labs YouTube Upload Template — Version 1.0*
+☐ Published

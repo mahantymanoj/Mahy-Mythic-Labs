@@ -1,0 +1,293 @@
+# ==============================================================================
+# Mahy Mythic Labs
+# Logging Configuration
+# File: config/logging.yaml
+# Version: 1.0
+# ==============================================================================
+
+version: "1.0"
+
+# ==============================================================================
+# Global Logging
+# ==============================================================================
+
+logging:
+  enabled: true
+
+  level: INFO
+
+  format: text
+
+  timezone: Asia/Kolkata
+
+  include_timestamp: true
+
+  include_log_level: true
+
+  include_module: true
+
+  include_function: true
+
+  include_line_number: false
+
+# ==============================================================================
+# Log Directories
+# ==============================================================================
+
+directories:
+  root: ./logs
+
+  application: ./logs/application
+
+  agents: ./logs/agents
+
+  providers: ./logs/providers
+
+  quality: ./logs/quality
+
+  generation: ./logs/generation
+
+  publishing: ./logs/publishing
+
+  performance: ./logs/performance
+
+  security: ./logs/security
+
+# ==============================================================================
+# Log Files
+# ==============================================================================
+
+files:
+  application: application.log
+
+  error: error.log
+
+  debug: debug.log
+
+  quality: quality.log
+
+  provider: provider.log
+
+  generation: generation.log
+
+  publishing: publishing.log
+
+  performance: performance.log
+
+  security: security.log
+
+# ==============================================================================
+# Rotation
+# ==============================================================================
+
+rotation:
+  enabled: true
+
+  type: daily
+
+  max_file_size_mb: 50
+
+  backup_files: 30
+
+  compress_old_logs: true
+
+# ==============================================================================
+# Retention
+# ==============================================================================
+
+retention:
+  application_days: 30
+
+  debug_days: 14
+
+  provider_days: 30
+
+  generation_days: 30
+
+  quality_days: 90
+
+  security_days: 180
+
+# ==============================================================================
+# Console Logging
+# ==============================================================================
+
+console:
+  enabled: true
+
+  colored_output: true
+
+  show_timestamp: true
+
+  minimum_level: INFO
+
+# ==============================================================================
+# File Logging
+# ==============================================================================
+
+file:
+  enabled: true
+
+  append: true
+
+  auto_create_directory: true
+
+# ==============================================================================
+# AI Request Logging
+# ==============================================================================
+
+ai_requests:
+  enabled: true
+
+  log_provider: true
+
+  log_model: true
+
+  log_temperature: true
+
+  log_tokens: true
+
+  log_latency_ms: true
+
+  log_cost: true
+
+  save_prompt: true
+
+  save_response: true
+
+# ==============================================================================
+# Agent Logging
+# ==============================================================================
+
+agents:
+  log_start: true
+
+  log_finish: true
+
+  log_execution_time: true
+
+  log_input_files: true
+
+  log_output_files: true
+
+  log_failures: true
+
+# ==============================================================================
+# Performance Logging
+# ==============================================================================
+
+performance:
+  enabled: true
+
+  cpu_usage: false
+
+  memory_usage: true
+
+  execution_time: true
+
+  disk_usage: false
+
+# ==============================================================================
+# Security
+# ==============================================================================
+
+security:
+  mask_api_keys: true
+
+  mask_tokens: true
+
+  mask_passwords: true
+
+  mask_personal_information: true
+
+  never_log_environment_variables: true
+
+# ==============================================================================
+# Error Logging
+# ==============================================================================
+
+errors:
+  include_stacktrace: true
+
+  save_failed_prompts: true
+
+  save_failed_responses: true
+
+# ==============================================================================
+# Cost Tracking
+# ==============================================================================
+
+cost_tracking:
+  enabled: true
+
+  log_input_tokens: true
+
+  log_output_tokens: true
+
+  log_total_tokens: true
+
+  log_estimated_cost: true
+
+  summarize_daily: true
+
+# ==============================================================================
+# JSON Logs
+# ==============================================================================
+
+json_logging:
+  enabled: false
+
+  output_directory: ./logs/json
+
+# ==============================================================================
+# Metrics
+# ==============================================================================
+
+metrics:
+  enabled: true
+
+  output_directory: ./logs/metrics
+
+# ==============================================================================
+# Notifications
+# ==============================================================================
+
+notifications:
+  notify_on_error: false
+
+  notify_on_critical: true
+
+  notify_on_provider_failure: true
+
+# ==============================================================================
+# Development Mode
+# ==============================================================================
+
+development:
+  verbose_logging: true
+
+  log_all_prompts: true
+
+  log_all_responses: true
+
+# ==============================================================================
+# Production Mode
+# ==============================================================================
+
+production:
+  verbose_logging: false
+
+  log_all_prompts: false
+
+  log_all_responses: false
+
+# ==============================================================================
+# Metadata
+# ==============================================================================
+
+metadata:
+  project: Mahy Mythic Labs
+
+  production_ready: false
+
+  owner: Mahy Mythic Labs

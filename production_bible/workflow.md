@@ -1,49 +1,48 @@
-# Mahy Mythic Labs Production Workflow Handbook
+# 🎬 Production Workflow
 
-**Document Version:** 1.0
-
-**Category:** Production Bible
-
-**Status:** Active
-
----
-
-# Preface
-
-A professional studio does not depend on inspiration alone.
-
-Creativity creates ideas.
-
-A workflow transforms ideas into finished products.
-
-Mahy Mythic Labs follows a structured production system where every video moves through defined stages.
-
-This workflow ensures:
-
-* Consistent quality.
-* Efficient production.
-* Better documentation.
-* Continuous improvement.
-* Scalable content creation.
-
-The objective is simple:
-
-> Create cinematic AI-generated videos with the discipline of an engineering team and the creativity of a filmmaking studio.
+> **Mahy Mythic Labs Production Workflow**
+>
+> Version: 1.0
+>
+> This document defines the complete creative production lifecycle for every Mahy Mythic Labs project. It describes how an idea evolves into a published video, establishes responsibilities for each production stage, and provides the quality checkpoints required before moving to the next phase.
 
 ---
 
-# Book I — Production Philosophy
+# 1. Purpose
 
-> "Creativity needs freedom. Production needs structure."
+The production workflow ensures that every video:
+
+- Follows a consistent process
+- Meets quality standards
+- Maintains brand identity
+- Preserves factual accuracy
+- Produces reusable assets
+- Can be automated over time
+
+This workflow applies to both manual and AI-assisted production.
 
 ---
 
-# Chapter 1 — The Production Lifecycle
+# 2. Production Philosophy
 
-Every Mahy Mythic Labs episode follows:
+Every production follows five principles:
 
-```text
+- Research before creation
+- Story before visuals
+- Quality before speed
+- Consistency before experimentation
+- Automation where it improves quality
+
+---
+
+# 3. Production Lifecycle
+
+```
 Idea
+
+↓
+
+Topic Selection
 
 ↓
 
@@ -51,11 +50,11 @@ Research
 
 ↓
 
-Story Development
+Fact Verification
 
 ↓
 
-Production Planning
+Episode Planning
 
 ↓
 
@@ -63,15 +62,19 @@ Script Writing
 
 ↓
 
+Script Review
+
+↓
+
 Storyboard
 
 ↓
 
-Visual Design
+Visual Planning
 
 ↓
 
-AI Asset Generation
+Asset Generation
 
 ↓
 
@@ -79,741 +82,393 @@ Narration
 
 ↓
 
-Music & Sound Design
-
-↓
-
-Video Editing
-
-↓
-
-Thumbnail Design
-
-↓
-
-SEO Preparation
-
-↓
-
-Publishing
-
-↓
-
-Analytics Review
-
-↓
-
-Knowledge Update
-
-```
-
----
-
-# Chapter 2 — Episode Development Model
-
-Every video is treated as an independent project.
-
-Example:
-
-```text
-projects/
-
-└── EP001_Ancient_Civilization/
-
-    ├── research/
-
-    ├── script/
-
-    ├── storyboard/
-
-    ├── prompts/
-
-    ├── assets/
-
-    ├── audio/
-
-    ├── editing/
-
-    ├── publishing/
-
-    └── review/
-
-```
-
----
-
-# Book II — Phase 1: Idea Generation
-
----
-
-# Chapter 3 — Idea Discovery
-
-Every episode starts with a question.
-
-Examples:
-
-* What mystery exists?
-* What discovery changed humanity?
-* What ancient knowledge remains unexplored?
-* What scientific concept fascinates people?
-
----
-
-# Chapter 4 — Idea Evaluation
-
-Before starting production evaluate:
-
-```text
-Topic:
-
-Audience Interest:
-
-Uniqueness:
-
-Research Availability:
-
-Visual Potential:
-
-Story Potential:
-
-Production Difficulty:
-
-Expected Impact:
-```
-
----
-
-# Chapter 5 — Idea Approval Criteria
-
-A topic should have:
-
-## Curiosity
-
-Does it create questions?
-
----
-
-## Visual Possibility
-
-Can AI create compelling visuals?
-
----
-
-## Educational Value
-
-Will viewers learn something?
-
----
-
-## Emotional Value
-
-Will viewers feel something?
-
----
-
-# Book III — Phase 2: Research
-
----
-
-# Chapter 6 — Research Process
-
-Research should answer:
-
-* What is known?
-* What is uncertain?
-* What are the important facts?
-* What are the different interpretations?
-
----
-
-# Chapter 7 — Research Sources
-
-Priority:
-
-1. Academic sources.
-2. Books.
-3. Historical references.
-4. Scientific publications.
-5. Credible websites.
-
----
-
-# Chapter 8 — Research Documentation
-
-Every episode should contain:
-
-```text
-Research Notes
-
-Important Facts
-
-Timeline
-
-References
-
-Questions
-
-Creative Possibilities
-```
-
----
-
-# Book IV — Phase 3: Story Development
-
----
-
-# Chapter 9 — Story Structure
-
-Every episode follows:
-
-```text
-Hook
-
-↓
-
-Introduction
-
-↓
-
-Context
-
-↓
-
-Journey
-
-↓
-
-Discovery
-
-↓
-
-Reflection
-
-```
-
----
-
-# Chapter 10 — Story Question
-
-Every episode must answer:
-
-"Why should someone spend their time watching this?"
-
----
-
-# Book V — Phase 4: Script Production
-
----
-
-# Chapter 11 — Script Workflow
-
-Process:
-
-```text
-Research
-
-↓
-
-Outline
-
-↓
-
-First Draft
-
-↓
-
-Fact Review
-
-↓
-
-Story Improvement
-
-↓
-
-Final Script
-
-```
-
----
-
-# Chapter 12 — Script Requirements
-
-Every script should define:
-
-```text
-Narration
-
-Visual Direction
-
-Scene Duration
-
-Emotion
-
-Music Direction
-
-Transition
-```
-
----
-
-# Book VI — Phase 5: Visual Production
-
----
-
-# Chapter 13 — Storyboard Creation
-
-Before generating visuals:
-
-Create:
-
-```text
-Scene Number
-
-Shot Description
-
-Camera Angle
-
-Character
-
-Environment
-
-Emotion
-
-Narration
-
-Duration
-
-```
-
----
-
-# Chapter 14 — Image Generation
-
-Follow:
-
-`image_direction.md`
-
-Process:
-
-```text
-Storyboard
-
-↓
-
-Image Prompt
-
-↓
-
-AI Generation
-
-↓
-
-Selection
-
-↓
-
-Approval
-
-```
-
----
-
-# Chapter 15 — Video Generation
-
-Follow:
-
-`video_direction.md`
-
-Process:
-
-```text
-Image Reference
-
-↓
-
-Motion Prompt
-
-↓
-
-AI Video Generation
+Video Assembly
 
 ↓
 
 Quality Review
 
+↓
+
+Publishing Package
+
+↓
+
+YouTube Upload
+
+↓
+
+Analytics & Improvement
 ```
 
----
-
-# Book VII — Phase 6: Audio Production
+Every stage must be completed before the next begins.
 
 ---
 
-# Chapter 16 — Narration Production
+# 4. Stage 1 — Topic Selection
 
-Follow:
+Objective:
 
-`narration.md`
+Choose a topic that aligns with the Mahy Mythic Labs mission.
 
-Process:
+Selection criteria:
 
-```text
-Final Script
+- Educational value
+- Viewer interest
+- Research availability
+- Visual storytelling potential
+- Long-term relevance
 
-↓
+Deliverable:
 
-Voice Selection
-
-↓
-
-Voice Generation
-
-↓
-
-Audio Review
-```
+`episode.md`
 
 ---
 
-# Chapter 17 — Music Production
+# 5. Stage 2 — Research
 
-Follow:
+Objective:
 
-`music.md`
+Collect accurate and trustworthy information.
 
-Process:
+Activities:
 
-```text
-Scene Emotion
+- Literature review
+- Scientific sources
+- Historical references
+- Multiple source comparison
+- Source documentation
 
-↓
+Deliverable:
 
-Music Direction
+`research/research.md`
 
-↓
+Quality Gate:
 
-Music Generation
-
-↓
-
-Sound Mixing
-
-```
-
----
-
-# Book VIII — Phase 7: Editing
+- Reliable sources
+- Evidence documented
+- Major claims verified
 
 ---
 
-# Chapter 18 — Editing Workflow
+# 6. Stage 3 — Episode Planning
 
-Follow:
+Objective:
 
-`editing.md`
+Transform research into a production plan.
 
-Process:
+Activities:
 
-```text
-Import Assets
+- Define audience
+- Episode length
+- Learning objectives
+- Key scenes
+- Emotional arc
 
-↓
+Deliverable:
 
-Arrange Timeline
-
-↓
-
-Add Narration
-
-↓
-
-Add Visuals
-
-↓
-
-Add Music
-
-↓
-
-Add Effects
-
-↓
-
-Color Correction
-
-↓
-
-Final Review
-
-```
+Updated `episode.md`
 
 ---
 
-# Chapter 19 — Quality Gate
+# 7. Stage 4 — Script Writing
 
-Before final export check:
+Objective:
 
-## Story
+Create a cinematic educational narrative.
 
-Is the message clear?
+Activities:
 
----
+- Hook
+- Narrative flow
+- Scientific accuracy
+- Storytelling
+- Conclusion
 
-## Visual
+Deliverable:
 
-Does it look cinematic?
+`script/script.md`
 
----
+Quality Gate:
 
-## Audio
-
-Is narration understandable?
-
----
-
-## Emotion
-
-Does it create impact?
+- Voice identity followed
+- Storytelling framework followed
+- AI generation rules satisfied
 
 ---
 
-# Book IX — Phase 8: Publishing
+# 8. Stage 5 — Storyboarding
+
+Objective:
+
+Convert the script into visual scenes.
+
+Activities:
+
+- Scene breakdown
+- Camera planning
+- Visual references
+- Timing
+- Scene transitions
+
+Deliverable:
+
+`storyboard/storyboard.md`
 
 ---
 
-# Chapter 20 — Publishing Preparation
+# 9. Stage 6 — Prompt Engineering
 
-Follow:
+Objective:
 
-`youtube.md`
+Prepare AI-ready prompts.
 
-Prepare:
+Artifacts:
 
-```text
-Title
+- Image prompts
+- Video prompts
+- Narration prompts
 
-Description
-
-Tags
-
-Thumbnail
-
-Chapters
-
-Subtitles
-
-References
+Deliverables:
 
 ```
+prompts/
 
----
+image_prompts.md
 
-# Chapter 21 — Upload Checklist
+video_prompts.md
 
-Before publishing:
-
-* Final video exported.
-* Thumbnail uploaded.
-* Description checked.
-* Metadata completed.
-* Copyright checked.
-* Preview reviewed.
-
----
-
-# Book X — Phase 9: Analytics & Improvement
-
----
-
-# Chapter 22 — Post Publishing Review
-
-After publishing analyze:
-
-```text
-Views
-
-CTR
-
-Retention
-
-Comments
-
-Traffic Sources
-
-Viewer Feedback
-
+narration_prompt.md
 ```
 
----
+Quality Gate:
 
-# Chapter 23 — Lessons Learned
-
-Every episode should update the studio.
-
-Document:
-
-```text
-What Worked:
-
-What Failed:
-
-Technical Problems:
-
-Creative Improvements:
-
-Future Changes:
-```
+- Style Guide compliance
+- Character consistency
+- Visual continuity
 
 ---
 
-# Book XI — Production Management
+# 10. Stage 7 — Asset Generation
 
----
+Objective:
 
-# Chapter 24 — Project Status Tracking
+Generate production assets.
 
-Each episode should have:
+Assets include:
 
-```text
-Idea
+- Images
+- Videos
+- Narration
+- Music
+- Sound Effects
 
-Research
-
-Script
-
-Storyboard
-
-Assets
-
-Editing
-
-Review
-
-Published
-```
-
----
-
-# Chapter 25 — Version Control
-
-All important changes should be tracked.
-
-Examples:
-
-```text
-git commit -m "Added EP001 research"
-
-git commit -m "Updated character prompts"
-
-git commit -m "Finalized episode workflow"
-```
-
----
-
-# Chapter 26 — Continuous Improvement
-
-Mahy Mythic Labs is a learning system.
-
-Each video improves:
-
-* Templates.
-* Prompts.
-* Workflow.
-* Quality standards.
-
-The studio becomes better with every production.
-
----
-
-# Book XII — Complete Studio Pipeline
-
-The complete Mahy Mythic Labs system:
-
-```text
-                    IDEA
-
-                      ↓
-
-                 RESEARCH
-
-                      ↓
-
-                 STORY DESIGN
-
-                      ↓
-
-                  SCRIPT
-
-                      ↓
-
-               STORYBOARD
-
-                      ↓
-
-          CHARACTER + ENVIRONMENT
-
-                      ↓
-
-              IMAGE GENERATION
-
-                      ↓
-
-              VIDEO GENERATION
-
-                      ↓
-
-               NARRATION
-
-                      ↓
-
-             MUSIC + SOUND
-
-                      ↓
-
-                EDITING
-
-                      ↓
-
-              THUMBNAIL
-
-                      ↓
-
-                 YOUTUBE
-
-                      ↓
-
-                ANALYTICS
-
-                      ↓
-
-              IMPROVEMENT
-
-                      ↓
-
-             NEXT EPISODE
+Output directories:
 
 ```
+assets/
+
+audio/
+
+video/
+```
+
+Generated assets should pass quality review before approval.
 
 ---
 
-# Closing Reflection
+# 11. Stage 8 — Video Production
 
-A great studio is not built by creating one great video.
+Objective:
 
-It is built by creating a system that can repeatedly produce great videos.
+Assemble the final video.
 
-Mahy Mythic Labs combines:
+Activities:
 
-The curiosity of a researcher.
+- Scene sequencing
+- Audio synchronization
+- Music
+- Effects
+- Titles
+- Subtitles
+- Branding
 
-The creativity of an artist.
+Deliverable:
 
-The discipline of an engineer.
-
-The vision of a filmmaker.
-
-This workflow is the operating system that transforms ideas into cinematic experiences.
+Draft video
 
 ---
 
-*End of Production Workflow Handbook — Book I*
+# 12. Stage 9 — Quality Review
+
+Objective:
+
+Validate every production component.
+
+Review checklist:
+
+✓ Research accuracy
+
+✓ Script quality
+
+✓ Narration quality
+
+✓ Visual consistency
+
+✓ Copyright compliance
+
+✓ Thumbnail quality
+
+✓ SEO metadata
+
+Deliverable:
+
+`quality/quality_report.md`
+
+---
+
+# 13. Stage 10 — Publishing
+
+Objective:
+
+Prepare publication assets.
+
+Deliverables:
+
+- Thumbnail
+- Title
+- Description
+- Tags
+- Chapters
+- End screen
+- Cards
+
+Output:
+
+`publishing/upload_metadata.md`
+
+---
+
+# 14. Stage 11 — YouTube Upload
+
+Activities:
+
+- Upload
+- Metadata verification
+- Thumbnail
+- Playlist
+- Scheduling
+- End screen
+- Captions
+
+Publishing should occur only after all quality gates pass.
+
+---
+
+# 15. Stage 12 — Post-Publication
+
+Collect:
+
+- Watch time
+- CTR
+- Audience retention
+- Viewer comments
+- Engagement
+- Performance insights
+
+Lessons learned should feed back into future productions.
+
+---
+
+# 16. AI Agent Responsibilities
+
+| Agent | Responsibility |
+|---------|----------------|
+| Master Director | Coordinate workflow |
+| Research Agent | Research |
+| Script Agent | Script writing |
+| Storyboard Agent | Visual planning |
+| Image Agent | Images |
+| Video Agent | Video generation |
+| Narration Agent | Voice generation |
+| Quality Agent | Review |
+| SEO Agent | Metadata |
+| Publishing Agent | Upload preparation |
+
+Each agent owns a clearly defined stage.
+
+---
+
+# 17. Production Artifacts
+
+Each episode produces:
+
+```
+episode.md
+
+research.md
+
+script.md
+
+storyboard.md
+
+image_prompts.md
+
+video_prompts.md
+
+narration_prompt.md
+
+quality_report.md
+
+upload_metadata.md
+```
+
+These documents form the permanent production record.
+
+---
+
+# 18. Quality Gates
+
+A stage cannot progress until:
+
+- Previous deliverables are complete
+- Quality checklist passes
+- Required approvals are recorded
+- Dependencies are satisfied
+
+Automation should enforce these gates wherever practical.
+
+---
+
+# 19. Continuous Improvement
+
+Every completed episode should contribute to improving:
+
+- Prompts
+- Workflows
+- Templates
+- Knowledge base
+- Production Bible
+- Automation rules
+
+Continuous refinement is part of the production process.
+
+---
+
+# 20. Related Documents
+
+| Document | Purpose |
+|----------|---------|
+| `production_bible/STYLE_GUIDE.md` | Visual identity |
+| `production_bible/VOICE_IDENTITY.md` | Narration identity |
+| `production_bible/STORYTELLING_FRAMEWORK.md` | Narrative framework |
+| `production_bible/AI_GENERATION_RULES.md` | AI standards |
+| `production_bible/QUALITY_STANDARDS.md` | Quality expectations |
+| `automation/workflow.md` | Technical automation workflow |
+| `docs/content_strategy.md` | Editorial planning |
+
+---
+
+# 21. Summary
+
+The Mahy Mythic Labs Production Workflow defines the complete creative lifecycle from idea to published video. It combines rigorous research, cinematic storytelling, structured quality control, and AI-assisted production into a repeatable process that supports both manual creation today and fully automated production in the future.

@@ -1,10 +1,6 @@
-# Mahy Mythic Labs Storyboard Template
+# Storyboard Template
 
-**Template Version:** 1.0
-
-**Template Type:** Visual Story Planning
-
-**Usage:** Copy this template for every episode storyboard.
+Version: 1.0
 
 ---
 
@@ -13,686 +9,599 @@
 ## Episode ID
 
 ```
-EP###
+EP-0001
 ```
-
-Example:
-
-```
-EP001
-```
-
----
 
 ## Episode Title
 
 ```
-Enter episode title
 ```
-
----
-
-## Storyboard Status
-
-Current Status:
-
-```
-NOT_STARTED
-
-DRAFT
-
-REVIEW
-
-APPROVED
-
-PRODUCTION_READY
-```
-
----
 
 ## Storyboard Version
 
 ```
-v1.0
+1.0
+```
+
+## Status
+
+```
+Draft
+Review
+Approved
+Production
+Completed
+```
+
+## Related Files
+
+Script
+
+```
+../script/script.md
+```
+
+Research
+
+```
+../research/research.md
+```
+
+Episode
+
+```
+../episode.md
 ```
 
 ---
 
-# Storyboard Purpose
+# Storyboard Overview
 
-A storyboard transforms the script into a visual journey.
-
-The purpose is to define:
-
-* Scene structure.
-* Visual storytelling.
-* Camera direction.
-* Character movement.
-* Environment design.
-* Asset requirements.
-
----
-
-# Production References
-
-Follow:
+## Total Runtime
 
 ```
-production_bible/cinematography.md
-
-production_bible/VISUAL_GUIDE.md
-
-production_bible/video_direction.md
+10:00
 ```
 
----
-
-# Episode Visual Summary
-
-## Core Visual Theme
+## Total Scenes
 
 ```
-Describe the overall visual identity.
+0
 ```
 
-Example:
+## Total Shots
 
 ```
-A cosmic cinematic journey combining ancient mythology with futuristic visuals.
+0
+```
+
+## Estimated AI Images
+
+```
+0
+```
+
+## Estimated AI Videos
+
+```
+0
 ```
 
 ---
 
-## Visual Mood
+# Visual Style
 
-Select:
+## Overall Style
 
 ```
-Epic
-
-Mystical
-
-Dark
-
-Scientific
-
-Emotional
-
-Ancient
-
-Futuristic
-
+Photorealistic
+Cinematic
 Documentary
-
-Other
+Educational
 ```
 
----
-
-## Color Direction
-
-Primary colors:
+## Color Palette
 
 ```
 ```
 
-Secondary colors:
+## Lighting Style
 
 ```
 ```
 
-Lighting style:
+## Camera Style
 
 ```
 ```
 
----
-
-# Scene Overview
-
-Total Scenes:
-
-```
-```
-
-Estimated Duration:
+## Visual References
 
 ```
 ```
 
 ---
 
-# Scene Timeline
+# Continuity Rules
 
-| Scene | Time | Purpose | Status |
-| ----- | ---- | ------- | ------ |
-| 01    |      |         | ☐      |
-| 02    |      |         | ☐      |
-| 03    |      |         | ☐      |
-| 04    |      |         | ☐      |
-| 05    |      |         | ☐      |
+Maintain consistency for:
 
----
-
-# Scene Development Template
-
-Repeat this section for every scene.
-
----
-
-# Scene
+- Characters
+- Clothing
+- Architecture
+- Environment
+- Lighting
+- Time of Day
+- Weather
+- Props
+- Color Palette
+- Camera Direction
 
 ---
 
-## Scene Title
+# Scene List
 
-```
-Example:
-
-The Birth of the Universe
-```
-
----
-
-## Scene Duration
-
-```
-00:00 - 00:00
-```
+| Scene | Duration | Shots | Purpose |
+|--------|----------|-------|----------|
+| SC-001 | | | |
+| SC-002 | | | |
+| SC-003 | | | |
 
 ---
 
-## Scene Purpose
-
-Why does this scene exist?
-
-```
-```
+# Scene Template
 
 ---
 
-# Narrative Connection
+# Scene SC-001
 
-Related script section:
+## Scene Information
 
-```
-Chapter / Paragraph reference
-```
-
----
-
-# Narration
-
-Voice-over:
+Title
 
 ```
-Paste narration for this scene.
+```
+
+Duration
+
+```
+00:00 - 00:30
+```
+
+Purpose
+
+```
+Hook
+```
+
+Learning Objective
+
+```
+```
+
+Narration Reference
+
+```
+Scene 1
 ```
 
 ---
 
-# Visual Description
+# Visual Goal
 
-Describe exactly what the audience sees.
+Describe what viewers should understand visually.
+
+---
+
+# Emotional Goal
 
 ```
-Subject:
-
-Environment:
-
-Action:
-
-Atmosphere:
-
-Details:
+Wonder
+Curiosity
+Mystery
+Discovery
+Reflection
 ```
 
 ---
 
-# Camera Direction
+# Environment
 
-## Shot Type
-
-Choose:
+Location
 
 ```
-Extreme Wide Shot
+```
 
-Wide Shot
+Architecture
 
-Medium Shot
+```
+```
 
-Close-Up
+Landscape
 
-Extreme Close-Up
+```
+```
+
+Weather
+
+```
+```
+
+Time of Day
+
+```
+```
+
+Atmosphere
+
+```
 ```
 
 ---
 
-## Camera Movement
+# Character Information
 
-Choose:
+Characters Present
 
 ```
-Static
+```
 
+Appearance Notes
+
+```
+```
+
+Wardrobe
+
+```
+```
+
+Expression
+
+```
+```
+
+Action
+
+```
+```
+
+---
+
+# Shot Breakdown
+
+---
+
+## Shot 1
+
+Shot ID
+
+```
+SC001-SH01
+```
+
+Duration
+
+```
+5 sec
+```
+
+Purpose
+
+```
+Establishing Shot
+```
+
+Visual Description
+
+```
+```
+
+Camera
+
+```
+Wide
+```
+
+Lens
+
+```
+24mm
+```
+
+Camera Movement
+
+```
 Slow Push In
-
-Pan
-
-Tilt
-
-Tracking Shot
-
-Aerial Movement
-
-Orbit Shot
-
-Handheld
 ```
 
----
-
-## Camera Description
+Composition
 
 ```
-Describe camera position and movement.
+Rule of Thirds
 ```
 
----
-
-# Composition
-
-## Main Focus
-
-```
-What should the viewer notice first?
-```
-
----
-
-## Secondary Elements
-
-```
-Supporting visual details.
-```
-
----
-
-## Depth
-
-Foreground:
+Foreground
 
 ```
 ```
 
-Middle ground:
+Midground
 
 ```
 ```
 
-Background:
+Background
+
+```
+```
+
+Lighting
+
+```
+Golden Hour
+```
+
+Mood
+
+```
+Wonder
+```
+
+Required Asset
+
+```
+AI Image
+```
+
+Transition Out
+
+```
+Fade
+```
+
+Production Notes
 
 ```
 ```
 
 ---
 
-# Character Direction
+## Shot 2
 
-If characters exist:
-
-## Character
-
-```
-Name:
-```
+(Repeat same structure)
 
 ---
 
-## Appearance
+## Shot N
 
-```
-Reference:
-
-character_bible.md
-```
+(Repeat)
 
 ---
 
-## Action
+# Educational Graphics
+
+Required
 
 ```
-What is the character doing?
+Yes / No
 ```
 
----
+If Yes
 
-## Emotion
+- Timeline
+- Map
+- Diagram
+- Cross-section
+- Animation
+- Infographic
 
-```
-```
-
----
-
-## Movement
+Purpose
 
 ```
 ```
 
 ---
 
-# Environment Direction
+# Continuity Notes
 
-Reference:
+Maintain:
 
-```
-environment_bible.md
-```
+Characters
 
----
+Objects
 
-## Location
+Weather
 
-```
-```
+Lighting
 
----
+Architecture
 
-## Time Period
+Timeline
 
-```
-```
+Environment
 
 ---
 
-## Weather / Atmosphere
+# Camera Summary
 
-```
-```
-
----
-
-## Lighting
-
-```
-```
+| Shot | Camera | Lens | Movement |
+|------|--------|------|----------|
+| | | | |
 
 ---
 
-# Visual Generation Requirements
+# Lighting Summary
+
+| Shot | Lighting |
+|------|----------|
+| | |
 
 ---
 
-## Image Required
+# Asset Requirements
+
+Images
 
 ```
-YES / NO
+0
 ```
 
----
-
-## Video Required
+Video
 
 ```
-YES / NO
+0
 ```
-
----
-
-## Asset Type
-
-Choose:
-
-```
-Image
 
 Animation
 
-Video Clip
+```
+0
+```
 
-3D Environment
+Motion Graphics
 
-Character Render
+```
+0
+```
 
-Background
+Maps
+
+```
+0
+```
+
+Diagrams
+
+```
+0
 ```
 
 ---
 
-# AI Image Prompt Notes
+# Handoff to Image Generator
 
-Prompt requirements:
+Generate:
 
-```
-Subject:
-
-Style:
-
-Camera:
-
-Lighting:
-
-Mood:
-
-Details:
-```
+- Cinematic keyframes
+- Hero images
+- Educational diagrams
+- Historical reconstructions
 
 ---
 
-# AI Video Prompt Notes
+# Handoff to Video Generator
 
-Motion requirements:
+Animate:
 
-```
-Camera Movement:
-
-Subject Movement:
-
-Environment Movement:
-
-Duration:
-
-Transition:
-```
+- Camera movement
+- Character movement
+- Environment
+- Atmospheric effects
+- Physics
 
 ---
 
-# Audio Direction
+# Handoff to Narration
+
+Verify synchronization with:
+
+- Scene timing
+- Emotional pacing
+- Major reveals
 
 ---
 
-## Narration
+# Handoff to Editor
 
-```
-Required narration:
-```
+Editor should prepare:
 
----
-
-## Music
-
-Style:
-
-```
-```
-
-Intensity:
-
-```
-Level 1
-
-Level 2
-
-Level 3
-
-Level 4
-
-Level 5
-```
+- Scene sequence
+- Transitions
+- Timing
+- Graphics placement
+- B-roll placement
 
 ---
 
-## Sound Effects
+# Storyboard Metrics
 
-Required:
-
-```
-Sound 01:
-
-Sound 02:
-
-Sound 03:
-```
-
----
-
-# Scene Transition
-
-Previous Scene:
+Scene Count
 
 ```
 ```
 
-Transition:
+Shot Count
 
 ```
-Cut
-
-Fade
-
-Dissolve
-
-Camera Match
-
-Other
 ```
 
----
+Average Shot Duration
 
-Next Scene:
+```
+```
+
+Estimated Visual Assets
+
+```
+```
+
+Estimated Render Time
 
 ```
 ```
 
 ---
 
-# Scene Quality Review
+# Review Checklist
 
-Checklist:
+## Visual
 
-☐ Visual supports story
+- [ ] Every script scene visualized
+- [ ] Clear learning objective
+- [ ] Camera defined
+- [ ] Lighting defined
+- [ ] Environment defined
 
-☐ Camera direction is clear
+## Continuity
 
-☐ Emotion is defined
+- [ ] Character consistency
+- [ ] Lighting consistency
+- [ ] Weather consistency
+- [ ] Architecture consistency
+- [ ] Timeline consistency
 
-☐ Character consistency maintained
+## Production
 
-☐ Environment consistency maintained
-
-☐ Audio direction defined
-
-☐ AI generation requirements complete
-
----
-
-# Complete Episode Storyboard Review
-
----
-
-## Story Flow
-
-☐ Beginning is engaging
-
-☐ Middle maintains curiosity
-
-☐ Ending creates impact
+- [ ] Ready for Image Generation
+- [ ] Ready for Video Generation
+- [ ] Ready for Editing
+- [ ] Ready for QA
 
 ---
 
-## Visual Flow
+# Review History
 
-☐ Scenes feel connected
-
-☐ Visual style is consistent
-
-☐ No unnecessary scenes
-
----
-
-## Production Readiness
-
-☐ All scenes documented
-
-☐ Assets identified
-
-☐ Prompts can be created
-
-☐ Editing requirements clear
+| Version | Reviewer | Status | Notes |
+|----------|----------|--------|-------|
+| | | | |
 
 ---
 
 # Final Approval
 
-Storyboard Status:
+Storyboard
 
-```
-APPROVED
-```
+☐ Approved
 
----
+Production
 
-Approval Date:
+☐ Approved
 
-```
-DD-MM-YYYY
-```
+Quality
 
----
+☐ Approved
 
-Approved By:
+Ready for Image Generation
 
-```
-```
-
----
-
-# Production Handoff
-
-After approval:
-
-Move to:
-
-```
-image_prompt_template.md
-
-video_prompt_template.md
-```
-
----
-
-# Final Storyboard Summary
-
-## Episode Visual Identity
-
-```
-```
-
----
-
-## Most Important Visual Moment
-
-```
-```
-
----
-
-## Audience Emotional Experience
-
-```
-```
-
----
-
-*End of Mahy Mythic Labs Storyboard Template — Version 1.0*
+☐ Yes

@@ -1,400 +1,489 @@
-# Technology Stack
+# 🛠 Technology Stack
 
-**Project:** Mahy Mythic Labs Studio OS
-
-**Document Version:** 1.0
-
-**Last Updated:** 05-Aug-2026
-
----
-
-# Purpose
-
-This document defines the official technology stack used by Mahy Mythic Labs.
-
-The objective is to standardize the software, tools, platforms, and technologies used throughout the content production pipeline.
-
-The technology stack should evolve as better tools become available, while maintaining compatibility with the established production workflow.
+> **Mahy Mythic Labs Technology Stack**
+>
+> Version: 1.0
+>
+> This document defines the official technology stack used throughout the Mahy Mythic Labs platform. It serves as the single source of truth for programming languages, frameworks, AI providers, infrastructure, development tools, and third-party services.
 
 ---
 
-# Technology Philosophy
+# 1. Purpose
 
-Mahy Mythic Labs follows these principles when selecting tools:
+The technology stack is designed to provide:
 
-* Prioritize quality over popularity.
-* Prefer tools with free tiers or trial credits whenever practical.
-* Use local software where possible.
-* Avoid unnecessary vendor lock-in.
-* Keep the workflow simple and maintainable.
-* Replace tools only when there is a clear improvement.
+- Scalability
+- Maintainability
+- Modularity
+- Provider independence
+- Long-term stability
+- AI-first development
+
+Technology choices should prioritize simplicity, community support, and extensibility.
 
 ---
 
-# Production Pipeline
+# 2. Technology Principles
 
-```text
-Research
-      ↓
-Story Writing
-      ↓
-Script Creation
-      ↓
-Storyboard
-      ↓
-Image Generation
-      ↓
-Video Generation
-      ↓
-Narration
-      ↓
-Music
-      ↓
-Editing
-      ↓
-Thumbnail
-      ↓
-SEO
-      ↓
-Publishing
+The stack should:
+
+- Minimize dependencies
+- Prefer mature technologies
+- Support multiple AI providers
+- Be platform independent
+- Remain open for future expansion
+
+---
+
+# 3. Programming Languages
+
+| Technology | Purpose |
+|------------|---------|
+| Python 3.12+ | Primary application language |
+| Markdown | Documentation |
+| YAML | Configuration |
+| JSON | Data exchange |
+| Bash / PowerShell | Automation scripts |
+
+Python is the only language used for application logic.
+
+---
+
+# 4. Python Ecosystem
+
+## Runtime
+
+- Python 3.12+
+
+---
+
+## Package Manager
+
+- pip
+
+Future consideration:
+
+- uv
+
+---
+
+## Virtual Environment
+
+- venv
+
+---
+
+## Dependency Management
+
+Primary:
+
+```
+requirements.txt
+```
+
+Development:
+
+```
+requirements-dev.txt
 ```
 
 ---
 
-# Core Development Tools
+# 5. AI Providers
 
-## Visual Studio Code
+The platform is provider-independent.
 
-**Purpose**
+Supported providers:
 
-Primary workspace for documentation, prompts, templates, and project management.
+| Provider | Purpose |
+|----------|---------|
+| OpenAI | GPT models |
+| Anthropic | Claude models |
+| Google Gemini | Gemini models |
+| xAI | Grok models |
 
-**Status**
+Future providers:
 
-Official Development Environment
-
----
-
-## Git
-
-**Purpose**
-
-Version control for all project files.
-
-**Status**
-
-Required
+- DeepSeek
+- Mistral
+- Local LLMs
+- Ollama
+- Hugging Face Inference
 
 ---
 
-## GitHub
-
-**Purpose**
-
-Repository hosting, backup, collaboration, and version history.
-
-**Status**
-
-Required
-
----
-
-## Python
-
-**Purpose**
-
-Local helper scripts, utilities, and future automation.
-
-Automation should support production rather than replace creativity.
-
-**Status**
-
-Supported
-
----
-
-# AI Writing & Research
-
-## ChatGPT
-
-**Purpose**
-
-Research assistance, documentation, brainstorming, prompt engineering, scripting, planning, and production guidance.
-
----
-
-## Claude
-
-**Purpose**
-
-Long-form writing, document refinement, reasoning, and editorial review.
-
----
-
-## Web Research
-
-Primary Sources:
-
-* Academic publications
-* Museums
-* Archaeological reports
-* Government organizations
-* Scientific journals
-* Official space agencies
-* Trusted historical references
-
-Information should always be validated before publication.
-
----
-
-# Image Generation
-
-The image generation tool may change over time.
-
-Selection Criteria:
-
-* Photorealistic quality
-* Cinematic composition
-* Prompt accuracy
-* Character consistency
-* Lighting quality
-* Camera control
-
-Example Categories:
-
-* General AI Image Generator
-* Photorealistic Image Generator
-* Character Generation
-* Concept Art Generator
-
----
-
-# Video Generation
-
-Video generation technology changes rapidly.
-
-Selection Criteria:
-
-* Realistic motion
-* Cinematic camera movement
-* Character consistency
-* Lighting consistency
-* Natural animation
-* Prompt controllability
-
-The Studio OS is designed to remain compatible with different AI video platforms.
-
----
-
-# Narration
-
-Narration tools should provide:
-
-* Natural speech
-* Emotional control
-* Multiple languages
-* Voice consistency
-* High audio quality
-
-Narration style should match the video's genre.
+# 6. AI Models
 
 Examples:
 
-* Documentary
-* Spiritual
-* Historical
-* Epic
-* Suspense
+### Text
+
+- GPT-5.x
+- Claude Opus
+- Claude Sonnet
+- Gemini Pro
+- Grok
 
 ---
 
-# Background Music
+### Image
 
-Music should support the story rather than dominate it.
-
-Preferred characteristics:
-
-* Cinematic
-* Emotional
-* Royalty-free or appropriately licensed
-* Genre-appropriate
-* Consistent audio quality
+- GPT Image
+- Flux
+- Imagen
+- Stable Diffusion
 
 ---
 
-# Video Editing
+### Video
 
-Primary Recommendation:
-
-DaVinci Resolve
-
-Responsibilities:
-
-* Editing
-* Transitions
-* Color grading
-* Audio mixing
-* Titles
-* Final rendering
-
-Alternative editors may be evaluated as production needs evolve.
+- Veo
+- Runway
+- Kling
+- Pika
+- Luma
 
 ---
 
-# Image Editing
+### Narration
 
-Used for:
+- ElevenLabs
+- OpenAI TTS
+- Azure Speech
 
-* Thumbnail enhancement
-* Branding
-* Image corrections
-* Asset preparation
-
-Preferred characteristics:
-
-* Layer support
-* Non-destructive editing
-* High-resolution export
+The specific model should be configurable rather than hardcoded.
 
 ---
 
-# Audio Editing
+# 7. Core Python Libraries
 
-Used for:
+## HTTP
 
-* Noise reduction
-* Audio balancing
-* Voice enhancement
-* Music mixing
-* Sound effects
+- httpx
 
 ---
 
-# Project Management
+## Validation
 
-Primary tools:
-
-* Git
-* GitHub
-* Project Board
-* Documentation
-
-The repository itself acts as the production management system.
+- pydantic
 
 ---
 
-# File Formats
+## CLI
 
-## Documentation
-
-* Markdown (.md)
+- typer
 
 ---
 
-## Images
+## Configuration
 
-* PNG
-* JPG
-* WEBP
-
----
-
-## Video
-
-* MP4
-* MOV
+- pyyaml
+- python-dotenv
 
 ---
 
-## Audio
+## Logging
 
-* WAV
-* MP3
-
----
-
-## Scripts
-
-* Python (.py)
+- logging (standard library)
 
 ---
 
-# Naming Standards
+## Testing
 
-Documentation:
-
-```text
-mission.md
-vision.md
-workflow.md
-```
-
-Projects:
-
-```text
-Episode_001
-Episode_002
-Episode_003
-```
-
-Assets:
-
-```text
-ep001_scene01.png
-ep001_scene01.mp4
-ep001_voice.wav
-```
-
-Consistent naming improves organization and automation readiness.
+- pytest
+- pytest-cov
 
 ---
 
-# Tool Evaluation Checklist
+## Linting
 
-Before adopting a new tool, evaluate:
-
-* Does it improve quality?
-* Does it simplify the workflow?
-* Is it reliable?
-* Does it fit the Studio OS?
-* Can it be replaced easily if necessary?
-* Is the learning curve reasonable?
-
-A new tool should solve a real problem rather than add unnecessary complexity.
+- Ruff
 
 ---
 
-# Future Technology
+## Formatting
 
-Potential future additions include:
-
-* Local AI models
-* AI-assisted asset management
-* Local documentation website
-* Python production utilities
-* Metadata generation
-* Subtitle generation
-* Analytics dashboards
-
-These should integrate with the existing architecture instead of replacing it.
+- Black
 
 ---
 
-# Maintenance Policy
+## Type Checking
 
-Review this document periodically.
-
-Update the technology stack when:
-
-* A significantly better tool becomes available.
-* Existing tools are discontinued.
-* Production requirements change.
-* Workflow improvements are adopted.
+- mypy (future)
 
 ---
 
-# Revision History
+## Progress Display
 
-| Version | Date        | Description                                              |
-| ------- | ----------- | -------------------------------------------------------- |
-| 1.0     | 05-Aug-2026 | Initial technology stack for Mahy Mythic Labs Studio OS. |
+- rich
+- tqdm
+
+---
+
+# 8. Multimedia Libraries
+
+Required:
+
+- FFmpeg
+
+Optional:
+
+- Pillow
+- MoviePy
+- OpenCV
+
+These support image, audio, and video processing.
+
+---
+
+# 9. Data Storage
+
+Current:
+
+- File system
+
+Future:
+
+- SQLite
+- PostgreSQL
+- Vector Database (if semantic search is added)
+
+Structured data should remain portable.
+
+---
+
+# 10. Configuration
+
+Configuration formats:
+
+- YAML
+- Environment Variables
+
+Never hardcode:
+
+- API keys
+- Model names
+- Paths
+- Provider settings
+
+---
+
+# 11. Development Tools
+
+Recommended:
+
+- VS Code
+- Cursor
+- Git
+- GitHub
+
+Optional:
+
+- Docker Desktop
+- Postman / Bruno
+- Obsidian
+
+---
+
+# 12. Documentation Tools
+
+Documentation is written in:
+
+- Markdown
+
+Future options:
+
+- MkDocs
+- Material for MkDocs
+
+---
+
+# 13. Version Control
+
+Repository:
+
+Git
+
+Hosting:
+
+GitHub
+
+Branch strategy:
+
+- main
+- develop
+- feature/*
+- release/*
+- hotfix/*
+
+---
+
+# 14. Automation
+
+Automation technologies:
+
+- Python
+- GitHub Actions
+- MCP integrations
+
+Future:
+
+- Celery
+- Redis
+- Message queues
+
+---
+
+# 15. Testing Stack
+
+Testing framework:
+
+- pytest
+
+Coverage:
+
+- pytest-cov
+
+Mocking:
+
+- unittest.mock
+
+Future:
+
+- Playwright (web automation)
+- Benchmark tooling
+
+---
+
+# 16. Security
+
+Security tools:
+
+- python-dotenv
+- GitHub Secret Scanning
+- Dependabot
+
+Future:
+
+- Trivy
+- Bandit
+
+---
+
+# 17. Deployment
+
+Current:
+
+- Local development
+
+Future:
+
+- Docker
+- Docker Compose
+- AWS
+- Azure
+- Google Cloud
+
+Deployment should remain cloud agnostic.
+
+---
+
+# 18. Monitoring
+
+Future tools:
+
+- Prometheus
+- Grafana
+- OpenTelemetry
+
+Initially:
+
+- Structured logging
+- Execution reports
+
+---
+
+# 19. YouTube Production Stack
+
+Research
+
+↓
+
+Prompt Engineering
+
+↓
+
+Image Generation
+
+↓
+
+Video Generation
+
+↓
+
+Narration
+
+↓
+
+Editing
+
+↓
+
+SEO
+
+↓
+
+Publishing
+
+Every stage should support multiple providers through a common abstraction.
+
+---
+
+# 20. Future Technology Roadmap
+
+Planned additions:
+
+- Plugin SDK
+- Agent marketplace
+- MCP Server
+- Local AI execution
+- GPU acceleration
+- Distributed workers
+- Web dashboard
+- Asset database
+- Semantic search
+- RAG-powered knowledge retrieval
+
+---
+
+# 21. Technology Selection Criteria
+
+New technologies should satisfy:
+
+- Active maintenance
+- Strong documentation
+- Community adoption
+- Cross-platform compatibility
+- Clear licensing
+- Long-term viability
+
+Avoid adopting tools solely because they are new or popular.
+
+---
+
+# 22. Related Documents
+
+| Document | Purpose |
+|----------|---------|
+| `docs/architecture.md` | Overall system architecture |
+| `docs/production_engine.md` | Runtime engine |
+| `docs/deployment.md` | Deployment strategy |
+| `docs/setup.md` | Local development setup |
+| `docs/coding_standards.md` | Coding conventions |
+| `docs/testing_strategy.md` | Testing strategy |
+
+---
+
+# 23. Summary
+
+Mahy Mythic Labs is built on a Python-first, AI-provider-independent technology stack designed for long-term maintainability and scalability. By standardizing languages, libraries, tools, and infrastructure while keeping providers configurable, the platform remains adaptable to future advances in AI and software engineering.

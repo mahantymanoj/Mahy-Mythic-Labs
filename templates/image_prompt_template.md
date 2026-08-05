@@ -1,855 +1,494 @@
-# Mahy Mythic Labs Image Prompt Template
+# Image Prompt Template
 
-**Template Version:** 1.0
-
-**Template Type:** AI Image Generation
-
-**Usage:** Copy this template for every image asset required in an episode.
+Version: 1.0
 
 ---
 
-# Image Asset Information
+# Prompt Information
+
+## Prompt ID
+
+```
+IMG-0001
+```
 
 ## Episode ID
 
 ```
-EP###
+EP-0001
 ```
 
-Example:
+## Scene ID
 
 ```
-EP001
+SC-001
 ```
 
----
-
-## Asset ID
-
-Format:
+## Shot ID
 
 ```
-IMG###
+SC001-SH01
 ```
 
-Example:
+## Prompt Version
 
 ```
-IMG001
+1.0
 ```
 
----
-
-## Scene Reference
-
-Storyboard scene:
+## Status
 
 ```
-Scene ###
+Draft
+Review
+Approved
+Generated
+Rejected
+Archived
 ```
 
 ---
 
-## Image Status
+# Source References
+
+Script
 
 ```
-IDEA
-
-PROMPT_DESIGN
-
-GENERATING
-
-REVIEW
-
-APPROVED
-
-FINAL
+../script/script.md
 ```
 
----
-
-## Image Purpose
-
-Select:
+Storyboard
 
 ```
-Story Scene
+../storyboard/storyboard.md
+```
 
-Character Reference
+Research
 
-Environment Reference
+```
+../research/research.md
+```
 
-Thumbnail
+Episode
 
-Transition
-
-Background
-
-Concept Art
-
-Other
+```
+../episode.md
 ```
 
 ---
 
-# Book I — Creative Intent
+# Purpose
+
+Describe why this image exists and what it should communicate.
 
 ---
 
-## Image Objective
+# Learning Objective
 
-What should this image communicate?
+What should the viewer understand after seeing this image?
+
+---
+
+# Scene Context
+
+Provide a brief summary of the surrounding scene.
+
+---
+
+# Hero Subject
+
+Primary object or character.
 
 ```
 ```
 
 ---
 
-## Emotional Goal
+# Supporting Subjects
 
-Audience should feel:
+-
 
-```
-Wonder
+-
 
-Mystery
-
-Fear
-
-Peace
-
-Excitement
-
-Discovery
-
-Inspiration
-
-Other
-```
+-
 
 ---
 
-## Story Connection
+# Environment
 
-How does this image support the story?
+Location
+
+```
+```
+
+Architecture
 
 ```
 ```
 
----
-
-# Book II — Visual Foundation
-
-Reference documents:
+Landscape
 
 ```
-production_bible/image_direction.md
-
-production_bible/VISUAL_GUIDE.md
-
-production_bible/cinematography.md
-
-character_bible.md
-
-environment_bible.md
 ```
 
----
+Weather
 
-# Subject Definition
+```
+```
 
-## Main Subject
+Time of Day
 
-Who or what is the primary focus?
+```
+```
+
+Atmosphere
 
 ```
 ```
 
 ---
 
-## Secondary Subjects
+# Character Details (If Applicable)
 
-Supporting elements:
+Name
+
+```
+```
+
+Appearance
+
+```
+```
+
+Clothing
+
+```
+```
+
+Pose
+
+```
+```
+
+Expression
+
+```
+```
+
+Action
 
 ```
 ```
 
 ---
 
-## Action
+# Camera
 
-What is happening?
-
-```
-```
-
----
-
-## Pose / Position
+Shot Type
 
 ```
-```
-
----
-
-# Book III — Character Integration
-
-If character exists:
-
-Reference:
-
-```
-character_template.md
-```
-
----
-
-## Character Name
-
-```
-```
-
----
-
-## Character Appearance
-
-Include:
-
-* Face
-* Hair
-* Clothing
-* Accessories
-* Age
-* Body type
-
-```
-```
-
----
-
-## Character Emotion
-
-```
-```
-
----
-
-## Character Movement
-
-```
-```
-
----
-
-## Character Consistency Keywords
-
-Always include:
-
-```
-```
-
-Example:
-
-```
-same face identity,
-same costume,
-consistent character design
-```
-
----
-
-# Book IV — Environment Integration
-
-Reference:
-
-```
-environment_template.md
-```
-
----
-
-## Location
-
-```
-```
-
----
-
-## Architecture
-
-```
-```
-
----
-
-## Environment Details
-
-Include:
-
-* Objects
-* Background
-* Landscape
-* Structures
-
-```
-```
-
----
-
-## Atmosphere
-
-```
-```
-
----
-
-## Weather
-
-```
-```
-
----
-
-# Book V — Cinematic Composition
-
----
-
-## Shot Type
-
-Select:
-
-```
-Extreme Wide Shot
-
-Wide Shot
-
-Medium Shot
-
-Close Up
-
-Extreme Close Up
-
-Portrait
-```
-
----
-
-## Camera Angle
-
-Select:
-
-```
-Eye Level
-
+Wide
+Medium
+Close-up
+Macro
+Drone
+Bird's-eye
 Low Angle
-
 High Angle
-
-Bird Eye View
-
-Drone View
-
-First Person View
-
-Macro View
 ```
 
----
-
-## Camera Movement Feeling
-
-Even for still images define:
+Lens
 
 ```
-Static
-
-Dynamic
-
-Epic
-
-Slow Cinematic
-
-Intimate
-
-Dramatic
+24mm
+35mm
+50mm
+85mm
 ```
 
----
+Camera Position
 
-## Composition Rule
+```
+```
 
-Select:
+Composition
 
 ```
 Rule of Thirds
-
-Center Composition
-
+Centered
 Leading Lines
+Symmetrical
+```
 
-Symmetry
+Depth of Field
 
-Depth Layers
-
-Negative Space
+```
+Shallow
+Medium
+Deep
 ```
 
 ---
 
-## Foreground
+# Lighting
+
+Primary Light
 
 ```
-```
-
----
-
-## Middle Ground
-
-```
-```
-
----
-
-## Background
-
-```
-```
-
----
-
-# Book VI — Lighting Design
-
-Reference:
-
-```
-production_bible/cinematography.md
-```
-
----
-
-## Lighting Type
-
-Select:
-
-```
-Natural Light
-
 Golden Hour
-
+Sunrise
 Moonlight
-
-Fire Light
-
-Divine Light
-
-Cosmic Light
-
-Neon Light
-
-Dramatic Shadow
+Studio
+Volumetric
 ```
 
----
-
-## Light Direction
+Secondary Light
 
 ```
-Front
-
-Back
-
-Side
-
-Top
-
-Ambient
 ```
 
----
-
-## Shadow Style
+Shadow Style
 
 ```
 Soft
-
 Hard
-
-Dramatic
-
-Minimal
 ```
 
 ---
 
-## Lighting Description
+# Visual Style
 
 ```
-```
-
----
-
-# Book VII — Color Direction
-
----
-
-## Primary Colors
-
-```
+Photorealistic
+Cinematic
+Documentary
+Ultra Detailed
+Natural Colors
 ```
 
 ---
 
-## Secondary Colors
+# Color Palette
+
+Primary Colors
 
 ```
+```
+
+Accent Colors
+
+```
+```
+
+Contrast
+
+```
+High
+Medium
+Low
 ```
 
 ---
 
-## Color Meaning
+# Historical / Scientific Accuracy
 
-Example:
+List important factual constraints.
 
-```
-Blue = Mystery
+-
 
-Gold = Divine Energy
-```
+-
 
-```
-```
+-
 
 ---
 
-# Book VIII — AI Image Prompt Construction
+# Educational Focus
+
+What concept should the image reinforce?
 
 ---
 
 # Master Prompt
 
-Use this structure:
-
-```
-[SUBJECT]
-
-+
-
-[CHARACTER DETAILS]
-
-+
-
-[ENVIRONMENT]
-
-+
-
-[ACTION]
-
-+
-
-[CAMERA]
-
-+
-
-[LIGHTING]
-
-+
-
-[COLOR]
-
-+
-
-[STYLE]
-
-+
-
-[QUALITY]
+```text
 ```
 
 ---
 
-## Final Prompt
+# Negative Prompt
 
-```
-Write complete AI image generation prompt here.
-```
-
----
-
-# Book IX — Style Parameters
-
----
-
-## Visual Style
-
-Select:
-
-```
-Cinematic Realism
-
-Photorealistic
-
-Fantasy Art
-
-Concept Art
-
-Documentary Style
-
-Ancient Painting
-
-Futuristic Sci-Fi
-
-Digital Art
+```text
+low quality,
+blurry,
+watermark,
+text,
+logo,
+duplicate objects,
+extra limbs,
+deformed anatomy,
+cropped,
+oversaturated,
+artifacts,
+low resolution
 ```
 
 ---
 
-## Detail Level
+# Model Compatibility
+
+Recommended Models
+
+- OpenAI Images
+- Flux
+- SDXL
+- Midjourney
+- Ideogram
+
+Preferred Resolution
 
 ```
-Medium
-
-High
-
-Ultra Detailed
-
-Extreme Detail
+1920 × 1080
 ```
 
----
-
-## Realism Level
-
-```
-Stylized
-
-Semi Realistic
-
-Realistic
-
-Hyper Realistic
-```
-
----
-
-# Book X — Negative Prompt
-
-Things to avoid:
-
-```
-```
-
-Common exclusions:
-
-```
-low quality
-
-blurry
-
-bad anatomy
-
-extra fingers
-
-wrong face
-
-inconsistent character
-
-distorted objects
-
-text
-
-watermark
-```
-
----
-
-# Book XI — Generation Settings
-
----
-
-## AI Tool
-
-Example:
-
-```
-Midjourney
-
-Stable Diffusion
-
-DALL-E
-
-Leonardo AI
-
-Other
-```
-
----
-
-## Aspect Ratio
-
-Select:
+Aspect Ratio
 
 ```
 16:9
-
-9:16
-
-1:1
-
-4:3
-
-21:9
 ```
 
 ---
 
-## Resolution
+# Variations
+
+Generate
 
 ```
+4
 ```
 
----
-
-## Generation Count
+Seed (Optional)
 
 ```
 ```
 
 ---
 
-# Book XII — Image Review
+# Continuity Requirements
+
+Maintain consistency with:
+
+- Characters
+- Clothing
+- Environment
+- Lighting
+- Props
+- Architecture
+- Color Palette
 
 ---
 
-## Technical Review
+# Related Assets
 
-☐ Correct resolution
-
-☐ No artifacts
-
-☐ Good composition
-
-☐ Correct lighting
-
-☐ Good quality
-
----
-
-## Story Review
-
-☐ Supports narration
-
-☐ Emotion achieved
-
-☐ Correct environment
-
-☐ Correct character
-
----
-
-## Brand Review
-
-☐ Matches Mahy Mythic Labs style
-
-☐ Cinematic quality
-
-☐ Consistent with previous assets
-
----
-
-# Book XIII — Asset Management
-
-Store:
+Previous Image
 
 ```
-assets/images/
 ```
 
----
-
-File naming:
+Next Image
 
 ```
-EP001_SC01_IMG001_description.png
 ```
 
-Example:
-
-```
-EP001_SC03_IMG004_shiva_cosmic_dance.png
-```
-
----
-
-Required files:
-
-```
-prompt.md
-
-reference_images/
-
-generated_versions/
-
-final_image.png
-```
-
----
-
-# Version Tracking
-
-| Version | Date | Change   | Approved |
-| ------- | ---- | -------- | -------- |
-| v1.0    |      | Initial  | ☐        |
-| v1.1    |      | Revision | ☐        |
-| v2.0    |      | Final    | ☐        |
-
----
-
-# Final Approval
-
-Status:
-
-```
-APPROVED
-```
-
----
-
-Approved Date:
-
-```
-DD-MM-YYYY
-```
-
----
-
-Approved By:
+Reference Images
 
 ```
 ```
 
 ---
 
-# Final Image Summary
+# File Naming
 
-## What is this image?
+```
+EP-0001_SC001_SH01_v1.png
+```
+
+Output Folder
+
+```
+assets/images/generated/
+```
+
+---
+
+# Copyright
+
+Source Material Verified
+
+☐ Yes
+
+No Copyright Issues
+
+☐ Yes
+
+---
+
+# Quality Checklist
+
+- [ ] Matches storyboard
+- [ ] Matches script
+- [ ] Research verified
+- [ ] Correct composition
+- [ ] Correct lighting
+- [ ] Correct camera
+- [ ] Educational objective met
+- [ ] Brand style followed
+- [ ] No AI artifacts
+- [ ] Ready for production
+
+---
+
+# Review
+
+Reviewer
+
+```
+```
+
+Status
+
+```
+Approved / Changes Required
+```
+
+Comments
 
 ```
 ```
 
 ---
 
-## Why is this image important?
+# Final Output
+
+Generated File
 
 ```
 ```
 
----
-
-## Viewer Impact
+Generation Date
 
 ```
 ```
 
----
+Model Used
 
-*End of Mahy Mythic Labs Image Prompt Template — Version 1.0*
+```
+```
+
+Generation Time
+
+```
+```
+
+Approved
+
+☐ Yes

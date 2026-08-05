@@ -1,665 +1,556 @@
-# Mahy Mythic Labs Research Template
+# Research Template
 
-**Template Version:** 1.0
-
-**Template Type:** Episode Research
-
-**Usage:** Copy this template for every new episode research phase.
+Version: 1.0
 
 ---
 
-# Research Information
+# Episode Information
 
 ## Episode ID
 
 ```
-EP###
+EP-0001
 ```
-
-Example:
-
-```
-EP001
-```
-
----
 
 ## Episode Title
 
 ```
-Enter episode title
 ```
 
----
+## Research Version
+
+```
+1.0
+```
 
 ## Research Status
 
-Current Status:
-
 ```
-NOT_STARTED
-
-IN_PROGRESS
-
-REVIEW
-
-COMPLETED
-
-ARCHIVED
+Planning
+In Progress
+Review
+Approved
+Rejected
+Archived
 ```
 
----
-
-## Research Owner
+## Researcher
 
 ```
-Name:
+AI Research Agent
 ```
 
----
-
-## Research Date
+## Reviewer
 
 ```
-DD-MM-YYYY
+```
+
+## Approval Date
+
+```
 ```
 
 ---
 
-# Book I — Research Objective
+# Research Objective
 
----
-
-# Main Research Question
-
-What is this episode trying to discover?
-
-```
-Example:
-
-How did ancient civilizations understand the universe?
-```
-
----
-
-# Research Purpose
-
-Why are we researching this topic?
-
-```
-Write the purpose.
-```
-
----
-
-# Expected Audience Learning
-
-After watching, the audience should understand:
-
-```
-Main takeaway:
-```
-
----
-
-# Research Scope
-
-Define boundaries.
-
-## Included Topics
-
-```
-Topic 1:
-
-Topic 2:
-
-Topic 3:
-```
-
----
-
-## Excluded Topics
-
-```
-Topic that will not be covered:
-```
-
----
-
-# Book II — Topic Overview
-
----
-
-# Topic Summary
-
-Write a short explanation:
-
-```
-Summary:
-```
-
----
-
-# Key Questions
-
-List important questions:
-
-```
-Q1:
-
-Q2:
-
-Q3:
-
-Q4:
-```
-
----
-
-# Initial Understanding
-
-What is currently known?
-
-```
-Notes:
-```
-
----
-
-# Book III — Research Classification
-
-Every important information must be categorized.
-
----
-
-# FACT
-
-Verified information supported by evidence.
+Clearly define what this research must answer.
 
 Example:
 
-```
-Statement:
-
-Evidence:
-
-Source:
-```
+> Explain how the Great Pyramid of Giza was constructed using the latest archaeological evidence.
 
 ---
 
-# THEORY
+# Scope
 
-Academic explanation or interpretation.
+## Included
 
-Example:
+-
 
-```
-Theory:
+-
 
-Supporting Evidence:
+-
 
-Debate:
-```
+## Excluded
 
----
+-
 
-# BELIEF
+-
 
-Cultural, religious, or traditional understanding.
-
-Example:
-
-```
-Tradition:
-
-Origin:
-
-Cultural Importance:
-```
+-
 
 ---
 
-# SPECULATION
+# Research Questions
 
-Possible ideas without strong evidence.
+1.
 
-Example:
+2.
 
-```
-Claim:
+3.
 
-Reason:
+4.
 
-Evidence Level:
-```
+5.
 
 ---
 
-# Book IV — Research Notes
+# Executive Summary
+
+Provide a concise summary of the findings.
+
+Maximum:
+
+300 words
 
 ---
 
-# Important Discovery 01
+# Key Findings
 
-## Topic
-
-```
-```
-
-## Explanation
-
-```
-```
-
-## Classification
-
-```
-FACT / THEORY / BELIEF / SPECULATION
-```
-
-## Source
-
-```
-```
+| ID | Finding | Confidence |
+|----|----------|------------|
+| KF-001 | | High |
+| KF-002 | | Medium |
+| KF-003 | | Low |
 
 ---
 
-# Important Discovery 02
+# Chronological Timeline
 
-## Topic
-
-```
-```
-
-## Explanation
-
-```
-```
-
-## Classification
-
-```
-FACT / THEORY / BELIEF / SPECULATION
-```
-
-## Source
-
-```
-```
+| Date / Era | Event | Evidence |
+|------------|-------|----------|
+| | | |
 
 ---
 
-# Important Discovery 03
+# People
 
-## Topic
-
-```
-```
-
-## Explanation
-
-```
-```
-
-## Classification
-
-```
-FACT / THEORY / BELIEF / SPECULATION
-```
-
-## Source
-
-```
-```
+| Name | Role | Importance | Evidence |
+|------|------|------------|----------|
+| | | | |
 
 ---
 
-# Book V — Timeline Research
+# Places
 
-Use for:
-
-* History.
-* Mythology.
-* Civilization.
-* Scientific discoveries.
+| Location | Country | Significance |
+|----------|----------|--------------|
+| | | |
 
 ---
 
-| Date | Event | Importance | Source |
-| ---- | ----- | ---------- | ------ |
-|      |       |            |        |
-|      |       |            |        |
-|      |       |            |        |
+# Objects / Artifacts
+
+| Object | Description | Current Location |
+|--------|-------------|------------------|
+| | | |
 
 ---
 
-# Book VI — People & Entities
+# Scientific Facts
+
+Document only verified scientific facts.
+
+| Fact | Evidence | Confidence |
+|------|----------|------------|
+| | | |
 
 ---
 
-# Important Person / Entity 01
+# Historical Facts
 
-Name:
+Document only verified historical facts.
 
-```
-```
-
-Role:
-
-```
-```
-
-Importance:
-
-```
-```
-
-Time Period:
-
-```
-```
-
-Source:
-
-```
-```
+| Fact | Evidence | Confidence |
+|------|----------|------------|
+| | | |
 
 ---
 
-# Important Person / Entity 02
+# Mythological Context (If Applicable)
 
-Name:
+Separate mythology from historical evidence.
 
-```
-```
+## Myth
 
-Role:
+-
 
-```
-```
+-
 
-Importance:
+## Historical Evidence
 
-```
-```
+-
 
-Time Period:
-
-```
-```
-
-Source:
-
-```
-```
+-
 
 ---
 
-# Book VII — Locations
+# Conflicting Views
+
+Document disagreements among experts.
+
+| Topic | View A | View B | Current Consensus |
+|--------|--------|--------|-------------------|
+| | | | |
 
 ---
 
-# Location 01
+# Common Misconceptions
 
-Name:
-
-```
-```
-
-Type:
-
-```
-City / Planet / Civilization / Site
-```
-
-Importance:
-
-```
-```
-
-Historical Context:
-
-```
-```
-
-Visual Potential:
-
-```
-```
-
-Sources:
-
-```
-```
+| Misconception | Reality |
+|---------------|----------|
+| | |
 
 ---
 
-# Book VIII — Source Management
+# Important Numbers
+
+| Metric | Value | Source |
+|--------|-------|--------|
+| | | |
 
 ---
 
-# Source List
+# Terminology
 
-| ID  | Source Name | Type | Reliability | Link |
-| --- | ----------- | ---- | ----------- | ---- |
-| S01 |             |      |             |      |
-| S02 |             |      |             |      |
-| S03 |             |      |             |      |
-
----
-
-# Source Type
-
-Classify:
-
-```
-Academic Paper
-
-Book
-
-University
-
-Research Organization
-
-Museum
-
-Expert Interview
-
-Website
-
-Other
-```
-
----
-
-# Source Reliability
-
-Rating:
-
-```
-HIGH
-
-MEDIUM
-
-LOW
-```
-
----
-
-# Book IX — Story Extraction
-
-Research is not only information.
-
-Find the story.
-
----
-
-# Main Story Angle
-
-```
-What is the most interesting way to tell this story?
-```
-
----
-
-# Emotional Elements
-
-Possible emotions:
-
-```
-Wonder
-
-Mystery
-
-Discovery
-
-Fear
-
-Inspiration
-
-Reflection
-```
+| Term | Definition |
+|------|------------|
+| | |
 
 ---
 
 # Visual Opportunities
 
-Possible scenes:
+Potential visuals for production.
+
+- Historical reconstruction
+- Scientific visualization
+- Maps
+- Timeline
+- Cross-section
+- Animation
+- Infographic
+
+---
+
+# Production Notes
+
+Information useful for later stages.
+
+## Script Writer
+
+Important story angles.
+
+-
+
+-
+
+---
+
+## Storyboard
+
+Important visual sequences.
+
+-
+
+-
+
+---
+
+## Image Generator
+
+Important hero visuals.
+
+-
+
+-
+
+---
+
+## Video Generator
+
+Important motion opportunities.
+
+-
+
+-
+
+---
+
+## Narration
+
+Important pronunciation notes.
+
+-
+
+-
+
+---
+
+## Thumbnail
+
+Strong visual moments.
+
+-
+
+-
+
+---
+
+## SEO
+
+Important searchable topics.
+
+-
+
+-
+
+---
+
+# Source Inventory
+
+## Primary Sources
+
+| Source | Type | Reliability |
+|--------|------|-------------|
+| | | |
+
+---
+
+## Secondary Sources
+
+| Source | Type | Reliability |
+|--------|------|-------------|
+| | | |
+
+---
+
+## Academic Papers
+
+| Title | Authors | Year |
+|--------|---------|------|
+| | | |
+
+---
+
+## Books
+
+| Title | Author |
+|--------|---------|
+| | |
+
+---
+
+## Museums
+
+-
+
+---
+
+## Government Sources
+
+-
+
+---
+
+## Scientific Organizations
+
+-
+
+---
+
+# Source Reliability Assessment
+
+| Source | Reliability | Notes |
+|--------|-------------|------|
+| | High | |
+
+---
+
+# Copyright Notes
+
+Images
 
 ```
-Scene 01:
+```
 
-Scene 02:
+Videos
 
-Scene 03:
+```
+```
+
+Music
+
+```
+```
+
+References
+
+```
+```
+
+Usage Restrictions
+
+```
 ```
 
 ---
 
-# Important Quotes
+# Open Questions
 
-Quote:
+Questions requiring additional research.
+
+-
+
+-
+
+-
+
+---
+
+# Assumptions
+
+Document assumptions separately from facts.
+
+-
+
+-
+
+---
+
+# Risks
+
+Potential research risks.
+
+-
+
+-
+
+---
+
+# Research Metrics
+
+Total Sources
 
 ```
 ```
 
-Source:
+Academic Sources
 
 ```
 ```
 
-Usage:
+Primary Sources
 
 ```
-Narration / Reference / Inspiration
+```
+
+Secondary Sources
+
+```
+```
+
+Books
+
+```
+```
+
+Research Hours
+
+```
+```
+
+Confidence Level
+
+```
+High
+Medium
+Low
 ```
 
 ---
 
-# Book X — Research Validation
+# Handoff Checklist
 
-Before moving to script:
+## Script
 
----
+- [ ] Story-ready
 
-## Accuracy Checklist
+## Storyboard
 
-☐ Information verified
+- [ ] Visual opportunities identified
 
-☐ Sources documented
+## Image Generation
 
-☐ Facts separated from beliefs
+- [ ] Hero scenes identified
 
-☐ Context understood
+## Video Generation
 
-☐ Contradictions reviewed
+- [ ] Motion opportunities identified
 
----
+## Narration
 
-## Story Checklist
+- [ ] Pronunciation complete
 
-☐ Strong story angle found
+## Thumbnail
 
-☐ Visual opportunities identified
+- [ ] Hero visual identified
 
-☐ Audience value confirmed
+## SEO
 
----
-
-# Research Completion
-
-Research Status:
-
-```
-COMPLETED
-```
+- [ ] Search topics identified
 
 ---
 
-Completed Date:
+# Research Review Checklist
 
-```
-DD-MM-YYYY
-```
+## Accuracy
 
----
+- [ ] Facts verified
+- [ ] Sources documented
+- [ ] Claims supported
+- [ ] Dates verified
 
-# Knowledge Base Transfer
+## Quality
 
-Should this research become reusable knowledge?
+- [ ] Multiple sources consulted
+- [ ] Conflicting views documented
+- [ ] Misconceptions addressed
+- [ ] Educational value confirmed
 
-```
-YES / NO
-```
+## Production
 
-If yes:
-
-Move useful information to:
-
-```
-knowledge_base/
-```
-
-Category:
-
-```
-Mythology
-
-History
-
-Science
-
-Astronomy
-
-Technology
-
-Other
-```
+- [ ] Ready for scripting
+- [ ] Visual guidance complete
+- [ ] Timeline complete
+- [ ] References complete
 
 ---
 
-# Final Research Summary
+# Review History
 
-## What We Learned
-
-```
-```
-
----
-
-## Most Important Insight
-
-```
-```
+| Version | Reviewer | Status | Notes |
+|----------|----------|--------|-------|
+| | | | |
 
 ---
 
-## Story Recommendation
+# Final Approval
+
+Research Approved
+
+☐ Yes
+
+Ready for Script Writing
+
+☐ Yes
+
+Quality Approved
+
+☐ Yes
+
+Approval Date
 
 ```
 ```
-
----
-
-*End of Mahy Mythic Labs Research Template — Version 1.0*

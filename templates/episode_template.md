@@ -1,10 +1,6 @@
-# Mahy Mythic Labs Episode Master Template
+# Episode Production Template
 
-**Template Version:** 1.0
-
-**Template Type:** Episode Management
-
-**Usage:** Copy this file for every new YouTube episode.
+Version: 1.0
 
 ---
 
@@ -13,824 +9,674 @@
 ## Episode ID
 
 ```
-EP###
+EP-0001
 ```
-
-Example:
-
-```
-EP001
-```
-
----
-
-## Episode Title
-
-```
-Enter episode title
-```
-
----
 
 ## Working Title
 
 ```
-Temporary production title
 ```
 
----
+## Final Title
+
+```
+```
+
+## Series
+
+```
+Astronomy
+History
+Science
+Mythology
+Special
+```
 
 ## Category
 
-Select:
-
 ```
-Mythology
-History
-Science
-Astronomy
-Technology
-Mystery
-Philosophy
-Fiction
-Other
 ```
 
----
+## Difficulty Level
 
-## Episode Status
+- Beginner
+- Intermediate
+- Advanced
 
-Current Status:
-
-```
-IDEA
-APPROVED
-RESEARCHING
-SCRIPT_WRITING
-SCRIPT_APPROVED
-STORYBOARD
-ASSET_GENERATION
-EDITING
-QUALITY_REVIEW
-READY_TO_PUBLISH
-PUBLISHED
-ANALYSIS
-COMPLETED
-ARCHIVED
-```
-
----
-
-# Episode Vision
-
-## Core Question
-
-What question does this episode answer?
+## Target Audience
 
 ```
-Example:
-
-Was the universe created by chance or design?
 ```
 
----
-
-## Episode Purpose
-
-Why should this episode exist?
+## Estimated Runtime
 
 ```
-Write the main purpose.
+10 Minutes
 ```
 
----
-
-## Audience Takeaway
-
-After watching, the audience should understand:
+## Language
 
 ```
-Main learning or emotional takeaway.
+English
 ```
 
----
-
-## Emotional Goal
-
-The audience should feel:
+## Status
 
 ```
-Wonder
-Curiosity
-Inspiration
-Fear
-Reflection
-Discovery
-Other
-```
-
----
-
-# Story Foundation
-
-## One Line Summary
-
-Describe the entire episode in one sentence.
-
-```
-Example:
-
-A journey exploring humanity's oldest questions about the universe.
-```
-
----
-
-## Story Hook
-
-First 30 seconds:
-
-```
-How will the viewer become curious?
-```
-
----
-
-## Main Narrative Question
-
-```
-What mystery or problem drives the story?
-```
-
----
-
-## Story Structure
-
-Follow:
-
-```
-HOOK
-
-↓
-
-INTRODUCTION
-
-↓
-
-CONTEXT
-
-↓
-
-EXPLORATION
-
-↓
-
-DISCOVERY
-
-↓
-
-MEANING
-
-↓
-
-CONCLUSION
-
-```
-
----
-
-# Research Section
-
-Location:
-
-```
-research/
-```
-
----
-
-## Research Status
-
-```
-Not Started
-In Progress
-Completed
-```
-
----
-
-## Research Documents
-
-Required:
-
-```
-research_notes.md
-
-references.md
-
-timeline.md
-
-key_facts.md
-
-questions.md
-```
-
----
-
-## Key Research Findings
-
-```
-Finding 1:
-
-Finding 2:
-
-Finding 3:
-
-```
-
----
-
-## Fact Classification
-
-Classify information:
-
-```
-FACT:
-
-THEORY:
-
-BELIEF:
-
-SPECULATION:
-```
-
----
-
-# Script Section
-
-Location:
-
-```
-script/
-```
-
----
-
-## Script Status
-
-```
-Draft
-Review
+Planning
+Research
 Approved
-```
-
----
-
-## Script Files
-
-```
-script.md
-
-narration_script.md
-
-revision_notes.md
-```
-
----
-
-## Script Summary
-
-```
-Brief description of story flow.
-```
-
----
-
-# Storyboard Section
-
-Location:
-
-```
-storyboard/
-```
-
----
-
-## Scene Count
-
-```
-Number of scenes:
-```
-
----
-
-## Storyboard Document
-
-```
-storyboard.md
-```
-
----
-
-## Scene Planning
-
-Each scene contains:
-
-```
-Scene Number:
-
-Duration:
-
-Visual Description:
-
-Camera Direction:
-
-Narration:
-
-Emotion:
-
-Audio:
-```
-
----
-
-# Character Section
-
-Location:
-
-```
-characters/
-```
-
----
-
-## Character List
-
-```
-Character 01:
-
-Character 02:
-
-Character 03:
-```
-
----
-
-## Character Documents
-
-```
-character_bible.md
-```
-
----
-
-# Environment Section
-
-Location:
-
-```
-environments/
-```
-
----
-
-## Environment List
-
-```
-Location 01:
-
-Location 02:
-
-Location 03:
-```
-
----
-
-## Environment Documents
-
-```
-environment_bible.md
-```
-
----
-
-# Visual Production
-
-Location:
-
-```
-prompts/
-assets/
-```
-
----
-
-## Image Generation Status
-
-```
-Not Started
-In Progress
+Scripting
+Storyboard
+Image Generation
+Video Generation
+Narration
+Editing
+Quality Review
+Publishing
 Completed
+Archived
 ```
 
 ---
 
-## Required Files
+# Episode Objective
+
+Describe what the audience should learn after watching this episode.
+
+---
+
+# Learning Outcomes
+
+- Outcome 1
+- Outcome 2
+- Outcome 3
+
+---
+
+# Episode Summary
+
+Short summary of the documentary.
+
+---
+
+# Key Questions
+
+- What?
+- Why?
+- How?
+- When?
+- Where?
+- Who?
+
+---
+
+# Knowledge Domains
+
+- Astronomy
+- History
+- Mythology
+- Science
+- AI
+- Archaeology
+- Future Technology
+
+---
+
+# Production Inputs
+
+## Knowledge Base Files
+
+- knowledge_base/...
+
+## References
+
+- ...
+
+## Research Notes
+
+- ...
+
+---
+
+# Research Stage
+
+Status:
 
 ```
-image_prompts.md
+Pending
+```
 
-generated_assets.md
+Research Document
 
-asset_review.md
+```
+research/research.md
+```
+
+Reviewer
+
+```
+```
+
+Approval Date
+
+```
+```
+
+---
+
+# Script Stage
+
+Status
+
+```
+Pending
+```
+
+Script File
+
+```
+script/script.md
+```
+
+Version
+
+```
+1.0
+```
+
+Approved By
+
+```
+```
+
+---
+
+# Storyboard Stage
+
+Status
+
+```
+Pending
+```
+
+Storyboard File
+
+```
+storyboard/storyboard.md
+```
+
+Scenes
+
+```
+0
+```
+
+Estimated Shots
+
+```
+0
+```
+
+---
+
+# Image Generation
+
+Prompt File
+
+```
+prompts/image_prompts.md
+```
+
+Images Planned
+
+```
+0
+```
+
+Images Generated
+
+```
+0
+```
+
+Images Approved
+
+```
+0
 ```
 
 ---
 
 # Video Generation
 
-## Video Status
+Prompt File
 
 ```
-Not Started
-In Progress
-Completed
+prompts/video_prompts.md
 ```
 
----
-
-## Required Files
+Scenes
 
 ```
-video_prompts.md
-
-animation_plan.md
+0
 ```
 
----
-
-# Audio Production
-
-Location:
+Videos Generated
 
 ```
-audio/
+0
+```
+
+Approved
+
+```
+0
 ```
 
 ---
 
 # Narration
 
-Status:
+Prompt File
 
 ```
-Not Started
-Generated
-Reviewed
-Approved
+prompts/narration_prompt.md
 ```
 
-Files:
+Narration Duration
 
 ```
-narration_script.md
-
-voice_reference.md
-
-final_voice.wav
 ```
 
----
-
-# Music
-
-Status:
+Voice
 
 ```
-Not Started
-Selected
-Approved
 ```
 
-Files:
+Language
 
 ```
-music_direction.md
-
-music_reference.md
+English
 ```
 
 ---
 
-# Sound Design
+# Audio
 
-Required:
-
-```
-ambient_sound.md
-
-sound_effects.md
-```
-
----
-
-# Editing Section
-
-Location:
+Background Music
 
 ```
-editing/
 ```
 
----
-
-## Editing Status
+SFX
 
 ```
-Rough Cut
-
-Review
-
-Final Cut
-
-Approved
-
 ```
 
----
-
-## Editing Files
-
-```
-editing_notes.md
-
-timeline.md
-
-revision_notes.md
-```
-
----
-
-# Thumbnail Production
-
-Location:
-
-```
-publishing/
-```
-
----
-
-## Thumbnail Status
-
-```
-Concept
-
-Design
-
-Review
-
-Approved
-```
-
----
-
-Files:
-
-```
-thumbnail_concept.md
-
-thumbnail_prompt.md
-
-thumbnail_final.png
-```
-
----
-
-# YouTube Publishing
-
-Location:
-
-```
-publishing/
-```
-
----
-
-## Metadata
-
-## Title
-
-```
-Final YouTube title
-```
-
----
-
-## Description
-
-```
-Video description
-```
-
----
-
-## Tags
-
-```
-Keyword list
-```
-
----
-
-## Chapters
-
-```
-00:00
-
-00:00
-
-00:00
-```
-
----
-
-## Publishing Details
-
-Date:
-
-```
-DD-MM-YYYY
-```
-
-URL:
-
-```
-YouTube URL
-```
-
----
-
-# Analytics Review
-
-Status:
+Mix Status
 
 ```
 Pending
-Completed
 ```
 
 ---
 
-## Performance Metrics
+# Editing
 
-After 24 hours:
-
-```
-Views:
-
-CTR:
-
-Average Watch Time:
-
-Retention:
-
-Subscribers:
-```
-
----
-
-After 7 days:
+Editing Status
 
 ```
-Views:
-
-CTR:
-
-Watch Time:
-
-Comments:
-
+Pending
 ```
 
----
-
-After 30 days:
+Software
 
 ```
-Performance Summary:
 ```
 
----
-
-# Lessons Learned
-
-## What Worked
+Project File
 
 ```
 ```
 
 ---
 
-## What Failed
+# Thumbnail
+
+Concept
+
+```
+```
+
+Prompt
+
+```
+```
+
+Approved
+
+```
+No
+```
+
+---
+
+# SEO
+
+Title
+
+```
+```
+
+Description
+
+```
+```
+
+Keywords
+
+```
+```
+
+Tags
+
+```
+```
+
+Hashtags
 
 ```
 ```
 
 ---
 
-## Improvements For Next Episode
+# Publishing
+
+YouTube Title
 
 ```
 ```
 
----
+Upload Date
 
-# Final Episode Checklist
+```
+```
 
-## Research
+Playlist
 
-☐ Sources verified
+```
+```
 
-☐ Facts checked
+Visibility
 
-☐ References stored
-
----
-
-## Story
-
-☐ Strong hook
-
-☐ Clear narrative
-
-☐ Meaningful conclusion
+```
+Private
+Unlisted
+Public
+```
 
 ---
 
-## Visual
+# Assets
 
-☐ Consistent characters
+## Images
 
-☐ Consistent environments
+- assets/images/
 
-☐ Cinematic quality
+## Videos
 
----
+- assets/videos/
 
 ## Audio
 
-☐ Narration approved
-
-☐ Music balanced
-
-☐ Sound design complete
+- assets/audio/
 
 ---
 
-## Publishing
+# References
 
-☐ Thumbnail ready
+Books
 
-☐ Metadata optimized
+-
 
-☐ Final video uploaded
+Research Papers
 
----
+-
 
-# Episode Completion
+Websites
 
-Final Status:
+-
 
-```
-COMPLETED
-```
+Museums
 
-Completion Date:
+-
 
-```
-DD-MM-YYYY
-```
+Scientific Organizations
+
+-
 
 ---
 
-# Archive Information
+# Copyright
 
-Stored Location:
+Images
+
+☐ Verified
+
+Music
+
+☐ Verified
+
+Video
+
+☐ Verified
+
+Fonts
+
+☐ Verified
+
+References
+
+☐ Verified
+
+---
+
+# Quality Checklist
+
+## Research
+
+- [ ] Approved
+
+## Script
+
+- [ ] Approved
+
+## Storyboard
+
+- [ ] Approved
+
+## Images
+
+- [ ] Approved
+
+## Video
+
+- [ ] Approved
+
+## Narration
+
+- [ ] Approved
+
+## SEO
+
+- [ ] Approved
+
+## Thumbnail
+
+- [ ] Approved
+
+## Copyright
+
+- [ ] Approved
+
+---
+
+# Production Metrics
+
+Words
 
 ```
-projects/EP###/
+```
+
+Scenes
+
+```
+```
+
+Shots
+
+```
+```
+
+Images
+
+```
+```
+
+Video Clips
+
+```
+```
+
+Narration Minutes
+
+```
+```
+
+Music Tracks
+
+```
+```
+
+SFX
+
+```
 ```
 
 ---
 
-# Final Reflection
+# AI Agents Used
 
-Every episode improves the Mahy Mythic Labs system.
-
-The objective is not only to publish videos.
-
-The objective is to build a repeatable cinematic AI storytelling studio.
+- Research Agent
+- Script Writer Agent
+- Storyboard Generator Agent
+- Image Generator Agent
+- Video Generator Agent
+- Narration Generator Agent
+- Thumbnail Generator Agent
+- SEO Optimizer Agent
+- Quality Agent
 
 ---
 
-*End of Episode Master Template — Version 1.0*
+# Risks
+
+List production risks.
+
+-
+
+---
+
+# Notes
+
+Additional production notes.
+
+---
+
+# Production Timeline
+
+| Stage | Status | Date | Owner |
+|---------|--------|------|-------|
+| Planning | | | |
+| Research | | | |
+| Script | | | |
+| Storyboard | | | |
+| Images | | | |
+| Video | | | |
+| Narration | | | |
+| Editing | | | |
+| Thumbnail | | | |
+| SEO | | | |
+| Quality | | | |
+| Publishing | | | |
+
+---
+
+# Final Approval
+
+Research
+
+☐
+
+Script
+
+☐
+
+Storyboard
+
+☐
+
+Images
+
+☐
+
+Video
+
+☐
+
+Narration
+
+☐
+
+Thumbnail
+
+☐
+
+SEO
+
+☐
+
+Quality
+
+☐
+
+Publishing
+
+☐
+
+---
+
+# Completion
+
+Episode Completed
+
+```
+Yes / No
+```
+
+Archive Location
+
+```
+archive/
+```
+
+Repository Version
+
+```
+```
+
+Completion Date
+
+```
+```

@@ -1,353 +1,90 @@
-# Mahy Mythic Labs Quality Check Template
+# Quality Check Template
 
-**Document Version:** 1.0
-
-**Document Type:** Final Production Quality Assurance System
-
-**Purpose:** Complete quality validation before publishing any episode.
+Version: 1.0
 
 ---
 
 # Quality Check Information
 
+## Check ID
+
+```
+QC-0001
+```
+
 ## Episode ID
 
-```text
-EP###
 ```
-
-Example:
-
-```text
-EP001
+EP-0001
 ```
-
----
 
 ## Episode Title
 
-```text
+```
+```
+
+## Version
+
+```
+1.0
+```
+
+## Checked By
+
+```
+AI Quality Agent
+```
+
+## Verified By
+
+```
+Human Reviewer
+```
+
+## Date
+
+```
+YYYY-MM-DD
+```
+
+## Overall Status
+
+```
+PASS
+PASS WITH WARNINGS
+FAIL
 ```
 
 ---
 
-## Quality Check ID
+# Stage Verification
 
-Format:
-
-```text
-QC###
-```
-
-Example:
-
-```text
-QC001
-```
-
----
-
-## Review Version
-
-```
-v1.0
-```
+| Stage | Status |
+|--------|--------|
+| Research | |
+| Script | |
+| Storyboard | |
+| Images | |
+| Video | |
+| Narration | |
+| Thumbnail | |
+| SEO | |
+| Publishing | |
 
 ---
 
-## Quality Status
-
-```
-NOT_STARTED
-
-IN_PROGRESS
-
-ISSUES_FOUND
-
-REVISION_REQUIRED
-
-PASSED
-
-APPROVED
-```
-
----
-
-# Book I — Quality Philosophy
-
-## Core Principle
-
-Every Mahy Mythic Labs episode must achieve:
-
-```
-Story Excellence
-
-+
-Visual Excellence
-
-+
-Audio Excellence
-
-+
-Technical Excellence
-
-+
-Audience Value
-```
-
----
-
-## Quality Standard
-
-The episode should feel:
-
-☐ Cinematic
-
-☐ Premium
-
-☐ Immersive
-
-☐ Educational
-
-☐ Emotionally engaging
-
-☐ Original
-
----
-
-# Book II — Project Completeness Check
-
-## Production Pipeline Status
-
-| Stage       | Status |
-| ----------- | ------ |
-| Research    | ☐      |
-| Script      | ☐      |
-| Storyboard  | ☐      |
-| Characters  | ☐      |
-| Environment | ☐      |
-| Images      | ☐      |
-| Videos      | ☐      |
-| Narration   | ☐      |
-| Music       | ☐      |
-| Editing     | ☐      |
-| Thumbnail   | ☐      |
-| SEO         | ☐      |
-
----
-
-# Book III — Story Quality Check
-
-## Story Structure
-
-Check:
-
-☐ Strong opening hook
-
-☐ Clear story direction
-
-☐ Logical progression
-
-☐ Strong climax
-
-☐ Meaningful ending
-
-Score:
-
-```
-/10
-```
-
-Comments:
-
-```
-```
-
----
-
-## Story Engagement
-
-Questions:
-
-Does the story create curiosity?
-
-```
-YES / NO
-```
-
-Does the viewer want to continue watching?
-
-```
-YES / NO
-```
-
-Does the episode create emotional connection?
-
-```
-YES / NO
-```
-
----
-
-## Educational Value
-
-Check:
-
-☐ Information is accurate
-
-☐ Explanation is understandable
-
-☐ Complex topics simplified
-
-Score:
-
-```
-/10
-```
-
----
-
-# Book IV — Visual Quality Check
-
----
-
-# Image Quality
-
-Check:
-
-☐ Correct composition
-
-☐ No AI artifacts
-
-☐ Realistic details
-
-☐ Consistent style
-
-☐ Correct proportions
-
-Score:
-
-```
-/10
-```
-
----
-
-# Video Quality
-
-Check:
-
-☐ Smooth motion
-
-☐ Natural camera movement
-
-☐ No flickering
-
-☐ No distortion
-
-☐ Good transitions
-
-Score:
-
-```
-/10
-```
-
----
-
-# Cinematography Check
-
-Reference:
-
-```
-production_bible/cinematography.md
-```
-
----
-
-Evaluate:
-
-## Composition
-
-☐ Balanced framing
-
-☐ Clear subject
-
-☐ Good visual hierarchy
-
----
-
-## Lighting
-
-☐ Appropriate mood
-
-☐ Cinematic lighting
-
-☐ Consistent exposure
-
----
-
-## Color
-
-☐ Brand color consistency
-
-☐ Correct emotional tone
-
-☐ Professional grading
-
-Score:
-
-```
-/10
-```
-
----
-
-# Book V — AI Generation Quality
-
----
-
-## Character Consistency
-
-Check:
-
-☐ Same face
-
-☐ Same clothing
-
-☐ Same identity
-
-☐ Correct emotions
-
----
-
-## Environment Consistency
-
-Check:
-
-☐ Same architecture
-
-☐ Same world design
-
-☐ Same atmosphere
-
----
-
-## AI Artifact Check
-
-Look for:
-
-☐ Extra fingers
-
-☐ Distorted faces
-
-☐ Incorrect objects
-
-☐ Unrealistic physics
-
-☐ Visual glitches
-
-Status:
+# Research Quality
+
+- [ ] Research completed
+- [ ] Multiple reliable sources used
+- [ ] Facts verified
+- [ ] Claims supported by evidence
+- [ ] Conflicting viewpoints documented
+- [ ] Source confidence assigned
+- [ ] References recorded
+- [ ] Copyright reviewed
+
+Status
 
 ```
 PASS / FAIL
@@ -355,47 +92,18 @@ PASS / FAIL
 
 ---
 
-# Book VI — Narration Quality
+# Script Quality
 
-Reference:
+- [ ] Strong hook
+- [ ] Logical structure
+- [ ] Educational value
+- [ ] Accurate facts
+- [ ] Smooth transitions
+- [ ] Viewer engagement
+- [ ] Appropriate pacing
+- [ ] Conclusion completed
 
-```
-production_bible/narration.md
-```
-
----
-
-## Voice Quality
-
-Check:
-
-☐ Clear voice
-
-☐ Professional tone
-
-☐ Correct pronunciation
-
-☐ Emotional delivery
-
-Score:
-
-```
-/10
-```
-
----
-
-## Synchronization
-
-Check:
-
-☐ Voice matches visuals
-
-☐ Timing feels natural
-
-☐ No awkward gaps
-
-Status:
+Status
 
 ```
 PASS / FAIL
@@ -403,63 +111,17 @@ PASS / FAIL
 
 ---
 
-# Book VII — Music & Audio Quality
+# Storyboard Quality
 
-Reference:
+- [ ] Every script scene visualized
+- [ ] Camera defined
+- [ ] Lighting defined
+- [ ] Environment defined
+- [ ] Continuity maintained
+- [ ] Scene timing verified
+- [ ] Educational visuals included
 
-```
-production_bible/music.md
-```
-
----
-
-## Background Music
-
-Check:
-
-☐ Supports emotion
-
-☐ Does not overpower narration
-
-☐ Correct intensity
-
-Score:
-
-```
-/10
-```
-
----
-
-## Sound Effects
-
-Check:
-
-☐ Realistic
-
-☐ Proper timing
-
-☐ Enhances immersion
-
-Score:
-
-```
-/10
-```
-
----
-
-## Audio Technical Check
-
-☐ No clipping
-
-☐ No distortion
-
-☐ Balanced volume
-
-☐ Clean output
-
-Status:
+Status
 
 ```
 PASS / FAIL
@@ -467,109 +129,18 @@ PASS / FAIL
 
 ---
 
-# Book VIII — Editing Quality
+# Image Generation Quality
 
-Reference:
+- [ ] Prompt complete
+- [ ] Historical accuracy
+- [ ] Scientific accuracy
+- [ ] Camera specified
+- [ ] Lighting specified
+- [ ] Composition defined
+- [ ] Negative prompt included
+- [ ] Brand style followed
 
-```
-production_bible/editing.md
-```
-
----
-
-## Timeline Review
-
-Check:
-
-☐ Good pacing
-
-☐ Smooth cuts
-
-☐ Appropriate transitions
-
-☐ No unnecessary scenes
-
-Score:
-
-```
-/10
-```
-
----
-
-## Viewer Retention
-
-Check:
-
-☐ Strong first 30 seconds
-
-☐ No boring sections
-
-☐ Good scene variation
-
-Score:
-
-```
-/10
-```
-
----
-
-# Book IX — Thumbnail Quality
-
-Reference:
-
-```
-templates/thumbnail_template.md
-```
-
----
-
-Check:
-
-☐ Strong emotion
-
-☐ Clear subject
-
-☐ Mobile readable
-
-☐ Matches video content
-
-☐ Creates curiosity
-
-Score:
-
-```
-/10
-```
-
----
-
-# Book X — SEO Quality
-
-Reference:
-
-```
-templates/seo_template.md
-```
-
----
-
-Check:
-
-☐ Title optimized
-
-☐ Description completed
-
-☐ Keywords added
-
-☐ Chapters added
-
-☐ Tags added
-
-☐ Playlist assigned
-
-Status:
+Status
 
 ```
 PASS / FAIL
@@ -577,195 +148,326 @@ PASS / FAIL
 
 ---
 
-# Book XI — Technical Quality
+# Video Generation Quality
 
----
+- [ ] Motion defined
+- [ ] Camera movement planned
+- [ ] Scene transitions complete
+- [ ] Duration verified
+- [ ] Visual continuity maintained
+- [ ] Animation requirements documented
 
-## Video Export
-
-Check:
-
-☐ Correct resolution
-
-☐ Correct frame rate
-
-☐ Correct codec
-
-☐ No rendering issues
-
----
-
-Resolution:
+Status
 
 ```
-1080p / 1440p / 4K
+PASS / FAIL
 ```
 
 ---
 
-Frame Rate:
+# Narration Quality
+
+- [ ] Natural flow
+- [ ] Voice direction included
+- [ ] Emotion defined
+- [ ] Pacing defined
+- [ ] Pronunciation notes added
+- [ ] Timing verified
+- [ ] Narration synchronized with storyboard
+
+Status
 
 ```
-24 FPS / 30 FPS / 60 FPS
-```
-
----
-
-## File Validation
-
-Check:
-
-☐ File opens correctly
-
-☐ Audio works
-
-☐ No missing assets
-
-☐ Backup created
-
----
-
-# Book XII — Brand Quality
-
-Reference:
-
-```
-production_bible/master_director.md
+PASS / FAIL
 ```
 
 ---
 
-Check:
+# Thumbnail Quality
 
-☐ Matches Mahy Mythic Labs identity
+- [ ] Strong focal point
+- [ ] Accurate representation
+- [ ] Readable text
+- [ ] Mobile-friendly
+- [ ] Brand consistency
+- [ ] AI image prompt complete
+- [ ] No misleading visuals
 
-☐ Premium cinematic feel
-
-☐ Unique storytelling
-
-☐ Consistent visual language
-
-☐ Appropriate tone
-
-Score:
+Status
 
 ```
-/10
+PASS / FAIL
 ```
 
 ---
 
-# Book XIII — Issue Tracking
+# SEO Quality
 
-## Critical Issues
+- [ ] Primary keyword selected
+- [ ] Secondary keywords selected
+- [ ] Optimized title created
+- [ ] Description completed
+- [ ] Tags generated
+- [ ] Chapters created
+- [ ] Hashtags added
+- [ ] Metadata reviewed
 
-Must fix:
-
-| Issue | Priority | Status |
-| ----- | -------- | ------ |
-|       |          |        |
-
----
-
-## Minor Issues
-
-| Issue | Status |
-| ----- | ------ |
-|       |        |
-
----
-
-# Book XIV — Final Quality Score
-
-| Category  | Score |
-| --------- | ----- |
-| Story     | /10   |
-| Visual    | /10   |
-| Audio     | /10   |
-| Editing   | /10   |
-| Thumbnail | /10   |
-| SEO       | /10   |
-| Brand     | /10   |
-
----
-
-## Overall Score
+Status
 
 ```
-/10
+PASS / FAIL
 ```
 
 ---
 
-# Book XV — Final Decision
+# Technical Quality
 
-Select:
+- [ ] Folder structure correct
+- [ ] Required files present
+- [ ] File names follow standards
+- [ ] Markdown validated
+- [ ] JSON validated
+- [ ] Links verified
+- [ ] Asset references correct
+- [ ] Version updated
+
+Status
 
 ```
-APPROVED
+PASS / FAIL
+```
 
-APPROVED WITH MINOR CHANGES
+---
 
-REVISION REQUIRED
+# Brand Compliance
+
+- [ ] Matches Mahy Mythic Labs identity
+- [ ] Documentary tone maintained
+- [ ] Educational focus maintained
+- [ ] Visual consistency
+- [ ] Voice consistency
+- [ ] Style Guide followed
+
+Status
+
+```
+PASS / FAIL
+```
+
+---
+
+# Copyright Compliance
+
+- [ ] Images licensed
+- [ ] Music licensed
+- [ ] Video licensed
+- [ ] Fonts licensed
+- [ ] AI provider terms respected
+- [ ] Attribution included where required
+
+Status
+
+```
+PASS / FAIL
+```
+
+---
+
+# Accessibility
+
+- [ ] Readable text
+- [ ] Clear narration
+- [ ] Inclusive language
+- [ ] High contrast visuals
+- [ ] Chapter markers included
+
+Status
+
+```
+PASS / FAIL
+```
+
+---
+
+# Automation Readiness
+
+- [ ] All required inputs exist
+- [ ] Required metadata present
+- [ ] AI agent outputs complete
+- [ ] File paths validated
+- [ ] Naming conventions followed
+- [ ] Pipeline can continue automatically
+
+Status
+
+```
+PASS / FAIL
+```
+
+---
+
+# Critical Issues
+
+| ID | Description | File | Owner |
+|----|-------------|------|-------|
+| | | | |
+
+---
+
+# Major Issues
+
+| ID | Description | File | Owner |
+|----|-------------|------|-------|
+| | | | |
+
+---
+
+# Minor Issues
+
+| ID | Description | File | Owner |
+|----|-------------|------|-------|
+| | | | |
+
+---
+
+# Warnings
+
+-
+
+-
+
+-
+
+---
+
+# Required Actions
+
+| Priority | Action | Owner | Status |
+|----------|--------|-------|--------|
+| Critical | | | |
+| Major | | | |
+| Minor | | | |
+
+---
+
+# Final Decision
+
+```
+READY FOR NEXT STAGE
+
+READY FOR PUBLISHING
+
+CHANGES REQUIRED
 
 REJECTED
 ```
 
 ---
 
-## Reviewer Notes
+# Approval
+
+Research
+
+☐
+
+Script
+
+☐
+
+Storyboard
+
+☐
+
+Images
+
+☐
+
+Video
+
+☐
+
+Narration
+
+☐
+
+Thumbnail
+
+☐
+
+SEO
+
+☐
+
+Quality
+
+☐
+
+Publishing
+
+☐
+
+---
+
+# Metrics
+
+Overall Score
 
 ```
+100 / 100
+```
+
+Critical Issues
+
+```
+0
+```
+
+Major Issues
+
+```
+0
+```
+
+Minor Issues
+
+```
+0
+```
+
+Warnings
+
+```
+0
 ```
 
 ---
 
-## Approved By
+# Notes
 
-```
-```
+Additional observations and recommendations.
 
----
+-
 
-## Approval Date
+-
 
-```
-DD-MM-YYYY
-```
+-
 
 ---
 
-# Book XVI — Quality History
+# Sign-off
 
-| Version | Change         | Date | Reviewer |
-| ------- | -------------- | ---- | -------- |
-| v1.0    | Initial Review |      |          |
-| v1.1    | Revision       |      |          |
-| v2.0    | Final Approval |      |          |
+AI Quality Agent
 
----
+☐ Approved
 
-# Final Quality Summary
+Human Reviewer
 
-## Biggest Strength
+☐ Approved
 
-```
-```
+Production Lead
 
----
+☐ Approved
 
-## Improvement Required
+Publication Approved
 
-```
-```
-
----
-
-## Future Production Learning
-
-```
-```
-
----
-
-*End of Mahy Mythic Labs Quality Check Template — Version 1.0*
+☐ Yes

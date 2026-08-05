@@ -1,329 +1,541 @@
-# Mahy Mythic Labs Prompt Engineering Handbook
+# 🧠 Prompt Engineering Standards
 
-**Document Version:** 1.0
-
-**Category:** Production Bible
-
-**Status:** Active
-
----
-
-# Preface
-
-Artificial Intelligence does not understand intention in the way humans do.
-
-It understands instructions.
-
-The quality of an AI-generated image, video, narration, or script is therefore directly influenced by the clarity of the prompt it receives.
-
-Prompt engineering is not about discovering secret keywords or copying viral templates.
-
-It is the practice of communicating creative intent with precision.
-
-For Mahy Mythic Labs, prompts are creative blueprints that translate research, storytelling, and cinematography into consistent AI-generated outputs.
+> **Mahy Mythic Labs Prompt Engineering Guide**
+>
+> Version: 1.0
+>
+> This document defines the prompt engineering principles, architecture, standards, templates, validation rules, and best practices used throughout Mahy Mythic Labs. It ensures that all AI providers generate consistent, high-quality, reproducible outputs.
 
 ---
 
-# Book I — The Philosophy of Prompt Engineering
+# 1. Purpose
 
-> *"The AI creates what it understands. The Creator is responsible for what is communicated."*
+Prompt engineering is the foundation of AI-assisted production.
 
----
+This guide establishes:
 
-# Chapter 1 — What is a Prompt?
+- Prompt architecture
+- Prompt quality standards
+- Reusable templates
+- Context management
+- Multi-agent communication
+- Provider independence
 
-A prompt is a structured creative specification.
-
-It tells an AI model:
-
-* What to create.
-* Why it matters.
-* What it should look like.
-* How it should feel.
-* What it should avoid.
-
-A prompt is not merely a sentence.
-
-It is the digital equivalent of a film director briefing an entire production team.
+Every AI prompt should be deterministic, maintainable, and reusable.
 
 ---
 
-# Chapter 2 — The Role of the Prompt Engineer
+# 2. Scope
 
-Within Mahy Mythic Labs, the Prompt Engineer acts as a Creative Director.
+These standards apply to:
 
-The role includes:
-
-* Translating research into visuals.
-* Preserving historical and mythological authenticity.
-* Maintaining visual continuity.
-* Defining camera language.
-* Guiding lighting and composition.
-* Ensuring emotional consistency.
-* Adapting prompts for different AI tools.
-
-The objective is not to maximize complexity.
-
-The objective is to maximize clarity.
+- Research prompts
+- Script prompts
+- Storyboard prompts
+- Image prompts
+- Video prompts
+- Narration prompts
+- SEO prompts
+- Thumbnail prompts
+- Quality review prompts
+- Agent orchestration prompts
 
 ---
 
-# Chapter 3 — The Universal Prompt Framework
+# 3. Design Principles
 
-Every production prompt should answer these questions:
+Every prompt should be:
 
-1. Subject — Who or what is the focus?
-2. Context — Where and when does the scene occur?
-3. Action — What is happening?
-4. Style — What visual language is required?
-5. Camera — How is the scene framed?
-6. Lighting — What is the lighting condition?
-7. Mood — What emotion should the audience feel?
-8. Quality — What production quality is expected?
-9. Constraints — What should be avoided?
+✓ Explicit
 
-This structure creates prompts that are easier to reuse and refine.
+✓ Context-aware
+
+✓ Reusable
+
+✓ Modular
+
+✓ Deterministic
+
+✓ Version controlled
+
+Avoid one-off prompts whenever possible.
 
 ---
 
-# Chapter 4 — The Mahy Mythic Labs Prompt Formula
+# 4. Prompt Architecture
 
-All prompts should follow this sequence:
+Every production prompt should follow this structure:
 
-```text
-Purpose
-      ↓
-Subject
-      ↓
-Environment
-      ↓
-Action
-      ↓
-Composition
-      ↓
-Camera
-      ↓
-Lighting
-      ↓
-Mood
-      ↓
-Visual Style
-      ↓
-Technical Quality
-      ↓
-Negative Constraints
+```
+SYSTEM
+
+↓
+
+ROLE
+
+↓
+
+OBJECTIVE
+
+↓
+
+CONTEXT
+
+↓
+
+INPUT
+
+↓
+
+CONSTRAINTS
+
+↓
+
+OUTPUT FORMAT
+
+↓
+
+QUALITY CHECKLIST
+
+↓
+
+EXAMPLES (Optional)
 ```
 
-This formula serves as the studio standard for image and video generation.
+This structure should remain consistent across all agents.
 
 ---
 
-# Chapter 5 — Prompt Categories
+# 5. Prompt Components
 
-Different AI tasks require different prompt styles.
+## System
 
-## Research Prompts
+Defines permanent behavior.
 
-Designed to gather information, compare perspectives, and identify reliable sources.
+Example:
 
----
-
-## Storytelling Prompts
-
-Generate narrative structures, plot ideas, dialogue, and emotional arcs.
+- Follow Mahy Mythic Labs standards.
+- Follow AI Generation Rules.
+- Follow Voice Identity.
 
 ---
 
-## Image Prompts
+## Role
 
-Describe a single, highly detailed visual frame.
+Examples:
 
-Focus on composition, realism, and continuity.
+- Research Analyst
+- Documentary Writer
+- Storyboard Artist
+- Cinematic Director
+- Prompt Engineer
+- SEO Specialist
 
----
-
-## Video Prompts
-
-Describe movement over time.
-
-Include:
-
-* Subject motion
-* Camera movement
-* Environmental changes
-* Timing
-* Visual continuity
+The role should remain focused.
 
 ---
 
-## Narration Prompts
+## Objective
 
-Guide tone, pacing, pronunciation, emotional delivery, and audience engagement.
+A single, measurable task.
 
----
+Example:
 
-## Music Prompts
-
-Describe atmosphere, instruments, rhythm, emotional progression, and transitions.
+> Create a cinematic documentary script explaining black holes for a general audience.
 
 ---
 
-## Thumbnail Prompts
+## Context
 
-Optimize for clarity, emotion, and instant recognition at small sizes.
+Context may include:
 
----
+- Episode summary
+- Research findings
+- Previous outputs
+- Knowledge base
+- Brand identity
+- Style guide
 
-# Chapter 6 — Precision Over Complexity
-
-Long prompts are not automatically better.
-
-Effective prompts are:
-
-* Specific.
-* Organized.
-* Consistent.
-* Free of contradictions.
-
-Every word should contribute to the desired result.
-
-Remove unnecessary adjectives and repeated instructions.
+Only include information relevant to the task.
 
 ---
 
-# Chapter 7 — Prompt Consistency
+## Input
 
-Across an episode, prompts should maintain consistency in:
+Examples:
 
-* Character appearance.
-* Clothing.
-* Hairstyles.
-* Accessories.
-* Architecture.
-* Landscapes.
-* Time of day.
-* Lighting direction.
-* Color palette.
-* Camera language.
+- Topic
+- Script
+- Storyboard
+- Image description
+- Research package
 
-Consistency is essential for believable storytelling.
+Inputs should be structured and complete.
 
 ---
 
-# Chapter 8 — Iterative Prompting
+## Constraints
 
-Prompt engineering is an iterative process.
+Define:
 
-The workflow is:
+- Length
+- Tone
+- Audience
+- Accuracy requirements
+- Formatting
+- Forbidden content
 
-```text
-Draft Prompt
-      ↓
-Generate Output
-      ↓
-Review Result
-      ↓
-Identify Issues
-      ↓
-Refine Prompt
-      ↓
-Generate Again
+Constraints reduce ambiguity.
+
+---
+
+## Output Format
+
+Prefer structured formats such as:
+
+- Markdown
+- JSON
+- Tables
+- Bullet lists
+- YAML
+
+Avoid free-form text when automation will consume the output.
+
+---
+
+## Quality Checklist
+
+Each prompt should include a self-review step.
+
+Example:
+
+- Is the output factually accurate?
+- Is it consistent with the style guide?
+- Are all requested sections present?
+
+---
+
+# 6. Context Hierarchy
+
+Prompts should load context in this order:
+
+```
+Global Standards
+
+↓
+
+Production Bible
+
+↓
+
+Knowledge Base
+
+↓
+
+Episode Context
+
+↓
+
+Previous Agent Output
+
+↓
+
+Current Task
 ```
 
-Do not expect perfection from the first attempt.
-
-Treat prompting as a process of continuous refinement.
+Higher-level context should not be overridden by lower-level context.
 
 ---
 
-# Chapter 9 — Prompt Versioning
+# 7. Prompt Categories
 
-Every important prompt should be version controlled.
+## Research
 
-Recommended naming convention:
+Objective:
 
-```text
-IMG_SHIVA_HIMALAYA_v1
-IMG_SHIVA_HIMALAYA_v2
-IMG_SHIVA_HIMALAYA_v3
+Gather and organize verified information.
 
-VID_KURUKSHETRA_v1
-VID_KURUKSHETRA_v2
+---
+
+## Script
+
+Objective:
+
+Transform research into a compelling narrative.
+
+---
+
+## Storyboard
+
+Objective:
+
+Convert the script into visual scenes.
+
+---
+
+## Image
+
+Objective:
+
+Generate consistent cinematic imagery.
+
+---
+
+## Video
+
+Objective:
+
+Generate cinematic shots that match the storyboard.
+
+---
+
+## Narration
+
+Objective:
+
+Produce natural documentary narration.
+
+---
+
+## SEO
+
+Objective:
+
+Generate discoverable but accurate metadata.
+
+---
+
+## Quality
+
+Objective:
+
+Review outputs against project standards.
+
+---
+
+# 8. Prompt Templates
+
+Every prompt should originate from a template.
+
+Examples:
+
+```
+templates/
+
+research_template.md
+
+script_template.md
+
+image_prompt.md
+
+video_prompt.md
+
+seo_template.md
 ```
 
-Versioning allows improvements without losing successful prompt variations.
+Avoid duplicating prompt logic across agents.
 
 ---
 
-# Chapter 10 — Common Prompt Mistakes
+# 9. Variable Placeholders
+
+Use placeholders for dynamic values.
+
+Example:
+
+```
+{{TOPIC}}
+
+{{AUDIENCE}}
+
+{{EPISODE_LENGTH}}
+
+{{STYLE_GUIDE}}
+
+{{VOICE_IDENTITY}}
+```
+
+Hardcoded values should be minimized.
+
+---
+
+# 10. Multi-Agent Prompting
+
+Each agent should receive:
+
+- Only the context it requires.
+- Approved outputs from previous agents.
+- Relevant production standards.
+
+Avoid passing unnecessary information.
+
+---
+
+# 11. Chain of Responsibility
+
+```
+Research
+
+↓
+
+Script
+
+↓
+
+Storyboard
+
+↓
+
+Image
+
+↓
+
+Video
+
+↓
+
+Narration
+
+↓
+
+SEO
+
+↓
+
+Quality
+```
+
+Agents should not bypass established dependencies.
+
+---
+
+# 12. Provider Independence
+
+Prompts should avoid provider-specific features unless necessary.
+
+The same logical prompt should work with:
+
+- GPT
+- Claude
+- Gemini
+- Grok
+- Local LLMs
+
+Provider-specific optimizations should be isolated in adapter layers.
+
+---
+
+# 13. Prompt Versioning
+
+Every prompt should include:
+
+- Version
+- Author
+- Last Updated
+- Purpose
+
+Changes should be tracked through Git.
+
+---
+
+# 14. Prompt Testing
+
+Test prompts using:
+
+- Different AI providers
+- Edge cases
+- Long inputs
+- Short inputs
+- Ambiguous topics
+
+Record observations for future refinement.
+
+---
+
+# 15. Prompt Evaluation
+
+Evaluate prompts based on:
+
+- Accuracy
+- Consistency
+- Completeness
+- Formatting
+- Creativity
+- Efficiency
+- Reproducibility
+
+Refine prompts based on measurable outcomes.
+
+---
+
+# 16. Common Mistakes
 
 Avoid:
 
-* Mixing multiple unrelated scenes.
-* Contradictory instructions.
-* Vague descriptions.
-* Missing camera information.
-* Missing lighting information.
-* Missing emotional context.
-* Ignoring continuity.
-* Overloading prompts with unnecessary keywords.
+- Ambiguous instructions
+- Multiple unrelated objectives
+- Missing context
+- Conflicting constraints
+- Excessive prompt length
+- Hidden assumptions
 
-Clarity consistently outperforms complexity.
+One prompt should solve one primary problem.
 
 ---
 
-# Chapter 11 — The Prompt Review Checklist
+# 17. Security
 
-Before using a prompt, ask:
+Never expose:
 
-* Is the objective clear?
-* Is the subject well defined?
-* Does the environment match the research?
-* Does the camera support the story?
-* Is the lighting intentional?
-* Is the mood appropriate?
-* Does the prompt maintain continuity?
-* Have unwanted elements been excluded?
+- API keys
+- Credentials
+- Internal configuration
+- Proprietary information
 
-Only after these checks should the prompt be considered production-ready.
+Sensitive data should be injected securely through configuration, not embedded in prompts.
 
 ---
 
-# Chapter 12 — The Future of Prompt Engineering
+# 18. AI Hallucination Prevention
 
-AI models will continue to evolve.
+Prompts should instruct models to:
 
-Prompt syntax may change.
+- State uncertainty.
+- Avoid inventing facts.
+- Request clarification when required.
+- Separate evidence from speculation.
 
-Capabilities will improve.
-
-However, the underlying principles will remain constant:
-
-* Clear thinking.
-* Strong research.
-* Effective communication.
-* Consistent creative direction.
-
-The Prompt Engineer's role is therefore not tied to any single AI model.
-
-It is a creative discipline that adapts as technology evolves.
+Trustworthiness is more important than confidence.
 
 ---
 
-# Closing Reflection
+# 19. Continuous Improvement
 
-A prompt is more than an instruction.
+Prompt quality should improve through:
 
-It is the first expression of a creative idea.
+- Episode reviews
+- Performance metrics
+- Human feedback
+- Model updates
+- A/B testing
 
-Every image, every video, every narration, and every piece of music begins with someone deciding how to communicate an intention.
-
-The quality of Mahy Mythic Labs productions will depend not on using the newest AI model, but on consistently expressing creative intent with clarity, precision, and purpose.
-
-Prompt engineering is therefore not merely a technical skill.
-
-It is the language through which imagination becomes visible.
+Successful prompt patterns should be documented and reused.
 
 ---
 
-*End of Prompt Engineering Handbook — Book I*
+# 20. Related Documents
+
+| Document | Purpose |
+|----------|---------|
+| `production_bible/AI_GENERATION_RULES.md` | AI behavior standards |
+| `production_bible/VOICE_IDENTITY.md` | Narration identity |
+| `production_bible/STYLE_GUIDE.md` | Visual direction |
+| `production_bible/STORYTELLING_FRAMEWORK.md` | Narrative structure |
+| `automation/agent_orchestration.md` | Agent execution flow |
+| `prompts/` | Prompt templates |
+
+---
+
+# 21. Summary
+
+The Mahy Mythic Labs Prompt Engineering Standards provide a structured methodology for designing, testing, and maintaining AI prompts across every production stage. By separating system behavior, context, objectives, constraints, and output formats, the platform remains scalable, provider-independent, and capable of producing consistent, high-quality results regardless of the underlying AI model.

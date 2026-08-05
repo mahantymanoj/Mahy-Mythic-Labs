@@ -1,418 +1,554 @@
-# Repository Architecture
+# 🏛 System Architecture
 
-**Project:** Mahy Mythic Labs Studio OS
-
-**Document Version:** 1.0
-
-**Last Updated:** 05-Aug-2026
-
----
-
-# Purpose
-
-This document defines the architecture of the Mahy Mythic Labs Studio OS repository.
-
-The objective is to create a structured, maintainable, and scalable workspace for producing AI-generated YouTube videos.
-
-Every file and folder inside this repository has a specific responsibility. Nothing should exist without a clear purpose.
+> **Mahy Mythic Labs Architecture Documentation**
+>
+> Version: 1.0
+>
+> This document describes the overall software architecture, runtime design, component interactions, and design principles of the Mahy Mythic Labs AI Video Production Platform.
 
 ---
 
-# Architecture Philosophy
+# 1. System Overview
 
-The repository follows one guiding principle:
+Mahy Mythic Labs is an AI-powered production platform that automatically transforms a single content idea into a complete, publish-ready YouTube video.
 
-> **Think like a Creator. Work like an Engineer.**
+The platform is designed around independent AI agents coordinated by a central Production Engine.
 
-Creativity produces the content.
+Core characteristics:
 
-Engineering provides organization, consistency, documentation, and repeatability.
-
-This repository is designed to support the complete lifecycle of every YouTube video.
+- Modular
+- Event-driven
+- Provider-independent
+- Configuration-driven
+- Scalable
+- Extensible
 
 ---
 
-# High-Level Architecture
+# 2. High-Level Architecture
 
-```text
-                        Mahy Mythic Labs Studio OS
+```
 
-                                │
-        ┌───────────────────────┼────────────────────────┐
-        │                       │                        │
-        ▼                       ▼                        ▼
+┌─────────────────────────────────────────────┐
+│ User │
+└─────────────────────────────────────────────┘
+│
+▼
+┌─────────────────────────────────────────────┐
+│ Master Director │
+└─────────────────────────────────────────────┘
+│
+▼
+┌─────────────────────────────────────────────┐
+│ Production Engine │
+│ │
+│ • Workflow │
+│ • Context │
+│ • Registry │
+│ • Scheduler │
+│ • Events │
+│ • State │
+└─────────────────────────────────────────────┘
+│
+├───────────────┬─────────────────┬─────────────────┐
+▼ ▼ ▼
+Research Script Storyboard
+Agent Agent Agent
 
-     Documentation        Production Bible        Knowledge Base
+│ │ │
 
-        │                       │                        │
-        └───────────────┬───────┴───────────────┬────────┘
-                        │                       │
-                        ▼                       ▼
+▼ ▼ ▼
+Image Video Narration
+Agent Agent Agent
 
-                    Templates              Prompt Library
+│
+▼
 
-                        │
-                        ▼
+Quality Agent
 
-                  Episode Projects
+│
+▼
 
-                        │
-                        ▼
+SEO Agent
 
-                  AI Production Pipeline
+│
+▼
 
-                        │
-                        ▼
+Publishing Agent
 
-                  Published YouTube Video
 ```
 
 ---
 
-# Repository Structure
+# 3. Repository Architecture
 
-```text
+```
+
 Mahy-Mythic-Labs/
 
-README.md
-PROJECT_BOARD.md
-LICENSE
-.gitignore
-
-docs/
-production_bible/
-knowledge_base/
-templates/
-prompts/
-projects/
 assets/
 automation/
-tools/
-archive/
+cache/
+config/
+docs/
+knowledge_base/
+logs/
+production_bible/
+projects/
+prompts/
+src/
+templates/
+tests/
+
+```
+
+Each directory has a single responsibility.
+
+---
+
+# 4. Runtime Architecture
+
+```
+
+User
+│
+▼
+
+Master Director
+
+│
+▼
+
+Workflow Engine
+
+│
+▼
+
+Context Manager
+
+│
+▼
+
+AI Agents
+
+│
+▼
+
+Provider Layer
+
+│
+▼
+
+External AI APIs
+
 ```
 
 ---
 
-# Folder Responsibilities
+# 5. Production Pipeline
 
-## docs/
+```
 
-Contains permanent documentation about the studio.
+Topic
 
-Examples:
-
-* Mission
-* Vision
-* Architecture
-* Roadmap
-* Setup Guide
-* Technology Stack
-* Glossary
-
-This folder explains **what the studio is**.
-
----
-
-## production_bible/
-
-Contains the standards that define how Mahy Mythic Labs creates content.
-
-Examples:
-
-* Storytelling Principles
-* Cinematography Standards
-* Research Methodology
-* Workflow
-* Quality Standards
-* Master Director
-
-This folder explains **how the studio operates**.
-
----
-
-## knowledge_base/
-
-Stores reusable research.
-
-Research should never be duplicated.
-
-Knowledge gathered for one episode should remain available for future projects.
-
-Examples:
-
-* Mythology
-* History
-* Science
-* Astronomy
-* References
-
----
-
-## templates/
-
-Contains reusable production templates.
-
-Every episode starts by copying these templates.
-
-Examples:
-
-* Research Template
-* Script Template
-* Storyboard Template
-* Image Prompt Template
-* Video Prompt Template
-* SEO Template
-* Review Template
-
----
-
-## prompts/
-
-Contains AI prompts organized by purpose.
-
-Examples:
-
-* System Prompts
-* Image Prompts
-* Video Prompts
-* Narration Prompts
-* Thumbnail Prompts
-
-Prompts should remain reusable and independent of any specific episode.
-
----
-
-## projects/
-
-Contains every YouTube episode.
-
-Each episode is a self-contained project.
-
-Example:
-
-```text
-Episode_001/
+↓
 
 Research
+
+↓
 
 Script
 
+↓
+
 Storyboard
 
-Prompts
+↓
 
-Assets
+Image Prompt
 
-Production
+↓
 
-Publishing
-
-Review
-```
-
----
-
-## assets/
-
-Stores reusable resources.
-
-Examples:
-
-* Logos
-* Fonts
-* Brand Elements
-* Music
-* Sound Effects
-* Reference Images
-
-Assets in this folder are shared across multiple episodes.
-
----
-
-## automation/
-
-Reserved for optional helper scripts.
-
-Automation should simplify repetitive work without replacing creative decisions.
-
-Possible examples:
-
-* Project scaffolding
-* Batch file renaming
-* Subtitle conversion
-* Image organization
-
-Automation is optional and should support the production process.
-
----
-
-## tools/
-
-Contains documentation for software used by the studio.
-
-Examples:
-
-* AI Writing Tools
-* Image Generation Tools
-* Video Generation Tools
-* Editing Software
-* Audio Software
-
----
-
-## archive/
-
-Stores deprecated or completed resources that should be preserved but are no longer actively used.
-
-Nothing should be permanently deleted unless necessary.
-
----
-
-# Video Production Flow
-
-Every episode follows the same production lifecycle.
-
-```text
-Idea
-    ↓
-Research
-    ↓
-Fact Validation
-    ↓
-Story Design
-    ↓
-Script Writing
-    ↓
-Storyboard
-    ↓
-Image Prompt Design
-    ↓
 Image Generation
-    ↓
-Video Prompt Design
-    ↓
+
+↓
+
+Video Prompt
+
+↓
+
 Video Generation
-    ↓
+
+↓
+
 Narration
-    ↓
-Background Music
-    ↓
-Video Editing
-    ↓
-Thumbnail Design
-    ↓
+
+↓
+
+Editing
+
+↓
+
+Quality
+
+↓
+
 SEO
-    ↓
+
+↓
+
 Publishing
-    ↓
-Review
-    ↓
-Lessons Learned
+
 ```
 
 ---
 
-# Design Principles
+# 6. AI Agent Architecture
 
-The repository follows these principles.
+Each AI capability is implemented as an independent agent.
 
-## Single Responsibility
+| Agent | Responsibility |
+|----------|-------------------------------------|
+| Master Director | Controls production |
+| Research Agent | Research |
+| Script Agent | Script generation |
+| Storyboard Agent | Scene planning |
+| Image Agent | Image prompts |
+| Video Agent | Video prompts |
+| Narration Agent | Narration |
+| Quality Agent | Validation |
+| SEO Agent | Optimization |
+| Publishing Agent | Publishing package |
 
-Each document should answer one question.
+Agents never communicate directly with each other.
 
-Each folder should have one clear responsibility.
-
----
-
-## Reusability
-
-Research, prompts, templates, and assets should be reusable whenever possible.
-
-Avoid duplicate work.
-
----
-
-## Consistency
-
-Every episode should follow the same production workflow.
-
-Consistency improves quality and reduces mistakes.
+All communication passes through the Production Engine.
 
 ---
 
-## Maintainability
+# 7. Production Engine
 
-The repository should remain easy to understand even after hundreds of videos.
+The Production Engine coordinates the entire system.
 
-Good organization is more valuable than excessive documentation.
+Components:
+
+- Director
+- Workflow
+- Context
+- Registry
+- State
+- Events
+- Scheduler
+
+Responsibilities:
+
+- execute workflow
+- share context
+- retry failures
+- maintain state
+- schedule agents
+- emit events
 
 ---
 
-## Version Control
+# 8. Provider Layer
 
-All significant changes should be committed to Git.
+The Provider Layer isolates AI providers from business logic.
 
-Every improvement should be traceable through version history.
+Supported providers:
+
+- OpenAI
+- Anthropic
+- Google Gemini
+- xAI
+
+```
+
+Agent
+
+↓
+
+Provider Interface
+
+↓
+
+Specific Provider
+
+↓
+
+LLM API
+
+```
+
+Changing providers should never require changing agent code.
 
 ---
 
-# Repository Workflow
+# 9. Knowledge Architecture
 
-```text
-Create Idea
-      ↓
-Create Episode Project
-      ↓
-Research
-      ↓
-Write Script
-      ↓
-Create Storyboard
-      ↓
-Generate AI Assets
-      ↓
-Edit Video
-      ↓
-Publish
-      ↓
-Review
-      ↓
-Improve Studio OS
+```
+
+knowledge_base/
+
+astronomy/
+
+history/
+
+mythology/
+
+science/
+
+references/
+
+```
+
+Knowledge is reusable.
+
+Agents consume knowledge before external searches.
+
+---
+
+# 10. Prompt Architecture
+
+```
+
+prompts/
+
+research/
+
+script/
+
+storyboard/
+
+image/
+
+video/
+
+quality/
+
+seo/
+
+system/
+
+```
+
+Prompts are treated as production assets.
+
+No prompts should be embedded in Python source code.
+
+---
+
+# 11. Asset Architecture
+
+Assets are divided into:
+
+## Source Assets
+
+- logos
+- fonts
+- branding
+- licensed music
+
+## Generated Assets
+
+Episode-specific outputs:
+
+```
+
+projects/
+
+EP001/
+
+assets/
+
+audio/
+
+video/
+
+```
+
+Generated assets should not pollute shared asset directories.
+
+---
+
+# 12. Episode Architecture
+
+Each episode is completely isolated.
+
+Example:
+
+```
+
+projects/
+
+EP001/
+
+episode.md
+
+research/
+
+script/
+
+storyboard/
+
+assets/
+
+audio/
+
+video/
+
+publishing/
+
+```
+
+This enables:
+
+- reproducibility
+- archiving
+- debugging
+- independent rendering
+
+---
+
+# 13. Configuration Architecture
+
+Configuration is stored under:
+
+```
+
+config/
+
+```
+
+Configuration includes:
+
+- models
+- providers
+- paths
+- logging
+- runtime settings
+
+No hardcoded configuration is allowed.
+
+---
+
+# 14. Event Flow
+
+```
+
+Research Completed
+
+↓
+
+Script Started
+
+↓
+
+Script Completed
+
+↓
+
+Storyboard Started
+
+↓
+
+Image Started
+
+↓
+
+Video Started
+
+↓
+
+Narration Started
+
+↓
+
+Quality Review
+
+↓
+
+Publishing
+
 ```
 
 ---
 
-# Future Expansion
+# 15. State Management
 
-The architecture is intentionally modular.
+The engine maintains:
 
-Future additions may include:
+- workflow state
+- episode state
+- execution history
+- retry information
+- metadata
 
-* AI-assisted research
-* Local Python helper utilities
-* Visual asset management
-* Documentation website
-* Production dashboards
-* Analytics reports
-
-These additions should extend the existing architecture without disrupting the established workflow.
+State is stored independently of business logic.
 
 ---
 
-# Success Criteria
+# 16. Error Handling
 
-The repository architecture is successful when:
+Every agent should return:
 
-* Every file has a defined purpose.
-* Team members can locate information quickly.
-* Episode production follows a consistent workflow.
-* Documentation remains organized.
-* The repository scales without becoming difficult to maintain.
+- Success
+- Warning
+- Retry
+- Failure
+
+The Production Engine determines recovery behavior.
 
 ---
 
-# Revision History
+# 17. Scalability
 
-| Version | Date        | Description                               |
-| ------- | ----------- | ----------------------------------------- |
-| 1.0     | 05-Aug-2026 | Initial repository architecture document. |
+Future architecture supports:
+
+- parallel agents
+- distributed execution
+- cloud deployment
+- multiple providers
+- plugin architecture
+- additional content domains
+
+No architectural redesign should be required.
+
+---
+
+# 18. Design Principles
+
+The project follows these principles:
+
+- Single Responsibility
+- Separation of Concerns
+- Dependency Inversion
+- Provider Abstraction
+- Modular Design
+- Configuration over Code
+- Reusable Components
+- Documentation First
+
+---
+
+# 19. Future Architecture
+
+Planned additions include:
+
+- Web dashboard
+- REST API
+- Plugin SDK
+- Distributed workers
+- Cost optimization
+- Vector database
+- RAG pipeline
+- Multi-language support
+- Cloud deployment
+
+---
+
+# 20. Summary
+
+Mahy Mythic Labs is designed as a modular AI production platform where a central Production Engine orchestrates specialized AI agents through a provider abstraction layer.
+
+The architecture separates documentation, knowledge, prompts, configuration, runtime code, and generated assets into distinct layers, ensuring maintainability, scalability, and long-term extensibility.

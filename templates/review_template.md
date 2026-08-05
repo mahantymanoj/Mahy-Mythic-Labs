@@ -1,722 +1,474 @@
-# Mahy Mythic Labs Review Template
+# Production Review Template
 
-**Template Version:** 1.0
-
-**Template Type:** Production Review & Quality Approval
-
-**Usage:** Copy this template for every episode/content review.
+Version: 1.0
 
 ---
 
 # Review Information
 
+## Review ID
+
+```
+REV-0001
+```
+
 ## Episode ID
 
-```text
-EP###
 ```
-
-Example:
-
-```text
-EP001
+EP-0001
 ```
-
----
 
 ## Episode Title
 
-```text
-Enter episode title
-```
-
----
-
-## Review ID
-
-Format:
-
-```text
-REV###
-```
-
-Example:
-
-```text
-REV001
-```
-
----
-
-## Review Version
-
-```text
-v1.0
-```
-
----
-
-## Review Status
-
-```text
-NOT_STARTED
-
-IN_REVIEW
-
-REVISION_REQUIRED
-
-REVIEW_COMPLETED
-
-APPROVED
-
-PUBLISHED
-```
-
----
-
-# Book I — Review Overview
-
----
-
-## Review Objective
-
-Why is this review being performed?
-
 ```
 ```
 
----
+## Review Type
+
+```
+Research
+Script
+Storyboard
+Image
+Video
+Narration
+Thumbnail
+SEO
+Quality
+Publishing
+Final
+```
 
 ## Reviewer
 
-Name:
-
 ```
+AI Quality Agent
+Human Reviewer
 ```
-
-Role:
-
-```
-Director
-
-Editor
-
-Producer
-
-Quality Reviewer
-
-Content Reviewer
-```
-
----
 
 ## Review Date
 
 ```
-DD-MM-YYYY
+YYYY-MM-DD
+```
+
+## Review Version
+
+```
+1.0
+```
+
+## Review Status
+
+```
+Pending
+In Review
+Changes Requested
+Approved
+Rejected
+Closed
 ```
 
 ---
 
-# Book II — Story Review
+# Review Scope
 
-## Story Concept
+Specify what is being reviewed.
 
-Score:
+Examples:
+
+- Research only
+- Script only
+- Storyboard
+- Entire production package
+
+---
+
+# Reviewed Files
+
+| File | Version | Status |
+|------|---------|--------|
+| | | |
+
+---
+
+# Summary
+
+Provide a short summary of the review.
+
+---
+
+# Overall Result
 
 ```
-/10
-```
-
-Comments:
-
-```
+PASS
+PASS WITH CHANGES
+FAIL
 ```
 
 ---
 
-## Story Structure
+# Quality Scores
 
-Evaluate:
-
-☐ Strong opening hook
-
-☐ Clear beginning
-
-☐ Logical progression
-
-☐ Strong climax
-
-☐ Meaningful ending
-
-Score:
-
-```
-/10
-```
-
-Comments:
-
-```
-```
+| Category | Score (/10) |
+|----------|------------:|
+| Research Accuracy | |
+| Script Quality | |
+| Storytelling | |
+| Historical Accuracy | |
+| Scientific Accuracy | |
+| Visual Planning | |
+| Narration | |
+| SEO | |
+| Brand Consistency | |
+| Technical Quality | |
+| Copyright Compliance | |
+| Overall | |
 
 ---
 
-## Narration Quality
+# Strengths
 
-Evaluate:
+-
 
-☐ Engaging
+-
 
-☐ Clear explanation
-
-☐ Good pacing
-
-☐ Emotional connection
-
-Score:
-
-```
-/10
-```
-
-Comments:
-
-```
-```
+-
 
 ---
 
-## Educational / Entertainment Value
+# Issues
 
-Score:
+## Critical
 
-```
-/10
-```
-
-Comments:
-
-```
-```
+| ID | Description | File | Owner |
+|----|-------------|------|-------|
+| | | | |
 
 ---
 
-# Book III — Visual Review
+## Major
+
+| ID | Description | File | Owner |
+|----|-------------|------|-------|
+| | | | |
 
 ---
 
-## Visual Consistency
+## Minor
 
-Check:
-
-☐ Character consistency maintained
-
-☐ Environment consistency maintained
-
-☐ Art style consistent
-
-☐ Color palette consistent
-
-Score:
-
-```
-/10
-```
-
-Comments:
-
-```
-```
+| ID | Description | File | Owner |
+|----|-------------|------|-------|
+| | | | |
 
 ---
 
-## Cinematography
+## Suggestions
 
-Evaluate:
+-
 
-☐ Composition
+-
 
-☐ Camera movement
+-
 
-☐ Lighting
+---
 
-☐ Framing
+# File-by-File Review
 
-☐ Visual storytelling
+## Research
 
-Score:
+Status
 
 ```
-/10
+Approved / Changes Required
 ```
 
-Comments:
+Comments
 
 ```
 ```
 
 ---
 
-## AI Generation Quality
+## Script
 
-Check:
-
-☐ No artifacts
-
-☐ No distorted objects
-
-☐ Natural motion
-
-☐ Realistic details
-
-Score:
+Status
 
 ```
-/10
+Approved / Changes Required
 ```
 
-Comments:
+Comments
 
 ```
 ```
 
 ---
 
-# Book IV — Audio Review
+## Storyboard
+
+Status
+
+```
+Approved / Changes Required
+```
+
+Comments
+
+```
+```
+
+---
+
+## Image Prompts
+
+Status
+
+```
+Approved / Changes Required
+```
+
+Comments
+
+```
+```
+
+---
+
+## Video Prompts
+
+Status
+
+```
+Approved / Changes Required
+```
+
+Comments
+
+```
+```
 
 ---
 
 ## Narration
 
-Check:
-
-☐ Clear voice
-
-☐ Correct pronunciation
-
-☐ Emotional delivery
-
-☐ Good synchronization
-
-Score:
+Status
 
 ```
-/10
+Approved / Changes Required
 ```
 
-Comments:
+Comments
 
 ```
 ```
 
 ---
 
-## Music
+## Thumbnail
 
-Check:
-
-☐ Supports emotion
-
-☐ Good timing
-
-☐ Proper intensity
-
-☐ No distraction
-
-Score:
+Status
 
 ```
-/10
+Approved / Changes Required
 ```
 
-Comments:
+Comments
 
 ```
 ```
 
 ---
 
-## Sound Effects
+## SEO
 
-Check:
-
-☐ Appropriate effects
-
-☐ Good placement
-
-☐ Natural sound
-
-Score:
+Status
 
 ```
-/10
+Approved / Changes Required
 ```
 
-Comments:
+Comments
 
 ```
 ```
 
 ---
 
-# Book V — Editing Review
+# Copyright Review
+
+| Asset | Status | Notes |
+|------|--------|-------|
+| Images | | |
+| Video | | |
+| Music | | |
+| Fonts | | |
+| References | | |
 
 ---
 
-## Pacing
+# Brand Review
 
-Check:
+Verify:
 
-☐ No unnecessary pauses
-
-☐ Good scene transitions
-
-☐ Viewer retention maintained
-
-Score:
-
-```
-/10
-```
-
-Comments:
-
-```
-```
+- [ ] Matches Mahy Mythic Labs identity
+- [ ] Educational
+- [ ] Documentary tone
+- [ ] Professional quality
+- [ ] Consistent visual style
 
 ---
 
-## Timeline Quality
+# Technical Review
 
-Check:
+Verify:
 
-☐ Smooth cuts
-
-☐ Good transitions
-
-☐ Visual rhythm
-
-Score:
-
-```
-/10
-```
-
-Comments:
-
-```
-```
+- [ ] Folder structure correct
+- [ ] File naming correct
+- [ ] Links valid
+- [ ] Markdown valid
+- [ ] Assets present
+- [ ] Metadata complete
 
 ---
 
-# Book VI — YouTube Optimization Review
+# Continuity Review
+
+Verify:
+
+- [ ] Character consistency
+- [ ] Timeline consistency
+- [ ] Lighting consistency
+- [ ] Environment consistency
+- [ ] Story consistency
 
 ---
 
-## Title Review
+# Action Items
 
-Title:
-
-```
-```
-
-Score:
-
-```
-/10
-```
-
-Questions:
-
-☐ Creates curiosity
-
-☐ Matches content
-
-☐ Search friendly
+| ID | Priority | Owner | Task | Due |
+|----|----------|-------|------|-----|
+| | Critical | | | |
 
 ---
 
-## Thumbnail Review
+# Re-Review Requirements
 
-Thumbnail:
+List what must be rechecked after fixes.
 
-```
-```
+-
 
-Score:
+-
 
-```
-/10
-```
-
-Questions:
-
-☐ Scroll stopping
-
-☐ Clear subject
-
-☐ Strong emotion
-
-☐ Mobile readable
+-
 
 ---
 
-## Description Review
+# Review Checklist
 
-Check:
+## Content
 
-☐ Good introduction
+- [ ] Accurate
+- [ ] Complete
+- [ ] Educational
 
-☐ Keywords included
+## Production
 
-☐ Useful information
+- [ ] Storyboard Ready
+- [ ] Image Ready
+- [ ] Video Ready
+- [ ] Narration Ready
 
-☐ CTA included
+## Publishing
 
----
-
-## SEO Review
-
-Keywords:
-
-```
-```
-
-Tags:
-
-```
-```
-
-Score:
-
-```
-/10
-```
+- [ ] Thumbnail Ready
+- [ ] SEO Ready
+- [ ] Copyright Verified
 
 ---
 
-# Book VII — Brand Review
+# Approval Matrix
+
+| Stage | Reviewer | Status | Date |
+|--------|----------|--------|------|
+| Research | | | |
+| Script | | | |
+| Storyboard | | | |
+| Images | | | |
+| Video | | | |
+| Narration | | | |
+| Thumbnail | | | |
+| SEO | | | |
+| Final QA | | | |
 
 ---
 
-## Mahy Mythic Labs Identity
-
-Check:
-
-☐ Cinematic storytelling
-
-☐ Premium visuals
-
-☐ Educational value
-
-☐ Myth + Science balance
-
-☐ Original presentation
-
-Score:
-
-```
-/10
-```
-
----
-
-# Book VIII — Technical Quality Check
-
----
-
-## Video Technical
-
-☐ Correct resolution
-
-☐ Correct frame rate
-
-☐ No rendering issues
-
-☐ Export successful
-
----
-
-## Audio Technical
-
-☐ No clipping
-
-☐ Correct loudness
-
-☐ Stereo quality
-
----
-
-## File Management
-
-☐ Correct naming
-
-☐ Assets stored correctly
-
-☐ Project backup completed
-
----
-
-# Book IX — Audience Prediction
-
----
-
-## Target Audience
-
-```
-```
-
----
-
-## Expected Viewer Reaction
-
-```
-```
-
----
-
-## Retention Prediction
-
-Estimated:
-
-```
-%
-```
-
----
-
-## Viral Potential
-
-Score:
-
-```
-/10
-```
-
-Reason:
-
-```
-```
-
----
-
-# Book X — Issues Found
-
----
-
-## Critical Issues
-
-Must fix before publishing:
-
-| Issue | Priority | Status |
-| ----- | -------- | ------ |
-|       |          |        |
-
----
-
-## Minor Improvements
-
-| Improvement | Status |
-| ----------- | ------ |
-|             |        |
-
----
-
-# Book XI — Revision Tracking
-
-| Version | Change         | Date | Approved |
-| ------- | -------------- | ---- | -------- |
-| v1.0    | Initial Review |      | ☐        |
-| v1.1    | Revision       |      | ☐        |
-| v2.0    | Final          |      | ☐        |
-
----
-
-# Book XII — Final Approval
-
----
-
-## Final Decision
-
-Select:
+# Final Decision
 
 ```
 APPROVED
 
 APPROVED WITH CHANGES
 
-REVISION REQUIRED
-
 REJECTED
 ```
 
 ---
 
-## Approval Notes
+# Sign-off
 
-```
-```
+AI Quality Agent
 
----
+☐ Approved
 
-## Approved By
+Human Reviewer
 
-```
-```
+☐ Approved
 
----
+Production Lead
 
-## Approval Date
+☐ Approved
 
-```
-DD-MM-YYYY
-```
+Publishing Approved
+
+☐ Yes
 
 ---
 
-# Final Episode Score
+# Review History
 
-| Category             | Score |
-| -------------------- | ----- |
-| Story                | /10   |
-| Visuals              | /10   |
-| Audio                | /10   |
-| Editing              | /10   |
-| YouTube Optimization | /10   |
-| Brand Match          | /10   |
+| Version | Reviewer | Result | Notes |
+|----------|----------|--------|-------|
+| | | | |
 
 ---
 
-## Overall Score
+# Lessons Learned
 
-```
-/10
-```
+Document improvements for future episodes.
 
----
+-
 
-# Final Review Summary
+-
 
-## Biggest Strength
-
-```
-```
+-
 
 ---
 
-## Biggest Improvement Area
+# Repository Update
 
-```
-```
+Project Status Updated
 
----
+☐ Yes
 
-## Learning For Future Episodes
+Episode Status Updated
 
-```
-```
+☐ Yes
 
----
+Archive Updated
 
-*End of Mahy Mythic Labs Review Template — Version 1.0*
+☐ Yes
+
+Documentation Updated
+
+☐ Yes

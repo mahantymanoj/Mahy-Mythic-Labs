@@ -1,796 +1,412 @@
-# Automation Architecture — Mahy Mythic Labs
+# ⚙️ Automation Architecture
 
-## 1. Purpose
-
-The **Mahy Mythic Labs Automation Architecture** defines how AI systems, automation tools, APIs, and production workflows work together to create a scalable AI-powered content production studio.
-
-The objective is to transform the current manual workflow into an intelligent production ecosystem where:
-
-* AI agents handle repetitive tasks
-* Humans control creative direction
-* Production quality remains consistent
-* Content creation becomes scalable
+> **Mahy Mythic Labs Automation Architecture**
+>
+> Version: 1.0
+>
+> This document describes how Mahy Mythic Labs automates the complete AI video production pipeline, from topic selection to publish-ready assets.
 
 ---
 
-# 2. Automation Vision
+# 1. Overview
 
-Mahy Mythic Labs will evolve from:
+The automation system orchestrates multiple independent AI agents through a centralized Production Engine.
 
-```text
-Single Creator Workflow
+The automation layer is responsible for:
 
-        ↓
+- Workflow execution
+- Agent orchestration
+- Context sharing
+- State management
+- Error recovery
+- Retry handling
+- Progress tracking
+- Cost monitoring
+- Logging
+- Publishing preparation
 
-AI Assisted Workflow
-
-        ↓
-
-Multi-Agent AI Production Studio
-```
-
-The final vision:
-
-```text
-Idea
-
- ↓
-
-AI Director
-
- ↓
-
-Specialized AI Agents
-
- ↓
-
-Automated Production Pipeline
-
- ↓
-
-Quality Validation
-
- ↓
-
-YouTube Publishing
-
- ↓
-
-Analytics Optimization
-```
+Automation is configuration-driven and provider-independent.
 
 ---
 
-# 3. High-Level Architecture
+# 2. Automation Goals
 
-```text
-                         USER
-                           |
-                           |
-                           ↓
+The automation platform should:
 
-                  MASTER DIRECTOR AI
-
-                           |
-        ------------------------------------------------
-        |              |              |                |
-        ↓              ↓              ↓                ↓
-
- Research Agent   Script Agent   Visual Agent   Production Agent
-
-        |              |              |                |
-
-        ------------------------------------------------
-
-                           |
-
-                    Quality Agent
-
-                           |
-
-                    Publishing Agent
-
-                           |
-
-                    Analytics Agent
-
-                           |
-
-                    Knowledge Update
-```
+- Require minimal human intervention
+- Support reusable workflows
+- Recover from failures
+- Track execution state
+- Allow manual checkpoints
+- Scale to multiple episodes
+- Support multiple AI providers
+- Produce reproducible outputs
 
 ---
 
-# 4. Core Components
+# 3. High-Level Automation Flow
 
-The automation ecosystem consists of six layers:
-
-```text
-Layer 1:
+```
+User
+ │
+ ▼
+Master Director
+ │
+ ▼
+Production Engine
+ │
+ ├──────── Workflow
+ ├──────── Context
+ ├──────── Registry
+ ├──────── Scheduler
+ ├──────── Events
+ └──────── State
+ │
+ ▼
 AI Agents
-
-Layer 2:
-Knowledge System
-
-Layer 3:
-Production Tools
-
-Layer 4:
-Automation Engine
-
-Layer 5:
-Storage System
-
-Layer 6:
-Analytics System
+ │
+ ▼
+Provider Layer
+ │
+ ▼
+External AI Services
+ │
+ ▼
+Episode Workspace
 ```
 
 ---
 
-# 5. Layer 1 — AI Agent System
+# 4. Automation Layers
 
-## Purpose
-
-AI agents perform specialized tasks instead of one general AI handling everything.
-
----
-
-# 5.1 Master Director Agent
-
-## Role
-
-The central coordinator of the entire production workflow.
-
-Responsibilities:
-
-* Understand content goals
-* Assign tasks
-* Maintain brand rules
-* Review outputs
-* Manage workflow state
-
-Input:
-
-```text
-Video Idea
-Topic
-Audience Goal
-```
-
-Output:
-
-```text
-Production Plan
-
-Agent Tasks
-
-Quality Requirements
-```
-
----
-
-# 5.2 Research Agent
-
-## Responsibilities
-
-* Search information
-* Collect references
-* Validate facts
-* Create research documents
-
-Connected With:
-
-```text
-Web Search
-
-Knowledge Base
-
-Reference Database
-```
-
-Output:
-
-```text
-research_summary.md
-sources.md
-facts.md
-```
-
----
-
-# 5.3 Script Agent
-
-## Responsibilities
-
-* Generate story structure
-* Create narration
-* Improve storytelling
-
-Connected With:
-
-```text
-Research Documents
-
-Story Templates
-
-Production Bible
-```
-
-Output:
-
-```text
-script.md
-narration.md
-scene_breakdown.md
-```
-
----
-
-# 5.4 Visual Agent
+## Layer 1 — User Layer
 
 Responsible for:
 
-* Image generation
-* Video generation
-* Visual consistency
+- Topic selection
+- Workflow selection
+- Manual approvals (optional)
 
-Input:
+---
 
-```text
+## Layer 2 — Orchestration Layer
+
+Responsible for:
+
+- Agent execution
+- Workflow control
+- Event dispatching
+- Scheduling
+- State transitions
+
+Primary component:
+
+```
+Master Director
+```
+
+---
+
+## Layer 3 — Production Engine
+
+The Production Engine coordinates every automation task.
+
+Core modules:
+
+```
+Director
+Workflow
+Registry
+Context
+Scheduler
+Events
+State
+```
+
+Responsibilities:
+
+- Load workflow
+- Load configuration
+- Execute agents
+- Manage dependencies
+- Handle retries
+- Persist execution state
+
+---
+
+## Layer 4 — AI Agent Layer
+
+Each task is performed by an independent AI agent.
+
+Current agents:
+
+```
+Research Agent
+Script Agent
+Storyboard Agent
+Image Agent
+Video Agent
+Narration Agent
+Quality Agent
+SEO Agent
+Publishing Agent
+```
+
+Each agent has a single responsibility.
+
+Agents never communicate directly.
+
+---
+
+## Layer 5 — Provider Layer
+
+Responsible for communicating with external AI services.
+
+Supported providers:
+
+- OpenAI
+- Anthropic
+- Google Gemini
+- xAI
+
+Future providers can be added without modifying the agents.
+
+---
+
+## Layer 6 — Output Layer
+
+Responsible for writing generated artifacts.
+
+Outputs include:
+
+- research
+- script
+- storyboard
+- prompts
+- images
+- videos
+- narration
+- metadata
+- reports
+
+Everything is stored inside the episode workspace.
+
+---
+
+# 5. Workflow Execution
+
+Automation follows a predefined workflow.
+
+```
+Topic
+ ↓
+Research
+ ↓
+Script
+ ↓
 Storyboard
+ ↓
+Image Prompt
+ ↓
+Image Generation
+ ↓
+Video Prompt
+ ↓
+Video Generation
+ ↓
+Narration
+ ↓
+Quality
+ ↓
+SEO
+ ↓
+Publishing
 ```
 
-Output:
-
-```text
-Images
-
-Video Clips
-
-Visual Prompts
-```
+Every stage waits for the previous stage to complete successfully.
 
 ---
 
-# 5.5 Audio Agent
+# 6. Agent Execution Model
+
+Each agent follows the same lifecycle.
+
+```
+Initialize
+
+↓
+
+Load Context
+
+↓
+
+Read Prompt
+
+↓
+
+Read Knowledge
+
+↓
+
+Execute
+
+↓
+
+Validate Output
+
+↓
+
+Save Result
+
+↓
+
+Emit Event
+
+↓
+
+Return Status
+```
+
+Possible return states:
+
+- Success
+- Warning
+- Retry
+- Failure
+
+---
+
+# 7. Context Management
+
+A shared execution context is maintained throughout the workflow.
+
+Context includes:
+
+- Topic
+- Episode metadata
+- Research
+- Script
+- Storyboard
+- Asset references
+- Runtime configuration
+- Previous outputs
+
+Agents receive only the context relevant to their task.
+
+---
+
+# 8. State Management
+
+The engine maintains runtime state.
+
+Example:
+
+```
+Episode Created
+
+↓
+
+Research Running
+
+↓
+
+Research Complete
+
+↓
+
+Script Running
+
+↓
+
+Storyboard Running
+
+↓
+
+Generation Running
+
+↓
+
+Quality Running
+
+↓
+
+Publishing Ready
+
+↓
+
+Completed
+```
+
+State is persisted to allow workflow resumption after interruptions.
+
+---
+
+# 9. Event System
+
+The event system enables loose coupling between components.
+
+Example events:
+
+```
+EpisodeStarted
+
+ResearchCompleted
+
+ScriptCompleted
+
+StoryboardCompleted
+
+ImageGenerationCompleted
+
+VideoGenerationCompleted
+
+NarrationCompleted
+
+QualityPassed
+
+PublishingReady
+
+EpisodeCompleted
+
+EpisodeFailed
+```
+
+Future modules can subscribe to these events without modifying existing code.
+
+---
+
+# 10. Scheduler
+
+The scheduler controls execution order.
 
 Responsibilities:
 
-* Generate narration
-* Select music
-* Add sound effects
-* Mix audio
+- Resolve dependencies
+- Queue tasks
+- Schedule retries
+- Manage concurrency
+- Track progress
 
-Output:
+Future enhancements:
 
-```text
-Final Audio Track
+- Parallel execution
+- Priority queues
+- Distributed workers
+
+---
+
+# 11. Retry Strategy
+
+Every task defines:
+
+- Maximum retries
+- Retry interval
+- Retry conditions
+
+Example:
+
 ```
-
----
-
-# 5.6 Quality Agent
-
-Responsibilities:
-
-* Validate content
-* Check consistency
-* Check technical quality
-
-Checks:
-
-```text
-Story Quality
-
-Visual Quality
-
-Audio Quality
-
-Research Accuracy
-
-Copyright Safety
-```
-
----
-
-# 6. Layer 2 — Knowledge System
-
-## Purpose
-
-Maintain long-term memory for AI agents.
-
-Structure:
-
-```text
-knowledge_base/
-
-├── mythology/
-├── astronomy/
-├── science/
-├── history/
-├── characters/
-├── locations/
-├── references/
-└── concepts/
-```
-
----
-
-# Knowledge Types
-
-## Static Knowledge
-
-Permanent information:
-
-Examples:
-
-* Production rules
-* Brand identity
-* Visual style
-
-Location:
-
-```text
-production_bible/
-```
-
----
-
-## Dynamic Knowledge
-
-Changes over time:
-
-Examples:
-
-* Trends
-* New discoveries
-* Audience preferences
-
-Location:
-
-```text
-knowledge_base/
-```
-
----
-
-# 7. Layer 3 — Production Tools
-
-## Image Generation
-
-Purpose:
-
-Create cinematic visuals.
-
-Workflow:
-
-```text
-Prompt
-
-↓
-
-Image Model
-
-↓
-
-Quality Check
-
-↓
-
-Asset Storage
-```
-
----
-
-## Video Generation
-
-Purpose:
-
-Create motion content.
-
-Workflow:
-
-```text
-Image
-
-↓
-
-Motion Prompt
-
-↓
-
-Video Model
-
-↓
-
-Final Clip
-```
-
----
-
-## Audio Generation
-
-Components:
-
-```text
-Voice AI
-
-Music AI
-
-Sound Effects
-```
-
----
-
-## Editing Tools
-
-Responsibilities:
-
-* Timeline creation
-* Transitions
-* Subtitles
-* Color grading
-
----
-
-# 8. Layer 4 — Automation Engine
-
-## Purpose
-
-Connect all agents and tools.
-
-Possible technologies:
-
-```text
-Python
-
-Workflow Engines
-
-APIs
-
-MCP Servers
-
-Cloud Functions
-```
-
----
-
-# Automation Flow
-
-```text
-New Video Idea
-
-↓
-
-Create Project Folder
-
-↓
-
-Research Agent Starts
-
-↓
-
-Generate Research
-
-↓
-
-Script Agent Creates Script
-
-↓
-
-Storyboard Generated
-
-↓
-
-Images Created
-
-↓
-
-Videos Generated
-
-↓
-
-Audio Generated
-
-↓
-
-Editing Pipeline
-
-↓
-
-Quality Check
-
-↓
-
-Upload
-```
-
----
-
-# 9. Layer 5 — Storage Architecture
-
-## Local Repository
-
-Purpose:
-
-Project management.
-
-Structure:
-
-```text
-Mahy-Mythic-Labs/
-
-├── docs/
-├── production_bible/
-├── prompts/
-├── templates/
-├── knowledge_base/
-├── projects/
-└── assets/
-```
-
----
-
-# Episode Storage
-
-Each episode:
-
-```text
-projects/
-
-MML_EP001/
-
-├── research/
-├── script/
-├── storyboard/
-├── images/
-├── videos/
-├── audio/
-├── editing/
-├── thumbnail/
-├── upload/
-└── analytics/
-```
-
----
-
-# Cloud Storage Future Architecture
-
-```text
-AI Agents
-
-↓
-
-Cloud Storage
-
-↓
-
-Processing Services
-
-↓
-
-YouTube Publishing
-```
-
-Possible services:
-
-* AWS S3
-* Google Cloud Storage
-* Azure Blob Storage
-
----
-
-# 10. Layer 6 — Analytics System
-
-## Purpose
-
-Use performance data to improve future content.
-
-Collect:
-
-```text
-Views
-
-Watch Time
-
-Retention
-
-CTR
-
-Comments
-
-Subscribers
-```
-
----
-
-Analytics Flow:
-
-```text
-Published Video
-
-↓
-
-Collect Metrics
-
-↓
-
-Analyze Performance
-
-↓
-
-Generate Insights
-
-↓
-
-Improve Next Episode
-```
-
----
-
-# 11. API Integration Architecture
-
-Future integrations:
-
-```text
-AI Models
-
-|
-
-APIs
-
-|
-
-Automation Layer
-
-|
-
-Production Pipeline
-```
-
-Possible integrations:
-
-## AI Models
-
-* Text generation
-* Image generation
-* Video generation
-* Voice generation
-
----
-
-## YouTube API
-
-Purpose:
-
-* Upload videos
-* Manage metadata
-* Collect analytics
-
----
-
-## Storage APIs
-
-Purpose:
-
-* Asset management
-* Backup
-* Version control
-
----
-
-# 12. MCP Architecture
-
-Model Context Protocol enables AI agents to interact with external systems.
-
-Architecture:
-
-```text
-                 AI Agent
-
-                    |
-
-                 MCP Server
-
-                    |
-
-----------------------------------
-
-Files
-
-Git Repository
-
-Databases
-
-APIs
-
-Cloud Storage
-
-Tools
-```
-
----
-
-# MCP Examples
-
-## File System MCP
-
-Allows agents to:
-
-* Read files
-* Create files
-* Update documents
-
----
-
-## Git MCP
-
-Allows:
-
-* Version control
-* Commit changes
-* Track production history
-
----
-
-## YouTube MCP
-
-Allows:
-
-* Upload videos
-* Update metadata
-* Fetch analytics
-
----
-
-# 13. Human Approval Workflow
-
-Automation does not remove creative control.
-
-Human checkpoints:
-
-```text
-Idea Approval
-
-↓
-
-Research Approval
-
-↓
-
-Script Approval
-
-↓
-
-Visual Approval
-
-↓
-
-Final Video Approval
-
-↓
-
-Publishing Approval
-```
-
----
-
-# 14. Error Handling Strategy
-
-Every automation step should have:
-
-## Validation
-
-Check output quality.
-
----
-
-## Retry Mechanism
-
-If failure occurs:
-
-```text
-Failed Task
+LLM Timeout
 
 ↓
 
@@ -798,185 +414,185 @@ Retry
 
 ↓
 
-Alternative Tool
+Still Failed
 
 ↓
 
-Human Review
+Switch Provider
+
+↓
+
+Still Failed
+
+↓
+
+Abort Workflow
 ```
 
 ---
 
-# 15. Version Control Strategy
+# 12. Error Handling
 
-Every production asset should be tracked.
+Errors are categorized as:
+
+## Recoverable
+
+- API timeout
+- Temporary rate limit
+- Network interruption
+
+Action:
+
+Retry
+
+---
+
+## Non-Recoverable
+
+- Invalid prompt
+- Missing configuration
+- Missing workflow
+- Corrupted knowledge
+
+Action:
+
+Stop execution and report.
+
+---
+
+# 13. Provider Routing
+
+The provider layer determines which AI service executes each task.
 
 Example:
 
-```text
-Episode Script
+| Task | Provider |
+|------|----------|
+| Research | Gemini |
+| Script | Claude |
+| Storyboard | GPT |
+| Image Prompt | GPT |
+| Video Prompt | GPT |
+| SEO | GPT |
 
-v1 Draft
+Routing is configurable through YAML.
 
-v2 Reviewed
+---
 
-v3 Final
+# 14. Workflow Configuration
+
+Automation is driven by workflow definitions.
+
+Example:
+
+```
+automation/workflows/
+
+default.yaml
+
+shorts.yaml
+
+documentary.yaml
 ```
 
+Each workflow specifies:
+
+- stages
+- dependencies
+- providers
+- prompts
+- retry policies
+
 ---
 
-Use:
+# 15. Episode Workspace
 
-```text
-Git
+Each execution has an isolated workspace.
 
-Commit History
+```
+projects/
 
-Change Logs
+EP001/
+
+research/
+
+script/
+
+storyboard/
+
+assets/
+
+audio/
+
+video/
+
+publishing/
 ```
 
----
-
-# 16. Security Principles
-
-Protect:
-
-* API keys
-* Credentials
-* Personal data
-* Copyright assets
-
-Rules:
-
-* Never store secrets in Git
-* Use environment variables
-* Maintain access control
+No generated content is shared between episodes.
 
 ---
 
-# 17. Future AI Studio Architecture
+# 16. Logging
 
-Final vision:
+Every workflow produces:
 
-```text
-                     MAHY MYTHIC LABS AI STUDIO
+- execution log
+- agent log
+- provider log
+- error log
+- performance metrics
 
-
-                           AI DIRECTOR
-
-                                |
-
-        -------------------------------------------------
-
-        |              |             |                 |
-
-   Research       Creative       Production       Business
-
-     AI             AI              AI              AI
-
-
-        |              |             |                 |
-
- Knowledge      Content        Automation       Analytics
-
-  System        System          System           System
-```
+Logs are stored separately from generated assets.
 
 ---
 
-# 18. Implementation Roadmap
+# 17. Monitoring
 
-## Phase 1 — Manual AI Assisted
+The automation engine tracks:
 
-Status:
+- execution time
+- provider usage
+- API cost
+- retry count
+- failures
+- completion rate
 
-Current stage
-
-Workflow:
-
-```text
-Human
-
-+
-
-AI Tools
-
-+
-
-Manual Editing
-```
+Future dashboards can visualize these metrics.
 
 ---
 
-## Phase 2 — Semi Automated
+# 18. Security
 
-Goal:
+Automation must never expose:
 
-Automate repetitive tasks.
+- API keys
+- Secrets
+- Provider credentials
+- Private prompts
 
-Examples:
-
-* Research automation
-* Prompt generation
-* Asset organization
-* Metadata generation
+Secrets should be loaded from environment variables or secure configuration files.
 
 ---
 
-## Phase 3 — Autonomous Production System
+# 19. Future Automation
 
-Goal:
+Planned capabilities include:
 
-AI agents execute complete workflows.
-
-Workflow:
-
-```text
-Idea
-
-↓
-
-AI Director
-
-↓
-
-Multiple Agents
-
-↓
-
-Quality Control
-
-↓
-
-Published Video
-```
+- Parallel agent execution
+- Human approval checkpoints
+- Cloud deployment
+- Distributed rendering
+- Multi-language production
+- Cost optimization
+- Automatic model selection
+- Plugin architecture
+- External knowledge retrieval (RAG)
 
 ---
 
-# Conclusion
+# 20. Summary
 
-The Mahy Mythic Labs Automation Architecture defines the foundation for a scalable AI-powered media company.
+The automation architecture transforms Mahy Mythic Labs into an autonomous AI production platform by coordinating specialized agents through a centralized Production Engine.
 
-The system combines:
-
-```text
-AI Intelligence
-
-+
-
-Automation
-
-+
-
-Human Creativity
-
-+
-
-Knowledge Management
-
-+
-
-Continuous Learning
-```
-
-The long-term objective is to build an autonomous cinematic production studio capable of creating high-quality educational and storytelling content at scale.
+The system emphasizes modularity, configurability, fault tolerance, and provider independence, enabling scalable production workflows that can evolve without requiring major architectural changes.

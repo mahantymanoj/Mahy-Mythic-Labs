@@ -1,584 +1,404 @@
-# Mahy Mythic Labs Visual & Creative Style Guide
+# 🎨 Mahy Mythic Labs Style Guide
 
-**Document Version:** 1.0
-
-**Category:** Production Bible
-
-**Status:** Active
-
-**Last Updated:** 05-Aug-2026
+> **Mahy Mythic Labs Visual & Creative Style Guide**
+>
+> Version: 1.0
+>
+> This document defines the official visual identity, creative language, cinematic direction, typography, composition, lighting, and design principles used throughout Mahy Mythic Labs. It ensures every asset produced by humans or AI appears to belong to the same cinematic universe.
 
 ---
 
-# Preface
+# 1. Purpose
 
-A strong creative studio is recognized not only by what it creates, but by how it creates.
+This guide establishes a consistent visual identity across all content.
 
-Thousands of creators may use the same AI tools.
+It applies to:
 
-The difference is:
+- YouTube videos
+- Shorts
+- Thumbnails
+- AI Images
+- AI Videos
+- Motion Graphics
+- Animations
+- Branding
+- Social Media
+- Promotional Material
+- Website Assets
+- Future Applications
 
-* Vision.
-* Taste.
-* Consistency.
-* Creative identity.
-
-Mahy Mythic Labs must develop a recognizable signature.
-
-The audience should be able to see a frame, hear a sound, or experience a story and think:
-
-> "This feels like Mahy Mythic Labs."
-
----
-
-# Book I — Brand Identity
+Every visual asset should reinforce the Mahy Mythic Labs brand.
 
 ---
 
-# Chapter 1 — The Core Identity
+# 2. Creative Vision
 
-## Brand Name
+Mahy Mythic Labs blends:
 
-Mahy Mythic Labs
+- Science
+- Mythology
+- Ancient History
+- Astronomy
+- Archaeology
+- Artificial Intelligence
+- Cinematic Documentary
 
----
+Visual inspiration comes from:
 
-## Brand Meaning
+- BBC Earth
+- National Geographic
+- Cosmos
+- Interstellar
+- Dune
+- Blade Runner 2049
+- Oppenheimer
+- Planet Earth
+- Ancient Apocalypse (visual style only, not factual approach)
 
-Mahy:
-
-Represents personal creative identity.
-
-Mythic:
-
-Represents:
-
-* Ancient stories.
-* Human imagination.
-* Unknown worlds.
-* Timeless mysteries.
-
-Labs:
-
-Represents:
-
-* Experimentation.
-* Technology.
-* AI innovation.
-* Continuous learning.
+The objective is **cinematic realism with educational clarity**.
 
 ---
 
-# Chapter 2 — Brand Personality
-
-Mahy Mythic Labs personality:
-
-## Curious
-
-Always exploring unknown questions.
-
----
-
-## Intelligent
-
-Focused on learning and understanding.
-
----
-
-## Cinematic
-
-Stories should feel like experiences.
-
----
-
-## Respectful
-
-Cultures, history, and science should be treated responsibly.
-
----
-
-## Futuristic
-
-Using technology to create new forms of storytelling.
-
----
-
-# Chapter 3 — Brand Statement
-
-Mahy Mythic Labs creates:
-
-"Cinematic AI-powered stories exploring mythology, history, science, and the mysteries of existence."
-
----
-
-# Book II — Visual Identity
-
----
-
-# Chapter 4 — Overall Visual Direction
-
-The visual language should feel:
-
-* Cinematic.
-* Premium.
-* Atmospheric.
-* Mysterious.
-* Educational.
-* Immersive.
-
----
-
-# Chapter 5 — Visual Inspiration
-
-The style combines:
-
-## Documentary
-
-For:
-
-* Accuracy.
-* Research.
-* Explanation.
-
----
-
-## Cinema
-
-For:
-
-* Emotion.
-* Composition.
-* Storytelling.
-
----
-
-## Digital Art
-
-For:
-
-* Imagination.
-* Impossible worlds.
-* AI visualization.
-
----
-
-# Chapter 6 — Cinematic Principles
-
-Every visual should consider:
-
-## Composition
-
-The viewer's eye should know where to look.
-
----
-
-## Lighting
-
-Lighting should create emotion.
-
----
-
-## Depth
-
-Images should feel three-dimensional.
-
----
-
-## Scale
-
-Use size differences to create wonder.
-
-Example:
-
-Human vs galaxy.
-
-Human vs ancient monument.
-
----
-
-# Book III — Color Language
-
----
-
-# Chapter 7 — Primary Color Philosophy
-
-Mahy Mythic Labs does not depend on one fixed color.
-
-Instead, colors follow storytelling.
-
----
-
-# Ancient / Mythology Theme
-
-Preferred feeling:
-
-* Gold.
-* Deep blue.
-* Earth tones.
-
-Emotion:
-
-* Wisdom.
-* Spirituality.
-* Timelessness.
-
----
-
-# Science / Space Theme
-
-Preferred feeling:
-
-* Deep blue.
-* Purple.
-* Black.
-* Silver.
-
-Emotion:
-
-* Wonder.
-* Exploration.
-* Infinity.
-
----
-
-# Mystery Theme
-
-Preferred feeling:
-
-* Dark contrast.
-* Shadows.
-* Atmospheric tones.
-
-Emotion:
-
-* Curiosity.
-* Suspense.
-
----
-
-# Future / AI Theme
-
-Preferred feeling:
-
-* Clean.
-* Futuristic.
-* Digital atmosphere.
-
-Emotion:
-
-* Innovation.
-* Possibility.
-
----
-
-# Book IV — Typography Style
-
----
-
-# Chapter 8 — Text Philosophy
-
-Text should support storytelling.
-
-It should never overpower visuals.
-
----
-
-# Thumbnail Text
-
-Rules:
-
-* Short.
-* Powerful.
-* Easy to read.
-
-Preferred:
-
-2-5 words.
-
-Examples:
-
-"Lost Civilization"
-
-"Beyond Reality"
-
-"The Cosmic Secret"
-
----
-
-# Chapter 9 — Font Direction
-
-Preferred qualities:
-
-* Elegant.
-* Modern.
-* Cinematic.
-* Premium.
+# 3. Brand Personality
+
+The visual identity should feel:
+
+- Intelligent
+- Timeless
+- Mysterious
+- Premium
+- Elegant
+- Epic
+- Minimal
+- Trustworthy
 
 Avoid:
 
-* Cartoon fonts.
-* Overly decorative fonts.
-* Difficult-to-read styles.
+- Cartoon aesthetics
+- Meme culture
+- Cheap visual effects
+- Over-saturation
+- Excessive clutter
 
 ---
 
-# Book V — Image Style
+# 4. Core Design Principles
+
+Every design should prioritize:
+
+✓ Simplicity
+
+✓ Clarity
+
+✓ Consistency
+
+✓ Visual hierarchy
+
+✓ Cinematic realism
+
+✓ Educational value
+
+Less is more.
 
 ---
 
-# Chapter 10 — AI Image Style Standards
+# 5. Color Philosophy
 
-Generated images should aim for:
+Primary emotional palette:
 
-* Cinematic realism.
-* High detail.
-* Natural lighting.
-* Film composition.
+- Deep Space Blue
+- Midnight Black
+- Warm Gold
+- Cosmic Purple
+- Silver
+- White
 
----
+Accent colors should support the story rather than dominate it.
 
-# Chapter 11 — Character Appearance
-
-Characters should maintain:
-
-* Consistent face.
-* Consistent clothing.
-* Consistent age.
-* Consistent visual identity.
-
-Use:
-
-Character Bible.
+Different topics may introduce contextual accents while maintaining overall brand cohesion.
 
 ---
 
-# Chapter 12 — Environment Appearance
+# 6. Lighting Style
 
-Worlds should feel:
+Preferred lighting:
 
-* Believable.
-* Detailed.
-* Immersive.
-
-Use:
-
-Environment Bible.
-
----
-
-# Book VI — Video Style
-
----
-
-# Chapter 13 — Camera Language
-
-Preferred movements:
-
-## Slow Cinematic Push
-
-Creates:
-
-* Discovery.
-* Importance.
-
----
-
-## Wide Establishing Shot
-
-Creates:
-
-* Scale.
-* Context.
-
----
-
-## Close Detail Shot
-
-Creates:
-
-* Emotional connection.
-
----
-
-## Smooth Camera Motion
-
-Creates:
-
-* Professional feel.
-
----
+- Cinematic
+- Volumetric
+- Soft contrast
+- Natural shadows
+- Golden-hour highlights
+- Space illumination
+- Moonlight
+- Firelight (historical scenes)
 
 Avoid:
 
-* Random movement.
-* Excessive effects.
+- Flat lighting
+- Overexposed scenes
+- Harsh artificial lighting without narrative purpose
+
+Lighting should direct the viewer's attention.
 
 ---
 
-# Chapter 14 — Editing Rhythm
+# 7. Composition
 
-Mahy Mythic Labs editing should feel:
+Preferred composition:
 
-* Thoughtful.
-* Cinematic.
-* Purposeful.
+- Rule of Thirds
+- Leading Lines
+- Symmetry (when appropriate)
+- Negative Space
+- Layered Depth
+- Foreground / Midground / Background separation
 
-Avoid:
-
-* Hyperactive cuts.
-* Overuse of transitions.
-
----
-
-# Book VII — Audio Identity
+Every frame should have a clear focal point.
 
 ---
 
-# Chapter 15 — Voice Style
+# 8. Camera Language
 
-Narration should feel:
+Preferred camera shots:
 
-* Calm.
-* Intelligent.
-* Story-driven.
+- Wide Establishing Shot
+- Medium Cinematic Shot
+- Close-up for emotional emphasis
+- Aerial Views
+- Slow Push-in
+- Orbital Camera Movement
+- Tracking Shots
+- Crane Movement
 
-Avoid:
-
-* Artificial excitement.
-* Robotic delivery.
-
----
-
-# Chapter 16 — Music Style
-
-Music should create:
-
-* Atmosphere.
-* Emotion.
-* Wonder.
-
-Common directions:
-
-* Cinematic orchestra.
-* Ambient soundscapes.
-* Ancient instruments.
-* Futuristic textures.
+Avoid excessive handheld motion unless it supports the narrative.
 
 ---
 
-# Book VIII — Storytelling Style
+# 9. Visual Scale
+
+Images should convey scale through:
+
+- Human figures
+- Architecture
+- Celestial bodies
+- Landscapes
+- Environmental context
+
+Large subjects should feel genuinely immense.
 
 ---
 
-# Chapter 17 — Narrative Approach
+# 10. Character Design
 
-Mahy Mythic Labs storytelling follows:
+Recurring characters must remain consistent in:
 
-```text
-Question
+- Face
+- Hair
+- Clothing
+- Accessories
+- Age
+- Ethnicity (where historically appropriate)
+- Body proportions
+- Expressions
 
-↓
-
-Exploration
-
-↓
-
-Discovery
-
-↓
-
-Understanding
-
-↓
-
-Reflection
-
-```
+Reference sheets should be reused across episodes.
 
 ---
 
-# Chapter 18 — Content Tone
+# 11. Environment Design
 
-The tone should be:
+Environment consistency includes:
 
-Educational without being boring.
+- Architecture
+- Geography
+- Climate
+- Vegetation
+- Materials
+- Historical accuracy
+- Scientific plausibility
 
-Mystical without being misleading.
-
-Scientific without being cold.
-
-Creative without losing responsibility.
-
----
-
-# Book IX — Quality Consistency Rules
+Backgrounds should support rather than distract from the subject.
 
 ---
 
-# Chapter 19 — Every Episode Must Feel Like:
+# 12. Typography
 
-A cinematic documentary.
+Typography should be:
 
-Not:
+- Clean
+- Modern
+- Readable
+- Premium
 
-* A slideshow.
-* A random AI compilation.
-* A generic information video.
+Use typography sparingly.
 
----
+Recommended hierarchy:
 
-# Chapter 20 — Brand Consistency Checklist
+- Title
+- Subtitle
+- Caption
 
-Before publishing:
-
-☐ Does this feel like Mahy Mythic Labs?
-
-☐ Are visuals consistent?
-
-☐ Is storytelling meaningful?
-
-☐ Is the tone appropriate?
-
-☐ Does the audience learn something?
-
-☐ Does the video create curiosity?
+Avoid decorative fonts that reduce readability.
 
 ---
 
-# Book X — Future Brand Evolution
+# 13. Motion Design
 
-As the channel grows, the style guide will evolve.
+Animation principles:
 
-Future additions:
+- Smooth easing
+- Cinematic pacing
+- Motivated camera movement
+- Purposeful transitions
 
-* Logo usage.
-* Intro animation.
-* Outro design.
-* Signature sound.
-* Character styles.
-* Thumbnail templates.
-* Series identity.
+Motion should reinforce understanding, not distract from it.
 
 ---
 
-# Closing Reflection
+# 14. Thumbnail Style
 
-A tool does not create a brand.
+Every thumbnail should:
 
-A consistent vision creates a brand.
+- Communicate one clear idea
+- Have a strong focal point
+- Use high contrast
+- Be readable on mobile
+- Create curiosity without deception
+- Match the video's actual content
 
-Mahy Mythic Labs is not defined by AI generation.
-
-It is defined by the stories we choose to tell and the way we tell them.
-
-Every frame.
-
-Every sound.
-
-Every story.
-
-Should carry the identity of the studio.
+Avoid clutter and excessive text.
 
 ---
 
-*End of Mahy Mythic Labs Style Guide — Version 1.0*
+# 15. Image Generation Standards
+
+AI-generated images should be:
+
+- Ultra-detailed
+- Photorealistic where appropriate
+- Cinematic
+- High dynamic range
+- Consistent with the storyboard
+- Free of visible AI artifacts
+
+Generated images should be reviewed before approval.
+
+---
+
+# 16. Video Generation Standards
+
+AI-generated video should:
+
+- Match storyboard intent
+- Maintain subject consistency
+- Use natural camera movement
+- Preserve lighting continuity
+- Avoid flicker or unstable motion
+- Follow the approved aspect ratio
+
+Each shot should contribute meaningfully to the story.
+
+---
+
+# 17. Graphics & Infographics
+
+Educational graphics should be:
+
+- Minimal
+- Accurate
+- Clearly labeled
+- Consistent with the brand palette
+- Easy to interpret
+
+Animations should support comprehension rather than decoration.
+
+---
+
+# 18. Iconography
+
+Icons should be:
+
+- Simple
+- Geometric
+- Consistent
+- High contrast
+
+Avoid mixing incompatible icon styles.
+
+---
+
+# 19. Visual Consistency Checklist
+
+Before approval, verify:
+
+✓ Brand colors are respected.
+
+✓ Lighting is cinematic.
+
+✓ Composition is balanced.
+
+✓ Typography is readable.
+
+✓ Characters remain consistent.
+
+✓ Environment matches the story.
+
+✓ Thumbnail communicates one idea.
+
+✓ Motion is smooth.
+
+✓ Educational purpose is clear.
+
+---
+
+# 20. AI Prompt Alignment
+
+Every prompt should reference this guide.
+
+Prompts should explicitly define:
+
+- Visual style
+- Lighting
+- Composition
+- Camera
+- Mood
+- Time period
+- Color palette
+- Rendering quality
+- Aspect ratio
+
+The Image and Video Agents should use these standards by default.
+
+---
+
+# 21. Evolution
+
+The style guide should evolve through:
+
+- Production reviews
+- Audience feedback
+- Technology improvements
+- Brand refinement
+
+Major changes should preserve the core Mahy Mythic Labs identity.
+
+---
+
+# 22. Related Documents
+
+| Document | Purpose |
+|----------|---------|
+| `production_bible/BRAND_IDENTITY.md` | Brand identity |
+| `production_bible/VOICE_IDENTITY.md` | Narration identity |
+| `production_bible/CINEMATIC_LANGUAGE.md` | Visual storytelling grammar |
+| `production_bible/VISUAL_STYLE.md` | Detailed visual standards |
+| `production_bible/COLOR_GUIDELINES.md` | Color system |
+| `production_bible/STORYTELLING_FRAMEWORK.md` | Narrative structure |
+| `production_bible/AI_GENERATION_RULES.md` | AI generation standards |
+| `production_bible/QUALITY_STANDARDS.md` | Content quality requirements |
+
+---
+
+# 23. Summary
+
+The Mahy Mythic Labs Style Guide establishes a unified creative language across every visual asset produced by the platform. By combining cinematic realism, educational clarity, and consistent branding, it ensures that every image, video, thumbnail, and graphic contributes to a recognizable and trustworthy visual identity that can scale across episodes, formats, and future products.

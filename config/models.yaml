@@ -1,0 +1,432 @@
+# ==============================================================================
+# Mahy Mythic Labs
+# AI Model Registry
+# Version: 1.0
+# ==============================================================================
+
+version: "1.0"
+
+default_provider: openai
+
+default_models:
+  director: gpt-5.5
+  research: gpt-5.5
+  script: gpt-5.5
+  storyboard: gpt-5.5
+  image_prompt: gpt-5.5
+  video_prompt: gpt-5.5
+  narration: gpt-5.5
+  seo: gpt-5.5
+  quality: gpt-5.5
+
+providers:
+
+# ==============================================================================
+# OpenAI
+# ==============================================================================
+
+  openai:
+
+    api_env: OPENAI_API_KEY
+
+    models:
+
+      gpt-5.5:
+
+        type: llm
+
+        enabled: true
+
+        default: true
+
+        context_window: 400000
+
+        max_output_tokens: 128000
+
+        supports:
+
+          - text
+
+          - reasoning
+
+          - markdown
+
+          - json
+
+          - code
+
+          - planning
+
+        best_for:
+
+          - research
+
+          - scripting
+
+          - storyboard
+
+          - seo
+
+          - narration
+
+          - quality
+
+      gpt-5.5-mini:
+
+        type: llm
+
+        enabled: true
+
+        context_window: 400000
+
+        max_output_tokens: 64000
+
+        supports:
+
+          - text
+
+          - json
+
+          - markdown
+
+        best_for:
+
+          - drafting
+
+          - rewriting
+
+          - formatting
+
+      gpt-image-1:
+
+        type: image
+
+        enabled: true
+
+        supports:
+
+          - image_generation
+
+          - image_editing
+
+          - transparent_background
+
+          - high_resolution
+
+        best_for:
+
+          - documentary_images
+
+          - thumbnails
+
+          - illustrations
+
+# ==============================================================================
+# Anthropic
+# ==============================================================================
+
+  anthropic:
+
+    api_env: ANTHROPIC_API_KEY
+
+    models:
+
+      claude-opus:
+
+        enabled: false
+
+        type: llm
+
+        best_for:
+
+          - long_reasoning
+
+          - planning
+
+          - documentation
+
+      claude-sonnet:
+
+        enabled: false
+
+        type: llm
+
+        best_for:
+
+          - scripting
+
+          - summarization
+
+# ==============================================================================
+# Google
+# ==============================================================================
+
+  google:
+
+    api_env: GOOGLE_API_KEY
+
+    models:
+
+      gemini-2.5-pro:
+
+        enabled: false
+
+        type: llm
+
+        best_for:
+
+          - reasoning
+
+          - multimodal
+
+          - research
+
+# ==============================================================================
+# xAI
+# ==============================================================================
+
+  xai:
+
+    api_env: XAI_API_KEY
+
+    models:
+
+      grok-4:
+
+        enabled: false
+
+        type: llm
+
+        best_for:
+
+          - brainstorming
+
+          - creativity
+
+# ==============================================================================
+# Image Providers
+# ==============================================================================
+
+image_generation:
+
+  default: gpt-image-1
+
+  fallback:
+
+    - flux
+
+    - sdxl
+
+    - midjourney
+
+providers:
+
+  flux:
+
+    enabled: false
+
+  sdxl:
+
+    enabled: false
+
+  midjourney:
+
+    enabled: false
+
+  ideogram:
+
+    enabled: false
+
+# ==============================================================================
+# Video Providers
+# ==============================================================================
+
+video_generation:
+
+  default: veo3
+
+  fallback:
+
+    - runway
+
+    - kling
+
+    - pika
+
+providers:
+
+  veo3:
+
+    enabled: false
+
+  runway:
+
+    enabled: false
+
+  kling:
+
+    enabled: false
+
+  pika:
+
+    enabled: false
+
+# ==============================================================================
+# Narration
+# ==============================================================================
+
+voice_generation:
+
+  default: elevenlabs
+
+  fallback:
+
+    - openai
+
+providers:
+
+  elevenlabs:
+
+    enabled: false
+
+  openai:
+
+    enabled: true
+
+# ==============================================================================
+# Agent Routing
+# ==============================================================================
+
+routing:
+
+  research_agent:
+
+    primary: gpt-5.5
+
+    fallback:
+
+      - claude-opus
+
+      - gemini-2.5-pro
+
+  script_writer:
+
+    primary: gpt-5.5
+
+    fallback:
+
+      - claude-sonnet
+
+  storyboard_generator:
+
+    primary: gpt-5.5
+
+    fallback:
+
+      - claude-sonnet
+
+  image_generator:
+
+    primary: gpt-image-1
+
+    fallback:
+
+      - flux
+
+      - sdxl
+
+  video_generator:
+
+    primary: veo3
+
+    fallback:
+
+      - runway
+
+      - kling
+
+  narration_generator:
+
+    primary: elevenlabs
+
+    fallback:
+
+      - openai
+
+  thumbnail_generator:
+
+    primary: gpt-image-1
+
+    fallback:
+
+      - flux
+
+  seo_optimizer:
+
+    primary: gpt-5.5
+
+    fallback:
+
+      - claude-sonnet
+
+  quality_agent:
+
+    primary: gpt-5.5
+
+    fallback:
+
+      - claude-opus
+
+# ==============================================================================
+# Global Parameters
+# ==============================================================================
+
+generation:
+
+  temperature: 0.7
+
+  top_p: 0.95
+
+  max_retries: 3
+
+  timeout_seconds: 120
+
+  save_prompts: true
+
+  save_outputs: true
+
+# ==============================================================================
+# Logging
+# ==============================================================================
+
+logging:
+
+  log_requests: true
+
+  log_responses: true
+
+  log_tokens: true
+
+  log_cost: true
+
+# ==============================================================================
+# Cost Control
+# ==============================================================================
+
+cost_control:
+
+  warn_after_usd: 10
+
+  stop_after_usd: 50
+
+# ==============================================================================
+# Version
+# ==============================================================================
+
+repository:
+
+  name: Mahy Mythic Labs
+
+  version: 1.0.0
+
+  production_ready: false

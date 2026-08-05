@@ -1,425 +1,398 @@
-# Development Environment Setup
+# 🛠 Setup Guide
 
-**Project:** Mahy Mythic Labs Studio OS
-
-**Document Version:** 1.0
-
-**Last Updated:** 05-Aug-2026
-
----
-
-# Purpose
-
-This document explains how to set up the complete Mahy Mythic Labs Studio development environment on a new computer.
-
-Following this guide should allow anyone to recreate the production workspace with minimal effort.
-
-This document should be updated whenever new tools become part of the standard workflow.
+> **Mahy Mythic Labs Development Setup**
+>
+> Version: 1.0
+>
+> This document explains how to install, configure, and verify a local development environment for Mahy Mythic Labs.
 
 ---
 
-# Minimum System Requirements
+# 1. Purpose
 
-Recommended hardware for AI-assisted content creation.
+This guide enables developers to:
 
-## Operating System
+- Clone the repository
+- Install dependencies
+- Configure AI providers
+- Verify the installation
+- Run the project locally
 
-* Windows 11 (Primary)
-* Ubuntu Linux (Supported)
-* macOS (Supported)
+It applies only to local development.
+
+Production deployment is documented separately in `docs/deployment.md`.
 
 ---
 
-## Processor
+# 2. Prerequisites
 
-* Intel Core i5 (12th Generation or newer)
-* AMD Ryzen 5 (5000 Series or newer)
+Required software:
+
+| Software | Version |
+|-----------|----------|
+| Git | Latest Stable |
+| Python | 3.12+ |
+| FFmpeg | Latest Stable |
+| VS Code / Cursor | Latest |
+| Docker (Optional) | Latest |
+| Git LFS (Optional) | Latest |
+
+---
+
+# 3. Recommended Hardware
+
+Minimum:
+
+- 4 CPU cores
+- 8 GB RAM
+- 20 GB free disk space
 
 Recommended:
 
-* Intel Core i7
-* AMD Ryzen 7
+- 8+ CPU cores
+- 16 GB RAM
+- SSD Storage
 
 ---
 
-## Memory
+# 4. Clone Repository
 
-Minimum
+```bash
+git clone https://github.com/<username>/Mahy-Mythic-Labs.git
 
-* 16 GB RAM
-
-Recommended
-
-* 32 GB RAM
-
----
-
-## Storage
-
-Minimum
-
-* 512 GB SSD
-
-Recommended
-
-* 1 TB NVMe SSD
-
-Suggested folder organization:
-
-```
-D:\Mahy-Mythic-Labs
-```
-
----
-
-## Internet
-
-Reliable broadband connection for:
-
-* AI tools
-* Research
-* Software updates
-* GitHub synchronization
-
----
-
-# Required Software
-
-## Git
-
-Purpose
-
-Version control.
-
-Installation
-
-https://git-scm.com/
-
-Verify
-
-```
-git --version
-```
-
----
-
-## Visual Studio Code
-
-Purpose
-
-Primary development environment.
-
-Installation
-
-https://code.visualstudio.com/
-
-Recommended Extensions
-
-* Markdown All in One
-* GitLens
-* Error Lens
-* Material Icon Theme
-* Markdown Preview Enhanced
-* Python
-* YAML
-* GitHub Pull Requests
-* Better Comments
-
----
-
-## Python
-
-Purpose
-
-Local helper scripts and automation.
-
-Recommended Version
-
-Python 3.12+
-
-Verify
-
-```
-python --version
-```
-
----
-
-## GitHub Desktop (Optional)
-
-Purpose
-
-Visual Git management.
-
-Useful for beginners.
-
----
-
-## Video Editing Software
-
-Primary Recommendation
-
-DaVinci Resolve
-
-Alternative
-
-CapCut Desktop
-
----
-
-## Image Editing
-
-Recommended
-
-GIMP
-
-Alternative
-
-Photopea (Browser)
-
----
-
-## Audio Editing
-
-Recommended
-
-Audacity
-
----
-
-# Repository Setup
-
-Clone the repository.
-
-```
-git clone <repository-url>
-```
-
-Enter the project.
-
-```
 cd Mahy-Mythic-Labs
 ```
 
-Open VS Code.
+---
 
+# 5. Create Virtual Environment
+
+Windows
+
+```powershell
+python -m venv .venv
+
+.venv\Scripts\activate
 ```
-code .
+
+Linux / macOS
+
+```bash
+python3 -m venv .venv
+
+source .venv/bin/activate
 ```
 
 ---
 
-# Repository Verification
+# 6. Install Dependencies
 
-Verify the following folders exist.
+```bash
+pip install --upgrade pip
+
+pip install -r requirements.txt
+```
+
+Developer dependencies
+
+```bash
+pip install -r requirements-dev.txt
+```
+
+---
+
+# 7. Verify Python
+
+```bash
+python --version
+```
+
+Expected:
 
 ```
-docs/
+Python 3.12+
+```
 
-production_bible/
+---
 
-knowledge_base/
+# 8. Repository Structure
 
-templates/
+Important directories:
 
-prompts/
-
-projects/
-
+```
 assets/
-
 automation/
-
+config/
+docs/
+knowledge_base/
+production_bible/
+projects/
+prompts/
+src/
+templates/
+tests/
 tools/
+```
 
-archive/
+Do not modify the repository structure without updating the documentation.
+
+---
+
+# 9. Environment Variables
+
+Create:
+
+```
+.env
+```
+
+Example:
+
+```text
+OPENAI_API_KEY=
+
+ANTHROPIC_API_KEY=
+
+GOOGLE_API_KEY=
+
+XAI_API_KEY=
+
+YOUTUBE_CLIENT_ID=
+
+YOUTUBE_CLIENT_SECRET=
+
+YOUTUBE_REFRESH_TOKEN=
+```
+
+Never commit `.env`.
+
+---
+
+# 10. Configuration Files
+
+Configuration directory:
+
+```
+config/
+```
+
+Example:
+
+```
+application.yaml
+
+providers.yaml
+
+workflow.yaml
+
+logging.yaml
+
+models.yaml
+```
+
+Configuration should remain outside application code.
+
+---
+
+# 11. Install FFmpeg
+
+Verify installation:
+
+```bash
+ffmpeg -version
+```
+
+If FFmpeg is unavailable, video generation and processing may fail.
+
+---
+
+# 12. Verify Installation
+
+Run:
+
+```bash
+python --version
+
+pip --version
+
+ffmpeg -version
+
+git --version
+```
+
+All commands should complete successfully.
+
+---
+
+# 13. Run the Project
+
+Current example:
+
+```bash
+python main.py
+```
+
+Future CLI:
+
+```bash
+python -m src.cli
+
+or
+
+mml run
 ```
 
 ---
 
-# Git Configuration
+# 14. Verify AI Providers
 
-Configure Git identity.
+Check configuration:
 
-```
-git config --global user.name "Your Name"
-
-git config --global user.email "your-email@example.com"
+```bash
+python scripts/check_providers.py
 ```
 
-Verify configuration.
+Expected:
 
 ```
-git config --global --list
+OpenAI
+
+✓ Connected
+
+Anthropic
+
+✓ Connected
+
+Gemini
+
+✓ Connected
+```
+
+(Provider validation script to be implemented.)
+
+---
+
+# 15. Verify Repository
+
+Recommended checks:
+
+```bash
+ruff check .
+
+black --check .
+
+pytest
+```
+
+All validation checks should pass before committing code.
+
+---
+
+# 16. Recommended VS Code Extensions
+
+- Python
+- Pylance
+- Ruff
+- Black Formatter
+- GitLens
+- Markdown All in One
+- Error Lens
+- YAML
+- Docker
+
+---
+
+# 17. Troubleshooting
+
+## Virtual Environment Not Activated
+
+Verify:
+
+```bash
+python --version
+
+where python
 ```
 
 ---
 
-# Standard Workflow
+## Missing API Key
 
-Every development session should follow this sequence.
-
-```
-Pull Latest Changes
-
-↓
-
-Open Project Board
-
-↓
-
-Select Current Task
-
-↓
-
-Complete Documentation
-
-↓
-
-Commit Changes
-
-↓
-
-Push to GitHub
-```
-
----
-
-# Commit Guidelines
-
-Every commit should describe one logical change.
-
-Examples
+Check:
 
 ```
-Add mission document v1.0
-
-Complete roadmap document
-
-Update production workflow
-
-Improve storyboard template
-
-Add Episode 001 research
+.env
 ```
 
-Avoid vague commit messages such as:
-
-* Update
-* Fix
-* Changes
-* Miscellaneous
+Ensure required variables are defined.
 
 ---
 
-# Recommended Workspace
+## FFmpeg Not Found
 
-Example directory structure.
+Verify:
 
-```
-Mahy-Mythic-Labs/
-
-VS Code
-
-GitHub Desktop
-
-DaVinci Resolve Projects
-
-Assets
-
-Downloads
+```bash
+ffmpeg -version
 ```
 
-Keep project assets organized and avoid storing production files randomly across the system.
+Add FFmpeg to your system PATH if necessary.
 
 ---
 
-# Backup Strategy
+## Dependency Errors
 
-Protect project data by maintaining multiple copies.
+Upgrade pip:
 
-Recommended approach:
-
-* Local Git repository
-* GitHub repository
-* Periodic backup of assets to an external drive
-
-Documentation should always remain synchronized with GitHub.
-
----
-
-# Troubleshooting
-
-## Git Authentication Issues
-
-Verify Git configuration.
-
-Sign in to GitHub.
-
-Confirm remote repository URL.
-
----
-
-## Repository Not Updating
-
-Run
-
-```
-git pull
+```bash
+pip install --upgrade pip
 ```
 
-before starting work.
+Reinstall dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## Merge Conflicts
+## Import Errors
 
-Review changes carefully.
+Confirm:
 
-Resolve conflicts before committing.
-
----
-
-## Missing Files
-
-Restore the latest version from Git history.
-
-Avoid deleting tracked files directly.
+- Virtual environment is active.
+- Dependencies are installed.
+- Working directory is the repository root.
 
 ---
 
-# Setup Checklist
+# 18. Development Checklist
 
-Before beginning work, verify:
+Before starting development:
 
-* Git is installed.
-* VS Code is installed.
-* Python is installed.
-* Repository is cloned.
-* GitHub connection works.
-* Required folders exist.
-* Project Board is available.
-* Documentation opens correctly.
-
----
-
-# Future Improvements
-
-Future setup enhancements may include:
-
-* Local documentation website
-* Python virtual environment
-* Helper scripts
-* Automated project scaffolding
-* Local asset indexing
-* Documentation search
-
-These additions should simplify the workflow without increasing unnecessary complexity.
+- Repository cloned
+- Virtual environment created
+- Dependencies installed
+- Environment variables configured
+- FFmpeg installed
+- Tests passing
+- Linting successful
 
 ---
 
-# Revision History
+# 19. Related Documents
 
-| Version | Date        | Description                                  |
-| ------- | ----------- | -------------------------------------------- |
-| 1.0     | 05-Aug-2026 | Initial development environment setup guide. |
+| Document | Purpose |
+|----------|---------|
+| `README.md` | Project overview |
+| `docs/development_workflow.md` | Development process |
+| `docs/coding_standards.md` | Coding conventions |
+| `docs/testing_strategy.md` | Testing approach |
+| `docs/deployment.md` | Production deployment |
+| `docs/repository_guidelines.md` | Repository organization |
+
+---
+
+# 20. Summary
+
+This setup guide provides a standardized process for preparing a local Mahy Mythic Labs development environment. By following these steps, contributors can install dependencies, configure AI providers, verify their environment, and begin development with a consistent and reproducible setup.

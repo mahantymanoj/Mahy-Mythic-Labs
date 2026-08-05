@@ -1,329 +1,385 @@
-# Mahy Mythic Labs Research Handbook
+# 🔬 Research Standards
 
-**Document Version:** 1.0
-
-**Category:** Production Bible
-
-**Status:** Active
-
----
-
-# Preface
-
-Every memorable production begins long before the first image is generated or the first scene is written.
-
-It begins with a question.
-
-Research is the process of transforming that question into understanding.
-
-For Mahy Mythic Labs, research is more than collecting facts. It is a disciplined practice of exploring evidence, comparing perspectives, acknowledging uncertainty, and presenting knowledge with honesty.
-
-Our audience places trust in us.
-
-That trust is earned through careful research and responsible storytelling.
+> **Mahy Mythic Labs Research Methodology**
+>
+> Version: 1.0
+>
+> This document defines the research principles, standards, validation methods, source hierarchy, documentation requirements, and quality controls for all Mahy Mythic Labs productions.
 
 ---
 
-# Book I — The Research Constitution
+# 1. Purpose
 
-> *"Research with Discipline. Verify with Integrity. Share with Humility."*
+Research is the foundation of every Mahy Mythic Labs production.
 
----
+No script, storyboard, image, narration, or video should be created until the research phase is complete.
 
-# Chapter 1 — The Purpose of Research
+The objectives are to:
 
-Research exists to answer three questions:
-
-1. What is currently known?
-2. What remains uncertain?
-3. How can this knowledge be communicated responsibly?
-
-Every episode should begin with these questions before any script or prompt is written.
-
-Research is not intended to confirm assumptions.
-
-Its purpose is to discover the strongest available evidence.
+- Ensure factual accuracy
+- Reduce AI hallucinations
+- Build audience trust
+- Support cinematic storytelling with evidence
+- Create reusable knowledge
 
 ---
 
-# Chapter 2 — Research Before Story
+# 2. Scope
 
-The production workflow always begins with research.
+These standards apply to:
+
+- Astronomy
+- Mythology
+- Ancient History
+- Archaeology
+- Science
+- Artificial Intelligence
+- Future Technology
+- Space Exploration
+
+They also apply to every AI agent and human contributor.
+
+---
+
+# 3. Research Principles
+
+Every research activity should be:
+
+✓ Accurate
+
+✓ Evidence-based
+
+✓ Objective
+
+✓ Transparent
+
+✓ Traceable
+
+✓ Reproducible
+
+Facts should always be distinguishable from interpretation.
+
+---
+
+# 4. Research Workflow
 
 ```
-Idea
-    ↓
-Research
-    ↓
-Evidence Review
-    ↓
-Story Design
-    ↓
-Script
-    ↓
-Storyboard
-    ↓
-Production
+Topic
+
+↓
+
+Research Question
+
+↓
+
+Source Collection
+
+↓
+
+Source Evaluation
+
+↓
+
+Fact Extraction
+
+↓
+
+Cross Verification
+
+↓
+
+Knowledge Summary
+
+↓
+
+Episode Research
+
+↓
+
+Quality Review
+
+↓
+
+Knowledge Base Update
 ```
 
-The story should emerge from the research—not the other way around.
-
-Avoid searching only for information that supports a preferred narrative.
-
-Instead, allow the available evidence to shape the story.
+No stage should be skipped.
 
 ---
 
-# Chapter 3 — Categories of Content
+# 5. Research Objectives
 
-Mahy Mythic Labs produces several types of content, each requiring a different research approach.
+Each topic should answer:
 
-### Mythology
-
-Research focuses on:
-
-* Primary scriptures
-* Traditional commentaries
-* Cultural context
-* Symbolism
-* Multiple interpretations
-
-The goal is to explain traditions respectfully without presenting one interpretation as universally accepted.
+- What happened?
+- Why did it happen?
+- How do we know?
+- What evidence exists?
+- What remains uncertain?
+- Why does it matter today?
 
 ---
 
-### History
+# 6. Source Hierarchy
 
-Research focuses on:
+### Tier 1 — Preferred
 
-* Primary historical sources
-* Archaeological evidence
-* Academic publications
-* Historical consensus
-* Areas of scholarly debate
-
-Whenever uncertainty exists, it should be acknowledged.
-
----
-
-### Science
-
-Research focuses on:
-
-* Peer-reviewed studies
-* Reputable scientific organizations
-* University publications
-* Established scientific consensus
-
-Avoid presenting speculative ideas as established science.
-
----
-
-### Astronomy
-
-Research focuses on:
-
-* Space agency publications
-* Observatory findings
-* Peer-reviewed astronomy research
-* Current scientific understanding
-
-Astronomy evolves rapidly, so publication dates should always be considered.
-
----
-
-### Fiction
-
-Creative freedom is encouraged.
-
-However, fictional content should remain internally consistent and clearly distinguish itself from factual material.
-
----
-
-# Chapter 4 — Source Hierarchy
-
-Not all sources have equal reliability.
-
-Mahy Mythic Labs follows the following order of preference.
-
-## Tier 1 — Primary Sources
+- Peer-reviewed journals
+- Scientific organizations
+- Government agencies
+- Universities
+- Museums
+- Space agencies
+- Official historical institutions
 
 Examples:
 
-* Sacred texts
-* Original historical documents
-* Peer-reviewed journals
-* Official publications
-* Archaeological reports
-
-These receive the highest priority.
-
----
-
-## Tier 2 — Scholarly Analysis
-
-Examples:
-
-* Academic books
-* University publications
-* Expert commentaries
-* Review papers
-
-These provide interpretation and context.
+- NASA
+- ESA
+- ISRO
+- CERN
+- Smithsonian
+- UNESCO
 
 ---
 
-## Tier 3 — Reputable Educational Sources
+### Tier 2 — High Quality
 
-Examples:
-
-* Museums
-* Scientific institutions
-* Educational organizations
-* Established documentaries
-
-Useful for explanation and visualization.
+- Academic books
+- University publications
+- Educational documentaries
+- Professional reference works
 
 ---
 
-## Tier 4 — Secondary Media
+### Tier 3 — Supporting Sources
 
-Examples:
+- Reputable news organizations
+- Expert interviews
+- Conference presentations
 
-* News articles
-* Educational websites
-* Books written for general audiences
-
-These should be verified against higher-tier sources whenever possible.
+Use these to supplement, not replace, primary evidence.
 
 ---
 
-## Tier 5 — Community Discussions
+### Tier 4 — Use with Caution
 
-Examples:
+- Personal blogs
+- Community forums
+- Opinion articles
+- AI-generated summaries
 
-* Forums
-* Blogs
-* Social media
-* Community videos
-
-These may inspire ideas but should never be treated as authoritative evidence without independent verification.
+These should never be treated as authoritative evidence without independent verification.
 
 ---
 
-# Chapter 5 — Evidence and Interpretation
+# 7. Multiple Source Verification
 
-Research should clearly distinguish between:
+Important claims should be supported by multiple independent sources whenever practical.
 
-* Observed evidence
-* Historical records
-* Scientific measurements
-* Traditional beliefs
-* Cultural practices
-* Scholarly interpretations
-* Personal speculation
+Recommended approach:
 
-Viewers deserve to know which category a statement belongs to.
+- At least two reliable sources for standard facts.
+- Additional corroboration for extraordinary or disputed claims.
 
-Clarity builds trust.
+When sources disagree, document the disagreement rather than forcing a single conclusion.
 
 ---
 
-# Chapter 6 — Presenting Uncertainty
+# 8. Handling Uncertainty
 
-Not every question has a definitive answer.
+Research should clearly distinguish:
 
-When uncertainty exists:
+- Established facts
+- Scientific theories
+- Historical interpretations
+- Legends
+- Speculation
+- Open questions
 
-* State what is known.
-* Explain what remains debated.
-* Avoid overstating conclusions.
-* Encourage continued exploration.
-
-Saying "we do not know" is acceptable when supported by the available evidence.
-
----
-
-# Chapter 7 — Research Ethics
-
-Research should always be conducted with integrity.
-
-Never:
-
-* Invent evidence.
-* Quote sources inaccurately.
-* Remove context to strengthen an argument.
-* Present speculation as established fact.
-* Ignore evidence simply because it conflicts with a preferred story.
-
-Trust is more valuable than dramatic certainty.
+Never present speculation as confirmed knowledge.
 
 ---
 
-# Chapter 8 — The Research Workflow
+# 9. Mythology Research
 
-Every project should follow the same workflow.
+When researching mythology:
+
+- Preserve the original cultural context.
+- Distinguish mythology from documented history.
+- Respect different traditions and interpretations.
+- Avoid presenting mythological narratives as historical fact unless supported by archaeological or historical evidence.
+
+---
+
+# 10. Scientific Research
+
+Scientific topics should include:
+
+- Current understanding
+- Supporting evidence
+- Accepted terminology
+- Limitations
+- Ongoing debates
+
+Explain uncertainty where appropriate.
+
+---
+
+# 11. Historical Research
+
+Historical research should include:
+
+- Timeline
+- Geographic context
+- Primary sources (where available)
+- Archaeological evidence
+- Scholarly interpretations
+
+Avoid relying on a single historian or publication.
+
+---
+
+# 12. Research Documentation
+
+Every episode research package should include:
+
+- Topic
+- Research objective
+- Executive summary
+- Key findings
+- Supporting evidence
+- Source list
+- Open questions
+- Notes for script writing
+
+---
+
+# 13. Fact Verification
+
+Every factual statement should be classified as:
+
+- Verified
+- Supported
+- Probable
+- Unverified
+
+Only verified and well-supported information should appear in the final narration unless uncertainty is explicitly discussed.
+
+---
+
+# 14. Citation Standards
+
+Each source should include:
+
+- Title
+- Author
+- Organization
+- Publication date
+- URL or DOI (if applicable)
+- Date accessed
+
+Use consistent citation formatting across the repository.
+
+---
+
+# 15. Research Deliverables
+
+Each completed research package should produce:
 
 ```
-Choose Topic
-      ↓
-Define Research Question
-      ↓
-Collect Sources
-      ↓
-Evaluate Reliability
-      ↓
-Compare Perspectives
-      ↓
-Identify Consensus
-      ↓
-Identify Uncertainty
-      ↓
-Document Findings
-      ↓
-Approve Research
-      ↓
-Begin Story Development
+research.md
+
+references.md
+
+timeline.md (optional)
+
+glossary.md (optional)
+
+facts.json (future automation)
+
+citations.json (future automation)
 ```
 
-Research approval is the gateway to production.
+---
 
-No script should begin before research is complete.
+# 16. AI Research Rules
+
+AI should be used to:
+
+- Summarize information
+- Organize notes
+- Compare sources
+- Generate research questions
+
+AI should **not** be treated as a primary source of factual information.
+
+All AI-generated summaries must be verified against authoritative references.
 
 ---
 
-# Chapter 9 — The Research Checklist
+# 17. Knowledge Base Integration
 
-Before moving to script writing, confirm:
+Validated findings should be incorporated into the project knowledge base where appropriate.
 
-* Is the central question clearly defined?
-* Have primary or authoritative sources been consulted?
-* Have multiple perspectives been reviewed where appropriate?
-* Are factual claims supported by evidence?
-* Are uncertainties clearly identified?
-* Is the material suitable for the intended audience?
-* Does the research align with the philosophy of Mahy Mythic Labs?
+Knowledge entries should be:
 
-Only after these questions are answered should production continue.
+- Topic-specific
+- Reusable
+- Version controlled
+- Updated when new evidence emerges
 
 ---
 
-# Closing Reflection
+# 18. Quality Checklist
 
-Every episode begins with curiosity.
+Before research is approved, verify:
 
-Research transforms curiosity into understanding.
+✓ Research question defined
 
-Stories transform understanding into experience.
+✓ Reliable sources used
 
-The strength of Mahy Mythic Labs will never depend solely on cinematic visuals or advanced AI tools.
+✓ Sources documented
 
-It will depend on the quality of the questions we ask, the discipline of our research, and the honesty with which we share what we learn.
+✓ Facts cross-verified
 
-Research is therefore not the first step of production.
+✓ Uncertainty identified
 
-It is the foundation upon which every production is built.
+✓ Citations complete
+
+✓ Key findings summarized
+
+✓ Research package archived
 
 ---
 
-*End of Research Handbook — Book I*
+# 19. Continuous Improvement
+
+Research standards should evolve based on:
+
+- New scientific discoveries
+- Updated historical evidence
+- Improved research methods
+- Feedback from reviewers
+- Lessons learned from published episodes
+
+Changes should be documented and version controlled.
+
+---
+
+# 20. Related Documents
+
+| Document | Purpose |
+|----------|---------|
+| `production_bible/AI_GENERATION_RULES.md` | AI generation standards |
+| `production_bible/STYLE_GUIDE.md` | Creative standards |
+| `production_bible/STORYTELLING_FRAMEWORK.md` | Narrative structure |
+| `knowledge_base/` | Reusable knowledge repository |
+| `_EPISODE_TEMPLATE/research/research.md` | Episode-specific research output |
+| `docs/content_strategy.md` | Editorial planning |
+
+---
+
+# 21. Summary
+
+Research is the cornerstone of Mahy Mythic Labs. Every episode should be built upon carefully verified information, transparent sourcing, and clear documentation of evidence and uncertainty. By following these standards, the project maintains educational integrity, supports AI-assisted production, and builds long-term audience trust.

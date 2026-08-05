@@ -1,10 +1,6 @@
-# Mahy Mythic Labs Script Template
+# Documentary Script Template
 
-**Template Version:** 1.0
-
-**Template Type:** Episode Script Development
-
-**Usage:** Copy this template for every episode script.
+Version: 1.0
 
 ---
 
@@ -13,725 +9,475 @@
 ## Episode ID
 
 ```
-EP###
+EP-0001
 ```
 
-Example:
+## Title
 
 ```
-EP001
 ```
 
----
-
-## Episode Title
+## Series
 
 ```
-Enter final episode title
+Astronomy
+History
+Science
+Mythology
+Special
 ```
 
----
-
-## Script Status
-
-Current Status:
+## Runtime
 
 ```
-OUTLINE
-
-FIRST_DRAFT
-
-REVIEW
-
-REVISION
-
-FINAL
-
-APPROVED
+10 Minutes
 ```
 
----
+## Language
+
+```
+English
+```
 
 ## Script Version
 
 ```
-v1.0
+1.0
+```
+
+## Status
+
+```
+Draft
+Review
+Approved
+Production
+Final
 ```
 
 ---
 
-## Target Duration
+# Episode Objective
 
-```
-Example:
-
-10 minutes
-
-15 minutes
-
-20 minutes
-```
+Describe what viewers should learn.
 
 ---
 
-## Target Audience
-
-```
-Who is this episode created for?
-```
-
----
-
-# Book I — Story Foundation
-
----
-
-# One Sentence Story
-
-Describe the complete episode in one sentence.
-
-```
-Example:
-
-A journey exploring how ancient civilizations searched for answers about the cosmos.
-```
-
----
-
-# Core Message
-
-What should viewers remember?
+# Target Audience
 
 ```
 ```
 
 ---
 
-# Main Question
+# Learning Outcomes
 
-The question driving the story:
+- Outcome 1
+- Outcome 2
+- Outcome 3
+
+---
+
+# Source Research
+
+Research Document
+
+```
+../research/research.md
+```
+
+Research Version
+
+```
+```
+
+Approved By
 
 ```
 ```
 
 ---
 
-# Emotional Journey
+# Story Structure
 
-Viewer should experience:
+| Section | Duration |
+|----------|----------|
+| Hook | |
+| Introduction | |
+| Background | |
+| Main Story | |
+| Discovery | |
+| Reflection | |
+| Conclusion | |
+
+---
+
+# Total Runtime
 
 ```
+10:00
+```
+
+---
+
+# Scene List
+
+| Scene | Duration | Purpose |
+|--------|----------|----------|
+| 1 | | |
+| 2 | | |
+| 3 | | |
+| 4 | | |
+
+---
+
+# Script
+
+---
+
+# Scene 1
+
+## Scene Information
+
+Scene ID
+
+```
+SC-001
+```
+
+Duration
+
+```
+00:00 - 00:30
+```
+
+Purpose
+
+```
+Hook
+```
+
+Learning Objective
+
+```
+```
+
+---
+
+## Narration
+
+> Write narration here.
+
+---
+
+## Visual Intent
+
+Describe what the audience should see.
+
+---
+
+## Emotion
+
+```
+Wonder
 Curiosity
-
-↓
-
+Mystery
 Discovery
-
-↓
-
-Understanding
-
-↓
-
 Reflection
 ```
 
 ---
 
-# Book II — Script Structure
-
-Every Mahy Mythic Labs script follows:
+## Transition
 
 ```
-HOOK
-
-↓
-
-INTRODUCTION
-
-↓
-
-CONTEXT
-
-↓
-
-EXPLORATION
-
-↓
-
-DISCOVERY
-
-↓
-
-MEANING
-
-↓
-
-CONCLUSION
+Cut
+Fade
+Cross Dissolve
+Match Cut
 ```
 
 ---
 
-# Chapter 1 — Hook
+## Visual Notes
 
-Duration:
-
-```
-0:00 - 0:30
-```
-
-Purpose:
-
-Capture attention immediately.
+- Hero subject
+- Environment
+- Atmosphere
+- Camera intent
 
 ---
 
-## Hook Strategy
+## Scientific / Historical Notes
 
-Choose:
-
-```
-Mystery
-
-Question
-
-Surprising Fact
-
-Visual Wonder
-
-Emotional Moment
-```
+Important factual notes.
 
 ---
 
-## Narration
+## Pronunciation Notes
 
-```
-Write opening narration.
-```
+List difficult words.
 
 ---
 
-## Visual Direction
+## References
 
-```
-Describe opening visuals.
-```
+Research section(s) used.
 
 ---
 
-## Audio Direction
+# Scene 2
 
-```
-Music:
-
-Sound Effects:
-```
+(Repeat same structure)
 
 ---
 
-# Chapter 2 — Introduction
+# Scene 3
 
-Duration:
-
-```
-0:30 - 1:30
-```
-
-Purpose:
-
-Introduce topic and explain why it matters.
+(Repeat)
 
 ---
 
-## Narration
+# Scene N
 
-```
-```
-
----
-
-## Visual Direction
-
-```
-```
+(Repeat)
 
 ---
 
-## Emotional Goal
+# Key Facts
 
-```
-```
-
----
-
-# Chapter 3 — Context
-
-Duration:
-
-```
-```
-
-Purpose:
-
-Provide background information.
+- Fact 1
+- Fact 2
+- Fact 3
 
 ---
 
-## Key Information
+# Definitions
 
-```
-Point 1:
-
-Point 2:
-
-Point 3:
-```
+| Term | Meaning |
+|------|----------|
+| | |
 
 ---
 
-## Narration
+# Timeline (If Applicable)
+
+| Date | Event |
+|------|-------|
+| | |
+
+---
+
+# Characters
+
+| Character | Description | First Scene |
+|-----------|-------------|-------------|
+| | | |
+
+---
+
+# Locations
+
+| Location | Notes |
+|----------|-------|
+| | |
+
+---
+
+# Visual Opportunities
+
+- Historical reconstruction
+- CGI animation
+- Scientific diagram
+- Map
+- Timeline
+- Cross-section
+- Infographic
+
+---
+
+# Audio Notes
+
+Background Music
+
+```
+```
+
+Sound Effects
+
+```
+```
+
+Ambient Audio
+
+```
+```
+
+Silence Points
 
 ```
 ```
 
 ---
 
-## Visual Direction
+# Storyboard Handoff
 
-```
-```
+Storyboard Agent should identify:
 
----
-
-# Chapter 4 — Exploration
-
-Duration:
-
-```
-```
-
-Purpose:
-
-Take the audience deeper into the story.
+- Camera angles
+- Lighting
+- Shot composition
+- Scene transitions
+- Character continuity
 
 ---
 
-## Main Discovery Path
+# Image Generation Handoff
 
-```
-Discovery 01:
+Important hero images.
 
-Discovery 02:
-
-Discovery 03:
-```
+- Scene 1
+- Scene 2
+- Scene 3
 
 ---
 
-# Scene Writing Format
+# Video Generation Handoff
 
-Every scene should follow:
+Important motion sequences.
 
----
-
-# Scene
-
-## Scene Title
-
-```
-```
+- Camera movement
+- Character movement
+- Environmental animation
 
 ---
 
-## Duration
+# Narration Handoff
 
-```
-00:00 - 00:00
-```
-
----
-
-## Purpose
-
-Why does this scene exist?
+Voice Style
 
 ```
 ```
 
----
-
-## Narration
-
-```
-Voice-over text.
-```
-
----
-
-## Visual Description
-
-```
-What should the audience see?
-```
-
----
-
-## Camera Direction
-
-```
-Camera movement:
-
-Shot type:
-
-Composition:
-```
-
----
-
-## Character Direction
-
-```
-Character actions:
-
-Emotion:
-
-Movement:
-```
-
----
-
-## Environment Direction
-
-```
-Location:
-
-Atmosphere:
-
-Lighting:
-```
-
----
-
-## Audio Direction
-
-Music:
+Speaking Pace
 
 ```
 ```
-
-Sound Effects:
-
-```
-```
-
-Ambience:
-
-```
-```
-
----
-
-# Book III — Narrative Control
-
----
-
-# Story Beat Tracking
-
-| Beat       | Purpose            | Completed |
-| ---------- | ------------------ | --------- |
-| Hook       | Capture attention  | ☐         |
-| Context    | Explain background | ☐         |
-| Discovery  | Reveal information | ☐         |
-| Emotion    | Create connection  | ☐         |
-| Conclusion | Leave impact       | ☐         |
-
----
-
-# Information Balance
-
-Maintain:
-
-```
-Information
-
-+
 
 Emotion
 
-+
-
-Visual Experience
+```
 ```
 
----
-
-# Complexity Management
-
-Avoid:
-
-```
-Too much information
-
-Confusing explanations
-
-Unnecessary details
-```
-
----
-
-# Book IV — Narration Script
-
----
-
-# Full Narration Draft
-
-```
-Paste complete narration here.
-```
-
----
-
-# Voice Direction
-
-Voice style:
-
-```
-Calm
-
-Deep
-
-Curious
-
-Dramatic
-
-Educational
-
-Reflective
-```
-
----
-
-# Speaking Speed
-
-```
-Slow
-
-Medium
-
-Fast
-```
-
----
-
-# Emotional Tone
+Pronunciation
 
 ```
 ```
 
 ---
 
-# Pronunciation Notes
+# Thumbnail Opportunity
 
-Important words:
+Strongest visual moment.
+
+---
+
+# SEO Highlights
+
+Primary Topic
 
 ```
-Word:
+```
 
-Pronunciation:
+Important Keywords
+
+- Keyword 1
+- Keyword 2
+
+---
+
+# Production Notes
+
+Additional notes for production.
+
+---
+
+# Script Metrics
+
+Total Words
+
+```
+```
+
+Estimated Speaking Time
+
+```
+```
+
+Scene Count
+
+```
+```
+
+Average Scene Duration
+
+```
 ```
 
 ---
 
-# Book V — Visual Planning Summary
+# Script Review Checklist
+
+## Structure
+
+- [ ] Hook included
+- [ ] Introduction complete
+- [ ] Logical flow
+- [ ] Strong conclusion
+
+## Accuracy
+
+- [ ] Research verified
+- [ ] Facts supported
+- [ ] No unsupported claims
+
+## Storytelling
+
+- [ ] Engaging
+- [ ] Educational
+- [ ] Emotional progression
+
+## Production
+
+- [ ] Storyboard ready
+- [ ] Image ready
+- [ ] Video ready
+- [ ] Narration ready
 
 ---
 
-# Required Visuals
+# Review History
 
-## Scene 01
-
-```
-```
-
-## Scene 02
-
-```
-```
-
-## Scene 03
-
-```
-```
-
----
-
-# Visual Style Reference
-
-Follow:
-
-```
-production_bible/VISUAL_GUIDE.md
-```
-
----
-
-# Book VI — Audio Planning Summary
-
----
-
-# Narration
-
-Status:
-
-```
-NOT_STARTED
-
-GENERATED
-
-REVIEWED
-
-APPROVED
-```
-
----
-
-# Music Direction
-
-Reference:
-
-```
-production_bible/AUDIO_GUIDE.md
-```
-
----
-
-Music style:
-
-```
-Cinematic
-
-Ambient
-
-Epic
-
-Mystical
-
-Futuristic
-```
-
----
-
-# Sound Design
-
-Required sounds:
-
-```
-Sound 01:
-
-Sound 02:
-
-Sound 03:
-```
-
----
-
-# Book VII — Script Review
-
----
-
-# Story Quality Checklist
-
-☐ Strong opening
-
-☐ Clear story progression
-
-☐ Audience understands topic
-
-☐ Emotional connection exists
-
-☐ Ending is meaningful
-
----
-
-# Writing Quality Checklist
-
-☐ Natural narration
-
-☐ No unnecessary repetition
-
-☐ Correct information
-
-☐ Suitable pacing
-
----
-
-# Production Checklist
-
-☐ Visual opportunities identified
-
-☐ Audio requirements identified
-
-☐ Scene timing estimated
-
----
-
-# Revision Notes
-
-Version:
-
-```
-```
-
-Changes:
-
-```
-```
+| Version | Reviewer | Status | Notes |
+|----------|----------|--------|-------|
+| | | | |
 
 ---
 
 # Final Approval
 
-Script Status:
+Research
 
-```
-APPROVED
-```
+☐ Approved
 
-Approved Date:
+Script
 
-```
-DD-MM-YYYY
-```
+☐ Approved
 
-Approved By:
+Quality
 
-```
-```
+☐ Approved
 
----
+Ready for Storyboard
 
-# Script Completion Summary
-
-## Final Story Message
-
-```
-```
-
----
-
-## Audience Impact
-
-```
-```
-
----
-
-## Lessons For Future Episodes
-
-```
-```
-
----
-
-*End of Mahy Mythic Labs Script Template — Version 1.0*
+☐ Yes
