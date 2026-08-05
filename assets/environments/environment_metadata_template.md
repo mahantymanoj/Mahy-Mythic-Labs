@@ -51,3 +51,29 @@
 
 ```text
 [Write the approved reusable visual prompt here.]
+
+## Negative Prompt
+
+[List anachronisms, AI artifacts, incorrect materials, prohibited symbols, or unwanted visual elements.]
+
+## Continuity Requirements
+
+- 
+- 
+- 
+
+## Research and Ethical Review
+
+| Check | Status | Notes |
+| --- | --- | --- |
+| Historical or scientific research verified | Pending | |
+| Cultural context reviewed | Pending | |
+| Architecture and material details reviewed | Pending | |
+| AI-generation record saved | Pending | |
+| Approved for production | Pending | |
+
+## Visual References
+
+| Reference ID | Description | Source | Usage status |
+| --- | --- | --- |
+| REF-001 | | | Research only / Licensed / Original |
