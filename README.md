@@ -86,9 +86,5 @@ Every completed video should improve the system:
 
 ---
 
-## Install the Required Python Package
-```python
- pip install -r requirements.txt
-```
 
 **Think like a Creator. Work like an Engineer.**
