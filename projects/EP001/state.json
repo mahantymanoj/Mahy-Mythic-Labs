@@ -1,0 +1,17 @@
+{
+  "episode_id": "EP001",
+  "status": "success",
+  "current_stage": "completed",
+  "completed_stages": [
+    "research",
+    "script",
+    "narration",
+    "storyboard"
+  ],
+  "stage_data": {
+    "research_facts": "[Gemini Mock Response for: Conduct documentary research on topic: The Secrets of the An...]",
+    "narration_text": "[Gemini Mock Response for: Write a video script for 'The Secrets of the Antikythera Mec...]",
+    "narration_audio_path": "projects\\EP001\\audio\\narration\\narration.mp3"
+  },
+  "errors": []
+}
