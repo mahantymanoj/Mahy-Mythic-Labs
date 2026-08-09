@@ -41,7 +41,6 @@ class VoiceClient:
             model=self.model,
             voice=self.voice,
             input=text,
-            instructions=instructions,
             response_format="wav",
         ) as response:
             response.stream_to_file(output)

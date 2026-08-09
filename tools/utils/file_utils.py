@@ -88,4 +88,4 @@ def list_files(
             if path.suffix.lower() in normalized_suffixes
         ]
 
-    return sorted(files)video_client.py
+    return sorted(files)

@@ -34,9 +34,10 @@ class ImageClient:
             model=self.model,
             prompt=prompt,
             size=size,
+            response_format="b64_json",
         )
-
         image_base64 = response.data[0].b64_json
+
         if not image_base64:
             raise RuntimeError("Image generation returned no image data.")
 
