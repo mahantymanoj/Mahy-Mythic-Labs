@@ -4,6 +4,14 @@
 
 This folder contains newly generated AI images that have not yet passed visual, factual, ethical, or rights review.
 
+> **Production rule: Generated does not mean approved. No image in this folder may be used in a final edit or published video.**
+
+## Workflow
+
+1. **Generate** — Place all new AI image outputs in this folder with the correct filename and a linked metadata record.
+2. **Review** — Assess each image for visual quality, factual accuracy, ethical appropriateness, and rights status.
+3. **Move** — Transfer reviewed images to `../approved/` if they pass, or to `../archive/` if they are rejected or superseded.
+
 ## Allowed Content
 
 - Raw AI image outputs

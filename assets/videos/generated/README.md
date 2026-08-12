@@ -38,10 +38,19 @@ Each generated video must have a linked record containing:
 - Creator or operator
 - Review status
 
+## Review Checklist
+
+Before moving a generated clip out of this folder:
+
+- [ ] Prompt accuracy: the clip represents what the approved prompt described.
+- [ ] Visual artifacts: no distortion, melting, unintended duplication, or broken geometry.
+- [ ] Subject consistency: characters, environments, and objects are consistent with approved metadata.
+- [ ] Motion quality: camera motion and subject movement are smooth and intentional.
+
 ## Rules
 
 - Generated clips are not approved for final use.
 - Do not place raw clips directly into a final edit.
 - Do not overwrite an existing render; create a new version.
-- Move approved clips to `../edited/` or `../final/` only after review.
-- Move rejected or obsolete clips to `../archive/` if an archive folder is later added.
+- Move approved clips to `../edited/` only after review.
+- Delete rejected or obsolete clips after confirming they are not needed for prompt reference or production record.

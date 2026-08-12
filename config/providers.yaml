@@ -1,242 +1,128 @@
-# ==============================================================================
-# Mahy Mythic Labs
-# AI Provider Configuration
-# File: providers.yaml
-# Version: 1.0
-# ==============================================================================
-
 version: "1.0"
-
-# ==============================================================================
-# Global Provider Settings
-# ==============================================================================
 
 global:
   timeout_seconds: 120
-
   max_retries: 3
-
   retry_backoff_seconds: 2
-
   verify_ssl: true
-
   log_requests: true
-
   log_responses: false
-
   user_agent: "Mahy-Mythic-Labs/1.0"
-
-# ==============================================================================
-# OpenAI
-# ==============================================================================
 
 openai:
   enabled: true
-
   priority: 1
-
   base_url: "https://api.openai.com/v1"
-
   api_key_env: "OPENAI_API_KEY"
-
   organization_env: ""
-
   project_env: ""
-
   supports:
     - llm
     - image_generation
     - image_editing
     - reasoning
     - structured_output
-
   rate_limit:
     requests_per_minute: 500
-
     tokens_per_minute: 1000000
-
-# ==============================================================================
-# Anthropic
-# ==============================================================================
 
 anthropic:
   enabled: false
-
   priority: 2
-
   base_url: "https://api.anthropic.com"
-
   api_key_env: "ANTHROPIC_API_KEY"
-
   supports:
     - llm
     - reasoning
     - long_context
 
-# ==============================================================================
-# Google AI
-# ==============================================================================
-
 google:
   enabled: false
-
   priority: 3
-
   base_url: "https://generativelanguage.googleapis.com"
-
   api_key_env: "GOOGLE_API_KEY"
-
   supports:
     - llm
     - multimodal
 
-# ==============================================================================
-# xAI
-# ==============================================================================
-
 xai:
   enabled: false
-
   priority: 4
-
   base_url: "https://api.x.ai/v1"
-
   api_key_env: "XAI_API_KEY"
-
   supports:
     - llm
     - reasoning
 
-# ==============================================================================
-# ElevenLabs
-# ==============================================================================
-
 elevenlabs:
   enabled: false
-
   priority: 1
-
   base_url: "https://api.elevenlabs.io"
-
   api_key_env: "ELEVENLABS_API_KEY"
-
   supports:
     - text_to_speech
     - voice_cloning
 
-# ==============================================================================
-# Stability AI
-# ==============================================================================
-
 stability:
   enabled: false
-
   priority: 2
-
   base_url: "https://api.stability.ai"
-
   api_key_env: "STABILITY_API_KEY"
-
   supports:
     - image_generation
 
-# ==============================================================================
-# Replicate
-# ==============================================================================
-
 replicate:
   enabled: false
-
   priority: 3
-
   base_url: "https://api.replicate.com"
-
   api_key_env: "REPLICATE_API_TOKEN"
-
   supports:
     - image_generation
     - video_generation
     - custom_models
 
-# ==============================================================================
-# Runway
-# ==============================================================================
-
 runway:
   enabled: false
-
   priority: 4
-
   base_url: "https://api.runwayml.com"
-
   api_key_env: "RUNWAY_API_KEY"
-
   supports:
     - video_generation
-
-# ==============================================================================
-# Pika
-# ==============================================================================
 
 pika:
   enabled: false
-
   priority: 5
-
   api_key_env: "PIKA_API_KEY"
-
   supports:
     - video_generation
-
-# ==============================================================================
-# Kling
-# ==============================================================================
 
 kling:
   enabled: false
-
   priority: 6
-
   api_key_env: "KLING_API_KEY"
-
   supports:
     - video_generation
 
-# ==============================================================================
-# Logging
-# ==============================================================================
-
 logging:
   enabled: true
-
   level: INFO
-
   save_requests: true
-
   save_responses: false
-
   save_errors: true
-
-# ==============================================================================
-# Health Check
-# ==============================================================================
 
 health_check:
   enabled: true
-
   startup_validation: true
-
   interval_minutes: 60
-
-# ==============================================================================
-# Security
-# ==============================================================================
 
 security:
   read_api_keys_from_environment: true
-
   never_store_api_keys: true
-
   mask_keys_in_logs: true
-
   validate_ssl_certificates: true
+
+# Default provider routing
+default_llm: openai
+default_image: openai
+default_video: runway
+default_audio: openai

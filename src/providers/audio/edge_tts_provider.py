@@ -9,11 +9,10 @@ from typing import Optional
 import edge_tts
 
 from src.enums import ProviderBackend, ProviderType
-from src.models.asset import MediaAsset, AssetType, GenerationStatus
 
 
 class EdgeTTSProvider:
-    """Free TTS provider powered by Microsoft Edge TTS."""
+    """Free TTS provider powered by Microsoft Edge TTS (no API key required)."""
 
     def __init__(self, default_voice: str = "en-US-ChristopherNeural") -> None:
         self.default_voice = default_voice
@@ -26,7 +25,7 @@ class EdgeTTSProvider:
         output_path: str | Path,
         voice: Optional[str] = None,
     ) -> Path:
-        """Asynchronously generate audio file using Edge TTS."""
+        """Asynchronously generate an audio file using Edge TTS."""
         output = Path(output_path)
         output.parent.mkdir(parents=True, exist_ok=True)
         selected_voice = voice or self.default_voice
@@ -41,7 +40,7 @@ class EdgeTTSProvider:
         output_path: str | Path,
         voice: Optional[str] = None,
     ) -> Path:
-        """Synchronous wrapper for Edge TTS generation."""
+        """Synchronous wrapper around Edge TTS generation."""
         return asyncio.run(self.generate_audio_async(text, output_path, voice))
 
 

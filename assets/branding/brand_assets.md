@@ -40,15 +40,26 @@ Every asset should communicate:
 - Use transparent PNG or SVG for logos and overlays whenever possible.
 - Version files using lowercase kebab case:
 
-`brand-[asset-name]-[variant]-v##.[extension]`
+```text
+brand-[asset-name]-[variant]-v##.[extension]
+```
 
 Example:
 
-`brand-wordmark-light-v01.svg`
+```text
+brand-wordmark-light-v01.svg
+```
 
 ## Brand Keywords
 
-Cinematic · Mythic · Intelligent · Cosmic · Ancient · Precise · Atmospheric · Human
+- Cinematic — every visual must feel like a documentary frame.
+- Mythic — rooted in the ancient, symbolic, and legendary.
+- Intelligent — grounded in research and presented with clarity.
+- Cosmic — open to the universe in scale and imagination.
+- Ancient — honoring human history, culture, and memory.
+- Precise — nothing extraneous; every element earns its place.
+- Atmospheric — mood and light carry as much meaning as subject.
+- Human — the story always returns to people and their place in the world.
 
 ## Quality Standard
 
@@ -59,3 +70,9 @@ A brand asset is approved only when it feels:
 - Appropriate for a global audience
 - Consistent with documentary storytelling
 - Free from generic AI-fantasy visual clichés
+
+## Version History
+
+| Version | Date | Changed By | Summary |
+| --- | --- | --- | --- |
+| v01 | — | — | Initial brand asset set |

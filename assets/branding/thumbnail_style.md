@@ -2,9 +2,29 @@
 
 ## Purpose
 
-A thumbnail must create immediate curiosity while accurately representing the episode’s central question.
+A thumbnail must create immediate curiosity while accurately representing the episode's central question.
 
 It is a cinematic promise, not a summary of the video.
+
+## Dimensions
+
+| Specification | Value |
+| --- | --- |
+| Standard size | 1280 × 720 px |
+| Maximum file size | 2 MB (YouTube requirement) |
+| Aspect ratio | 16:9 |
+
+## File Naming
+
+Use:
+
+`[episode-or-project]-thumbnail-[variant]-v##.[extension]`
+
+Examples:
+
+`ep001-thumbnail-main-v01.jpg`
+
+`ep001-thumbnail-shorts-v01.jpg`
 
 ## Visual Formula
 
@@ -34,7 +54,7 @@ Each thumbnail should contain:
 
 ## Typography
 
-- Use no more than three words.
+- Use no more than three words. Fewer words force clarity and ensure the thumbnail reads instantly at small sizes on mobile feeds, where a viewer has less than a second to decide.
 - Text must be readable on a mobile screen.
 - Use text only when it increases curiosity or clarity.
 - Avoid explanatory sentences, excessive punctuation, and clickbait phrases.
@@ -50,10 +70,12 @@ Good:
 
 Avoid:
 
-- YOU WON’T BELIEVE THIS
+- YOU WON'T BELIEVE THIS
 - SHOCKING TRUTH
 - THEY HID THIS
 - PROOF OF ALIENS
+- THE TRUTH THEY DON'T WANT YOU TO KNOW
+- EVERYTHING YOU KNOW IS WRONG
 
 ## Episode-Type Directions
 
@@ -73,3 +95,5 @@ Avoid:
 - [ ] Text is minimal and readable.
 - [ ] No visible AI artifacts, warped objects, or invented text.
 - [ ] It feels cinematic, original, and premium.
+- [ ] Dimensions are 1280 × 720 px and file size is under 2 MB.
+- [ ] File is named according to the naming convention.

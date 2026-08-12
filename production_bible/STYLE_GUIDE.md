@@ -1,4 +1,4 @@
-# 🎨 Mahy Mythic Labs Style Guide
+﻿# ðŸŽ¨ Mahy Mythic Labs Style Guide
 
 > **Mahy Mythic Labs Visual & Creative Style Guide**
 >
@@ -86,17 +86,17 @@ Avoid:
 
 Every design should prioritize:
 
-✓ Simplicity
+âœ“ Simplicity
 
-✓ Clarity
+âœ“ Clarity
 
-✓ Consistency
+âœ“ Consistency
 
-✓ Visual hierarchy
+âœ“ Visual hierarchy
 
-✓ Cinematic realism
+âœ“ Cinematic realism
 
-✓ Educational value
+âœ“ Educational value
 
 Less is more.
 
@@ -331,23 +331,23 @@ Avoid mixing incompatible icon styles.
 
 Before approval, verify:
 
-✓ Brand colors are respected.
+âœ“ Brand colors are respected.
 
-✓ Lighting is cinematic.
+âœ“ Lighting is cinematic.
 
-✓ Composition is balanced.
+âœ“ Composition is balanced.
 
-✓ Typography is readable.
+âœ“ Typography is readable.
 
-✓ Characters remain consistent.
+âœ“ Characters remain consistent.
 
-✓ Environment matches the story.
+âœ“ Environment matches the story.
 
-✓ Thumbnail communicates one idea.
+âœ“ Thumbnail communicates one idea.
 
-✓ Motion is smooth.
+âœ“ Motion is smooth.
 
-✓ Educational purpose is clear.
+âœ“ Educational purpose is clear.
 
 ---
 
@@ -390,12 +390,12 @@ Major changes should preserve the core Mahy Mythic Labs identity.
 |----------|---------|
 | `production_bible/BRAND_IDENTITY.md` | Brand identity |
 | `production_bible/VOICE_IDENTITY.md` | Narration identity |
-| `production_bible/CINEMATIC_LANGUAGE.md` | Visual storytelling grammar |
-| `production_bible/VISUAL_STYLE.md` | Detailed visual standards |
-| `production_bible/COLOR_GUIDELINES.md` | Color system |
-| `production_bible/STORYTELLING_FRAMEWORK.md` | Narrative structure |
+| `production_bible/cinematography.md` | Visual storytelling grammar |
+| `production_bible/VISUAL_GUIDE.md` | Detailed visual standards |
+| `production_bible/COLOR_PALETTE.md` | Color system |
+| `production_bible/storytelling.md` | Narrative structure |
 | `production_bible/AI_GENERATION_RULES.md` | AI generation standards |
-| `production_bible/QUALITY_STANDARDS.md` | Content quality requirements |
+| `production_bible/quality.md` | Content quality requirements |
 
 ---
 

@@ -28,7 +28,7 @@ It protects visual continuity, cultural accuracy, and reuse across episodes.
 - Historical and reconstructed characters must be based on credible research.
 - Mythological figures must be portrayed respectfully and never reduced to stereotypes.
 - Do not present reconstructed or symbolic characters as documented historical evidence.
-- Do not imitate a living person’s face, voice, or likeness without permission.
+- Do not imitate a living person's face, voice, or likeness without permission.
 - Maintain consistent age, clothing, features, props, and visual language across scenes.
 - Record every approved visual-generation prompt used for recurring characters.
 
@@ -53,6 +53,18 @@ Examples:
 - `CHAR-001-ancient-astronomer`
 - `CHAR-002-athena`
 - `CHAR-003-cosmic-narrator`
+- `CHAR-004-bronze-age-craftsperson`
+
+## Reuse Guidelines
+
+To reuse an existing character in a new episode:
+
+1. Check this registry to confirm the character is in `Approved` or `Active` status.
+2. Open the character's metadata file (listed in the Reference File column).
+3. Use the approved visual-generation prompt from the metadata file exactly as recorded.
+4. Do not alter appearance, clothing, or key visual features without submitting a new metadata version.
+5. Record the new episode use in the metadata file's Related Episodes field.
+6. Update this registry's status to `Active` if the character is being used in a new production.
 
 ## Approval Checklist
 

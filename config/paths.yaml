@@ -1,277 +1,127 @@
-# ==============================================================================
-# Mahy Mythic Labs
-# Repository Paths Configuration
-# File: config/paths.yaml
-# Version: 1.0
-# ==============================================================================
-
 version: "1.0"
-
-# ==============================================================================
-# Root
-# ==============================================================================
 
 root:
   repository: "."
 
-# ==============================================================================
-# Documentation
-# ==============================================================================
-
 docs:
   root: "./docs"
-
   architecture: "./docs/architecture.md"
-
   automation_architecture: "./docs/automation_architecture.md"
-
   coding_standards: "./docs/coding_standards.md"
-
   content_strategy: "./docs/content_strategy.md"
-
   deployment: "./docs/deployment.md"
-
   development_workflow: "./docs/development_workflow.md"
-
   repository_guidelines: "./docs/repository_guidelines.md"
-
   roadmap: "./docs/roadmap.md"
-
   setup: "./docs/setup.md"
-
   tech_stack: "./docs/tech_stack.md"
-
   testing_strategy: "./docs/testing_strategy.md"
-
   vision: "./docs/vision.md"
-
   production_engine: "./docs/production_engine.md"
-
   asset_management: "./docs/asset_management.md"
-
   youtube_strategy: "./docs/youtube_strategy.md"
-
-# ==============================================================================
-# Production Bible
-# ==============================================================================
 
 production_bible:
   root: "./production_bible"
-
   ai_generation_rules: "./production_bible/AI_GENERATION_RULES.md"
-
   copyright_policy: "./production_bible/COPYRIGHT_POLICY.md"
-
   prompt_engineering: "./production_bible/prompt_engineering.md"
-
   quality: "./production_bible/quality.md"
-
   research: "./production_bible/research.md"
-
   storytelling: "./production_bible/storytelling.md"
-
   style_guide: "./production_bible/STYLE_GUIDE.md"
-
   voice_identity: "./production_bible/VOICE_IDENTITY.md"
-
   workflow: "./production_bible/workflow.md"
-
-# ==============================================================================
-# Prompts
-# ==============================================================================
 
 prompts:
   root: "./prompts"
-
   system: "./prompts/system"
-
   research: "./prompts/research"
-
   script: "./prompts/script"
-
   storyboard: "./prompts/storyboard"
-
   image: "./prompts/image"
-
   video: "./prompts/video"
-
   narration: "./prompts/narration"
-
   seo: "./prompts/seo"
-
   thumbnail: "./prompts/thumbnail"
-
   quality: "./prompts/quality"
-
-# ==============================================================================
-# Templates
-# ==============================================================================
 
 templates:
   root: "./templates"
-
   episode: "./templates/episode_template.md"
-
   research: "./templates/research_template.md"
-
   script: "./templates/script_template.md"
-
   storyboard: "./templates/storyboard_template.md"
-
   image_prompt: "./templates/image_prompt.md"
-
   review: "./templates/review_template.md"
-
   quality_check: "./templates/quality_check_template.md"
-
   youtube_upload: "./templates/youtube_upload_template.md"
-
   social_media: "./templates/social_media_template.md"
-
-# ==============================================================================
-# Projects
-# ==============================================================================
 
 projects:
   root: "./projects"
 
-# ==============================================================================
-# Assets
-# ==============================================================================
-
 assets:
   root: "./assets"
-
   images: "./assets/images"
-
   generated_images: "./assets/images/generated"
-
   thumbnails: "./assets/images/thumbnails"
-
   reference_images: "./assets/images/reference"
-
   videos: "./assets/videos"
-
   audio: "./assets/audio"
-
   music: "./assets/music"
-
   sfx: "./assets/sfx"
-
   fonts: "./assets/fonts"
-
   logos: "./assets/logos"
-
-# ==============================================================================
-# Output
-# ==============================================================================
 
 output:
   root: "./output"
-
   images: "./output/images"
-
   videos: "./output/videos"
-
   audio: "./output/audio"
-
   reports: "./output/reports"
-
-# ==============================================================================
-# Configuration
-# ==============================================================================
 
 config:
   root: "./config"
-
   settings: "./config/settings.yaml"
-
   providers: "./config/providers.yaml"
-
   models: "./config/models.yaml"
-
   routing: "./config/routing.yaml"
-
   paths: "./config/paths.yaml"
-
   generation: "./config/generation.yaml"
-
   quality: "./config/quality.yaml"
-
-# ==============================================================================
-# Logs
-# ==============================================================================
 
 logs:
   root: "./logs"
-
   application: "./logs/application.log"
-
   generation: "./logs/generation.log"
-
   errors: "./logs/error.log"
-
   quality: "./logs/quality.log"
-
-# ==============================================================================
-# Cache
-# ==============================================================================
 
 cache:
   root: "./cache"
 
-# ==============================================================================
-# Temporary Files
-# ==============================================================================
-
 temp:
   root: "./temp"
-
-# ==============================================================================
-# Archive
-# ==============================================================================
 
 archive:
   root: "./archive"
 
-# ==============================================================================
-# Reports
-# ==============================================================================
-
 reports:
   root: "./reports"
-
-# ==============================================================================
-# Metadata
-# ==============================================================================
 
 metadata:
   root: "./metadata"
 
-# ==============================================================================
-# Environment
-# ==============================================================================
-
 environment:
   env_file: ".env"
-
   example_env: ".env.example"
-
-# ==============================================================================
-# Root Files
-# ==============================================================================
 
 root_files:
   readme: "./README.md"
-
   license: "./LICENSE"
-
   gitignore: "./.gitignore"
-
   project_status: "./PROJECT_STATUS.md"
-
   project_board: "./PROJECT_BOARD.md"
-
   ai_context: "./AI_CONTEXT.md"
-
   decisions: "./DECISIONS.md"

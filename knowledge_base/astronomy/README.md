@@ -1,4 +1,4 @@
-# Astronomy Knowledge Base
+﻿# Astronomy Knowledge Base
 
 ## Purpose
 
@@ -37,11 +37,7 @@ Covers:
 * Dark matter
 * Dark energy
 
-File:
-
-```
-universe.md
-```
+File: `universe.md`
 
 ---
 
@@ -54,11 +50,7 @@ Covers:
 * Milky Way
 * Galactic evolution
 
-File:
-
-```
-galaxies.md
-```
+File: `galaxies.md`
 
 ---
 
@@ -66,16 +58,13 @@ galaxies.md
 
 Covers:
 
-* Formation
+* Formation and types
 * Event horizons
-* Singularities
+* Hawking radiation
+* Gravitational waves
 * Supermassive black holes
 
-File:
-
-```
-black_holes.md
-```
+File: `black_holes.md`
 
 ---
 
@@ -86,12 +75,10 @@ Covers:
 * Stellar lifecycle
 * Nuclear fusion
 * Star classification
+* Supernovae and remnants
+* Element synthesis
 
-File:
-
-```
-stars.md
-```
+File: `stars.md`
 
 ---
 
@@ -102,13 +89,9 @@ Covers:
 * Planet formation
 * Solar systems
 * Exoplanets
-* Habitability
+* Habitability zones
 
-File:
-
-```
-planets.md
-```
+File: `planets.md`
 
 ---
 
@@ -118,41 +101,42 @@ Covers:
 
 * Human missions
 * Space agencies
-* Future exploration
+* Current and future exploration
 
-File:
-
-```
-space_exploration.md
-```
+File: `space_exploration.md`
 
 ---
 
 # Research Standards
 
-All astronomy content should:
+All astronomy content must:
 
-* Use scientifically accepted sources
-* Separate facts from theories
-* Avoid unsupported claims
-* Mention uncertainty where applicable
+* Use scientifically accepted sources (NASA, ESA, peer-reviewed journals)
+* Clearly separate confirmed facts from current theories
+* Acknowledge uncertainty where evidence is incomplete
+* Avoid misrepresenting scientific consensus for dramatic effect
 
 ---
 
 # Content Style
 
-Mahy Mythic Labs storytelling approach:
+Mahy Mythic Labs astronomy storytelling combines three elements:
 
-Scientific accuracy:
+**Scientific accuracy** — Every claim is grounded in accepted scientific understanding. Theories are distinguished from confirmed facts. Uncertainty is acknowledged openly rather than hidden.
 
-*
+**Human curiosity** — Content is framed around questions viewers naturally ask: Why does this exist? How did it form? What does this mean for humanity?
 
-Human curiosity:
+**Cinematic imagination** — Scientific concepts are visualized through immersive, large-scale imagery that creates wonder without misrepresenting the evidence.
 
-*
+Together these produce engaging cosmic storytelling that educates without oversimplifying.
 
-Cinematic imagination
+---
 
-=
+# Missing Topics
 
-Engaging cosmic storytelling
+If a production topic is not covered by an existing file in this folder, the Research Agent must:
+
+1. Conduct external research using Tier 1 sources (NASA, ESA, peer-reviewed journals).
+2. Document findings in the relevant episode project folder under `research/`.
+3. Flag the topic as a candidate for a new knowledge base file.
+4. Create or update a file in this folder after the episode is complete so future episodes can reuse the research.

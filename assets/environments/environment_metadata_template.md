@@ -10,6 +10,7 @@
 | Status | Draft / Approved / Active / Archived / Restricted |
 | First Episode | |
 | Related Episodes | |
+| Version History | v01 — [date] — initial record |
 
 ## Narrative Function
 
@@ -47,10 +48,20 @@
 | Atmospheric elements | Fog / dust / rain / particles / smoke / stars |
 | Key objects or landmarks | |
 
+## Audio Direction
+
+| Field | Details |
+| --- | --- |
+| Ambient sound | |
+| Music mood | |
+| Atmosphere sounds | |
+| Silence or restraint notes | |
+
 ## Generation Prompt
 
 ```text
 [Write the approved reusable visual prompt here.]
+```
 
 ## Negative Prompt
 
@@ -58,9 +69,9 @@
 
 ## Continuity Requirements
 
-- 
-- 
-- 
+-
+-
+-
 
 ## Research and Ethical Review
 
@@ -75,5 +86,5 @@
 ## Visual References
 
 | Reference ID | Description | Source | Usage status |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | REF-001 | | | Research only / Licensed / Original |

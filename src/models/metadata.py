@@ -19,7 +19,7 @@ from typing import Dict, List, Optional
 
 from pydantic import Field, field_validator
 
-from .base import StudioBaseModel
+from .base import EntityModel, ValueModel
 
 
 # ==============================================================================
@@ -84,13 +84,14 @@ class AudienceType(str, Enum):
 
 
 # ==============================================================================
-# Supporting Models
+# Supporting Value Objects (immutable, no identity, no touch())
 # ==============================================================================
 
 
-class SourceReference(StudioBaseModel):
+class SourceReference(ValueModel):
     """
     Represents a research reference or citation.
+    ValueModel: immutable, compared by value, no identity fields.
     """
 
     title: str = Field(..., min_length=1)
@@ -101,9 +102,10 @@ class SourceReference(StudioBaseModel):
     notes: Optional[str] = None
 
 
-class Keyword(StudioBaseModel):
+class Keyword(ValueModel):
     """
     Search or SEO keyword.
+    ValueModel: immutable, compared by value.
     """
 
     value: str
@@ -111,13 +113,45 @@ class Keyword(StudioBaseModel):
 
 
 # ==============================================================================
-# Main Metadata Model
+# Cost and Token Usage Value Objects (used by generation.py)
 # ==============================================================================
 
 
-class Metadata(StudioBaseModel):
+class TokenUsage(ValueModel):
+    """Token consumption record for an LLM call."""
+
+    prompt_tokens: int = Field(default=0, ge=0)
+    completion_tokens: int = Field(default=0, ge=0)
+    total_tokens: int = Field(default=0, ge=0)
+
+    @property
+    def has_usage(self) -> bool:
+        return self.total_tokens > 0
+
+
+class CostInfo(ValueModel):
+    """Monetary cost record for a generation call."""
+
+    currency: str = "USD"
+    input_cost: float = Field(default=0.0, ge=0.0)
+    output_cost: float = Field(default=0.0, ge=0.0)
+
+    @property
+    def total_cost(self) -> float:
+        return round(self.input_cost + self.output_cost, 6)
+
+
+# ==============================================================================
+# Main Metadata Entity (has identity, timestamps, touch())
+# ==============================================================================
+
+
+class Metadata(EntityModel):
     """
     Shared metadata used by all major Studio objects.
+
+    Uses EntityModel because Metadata instances are tracked
+    by identity across the production lifecycle.
 
     Examples
     --------
@@ -144,7 +178,7 @@ class Metadata(StudioBaseModel):
     # Classification
     # ------------------------------------------------------------------
 
-    category: ContentCategory
+    category: ContentCategory = ContentCategory.OTHER
 
     language: ContentLanguage = ContentLanguage.ENGLISH
 
@@ -220,27 +254,22 @@ class Metadata(StudioBaseModel):
     @field_validator("tags")
     @classmethod
     def normalize_tags(cls, value: List[str]) -> List[str]:
-        """
-        Remove duplicates and normalize.
-        """
+        """Remove duplicates and normalize."""
         normalized = {
             tag.strip().lower()
             for tag in value
             if tag.strip()
         }
-
         return sorted(normalized)
 
     @field_validator("title")
     @classmethod
     def validate_title(cls, value: str) -> str:
         value = value.strip()
-
         if len(value) < 3:
             raise ValueError(
                 "Title must contain at least 3 characters."
             )
-
         return value
 
     # ------------------------------------------------------------------
@@ -248,56 +277,41 @@ class Metadata(StudioBaseModel):
     # ------------------------------------------------------------------
 
     def add_tag(self, tag: str) -> None:
-        """
-        Add a tag if it does not already exist.
-        """
+        """Add a tag if it does not already exist."""
         tag = tag.strip().lower()
-
         if tag and tag not in self.tags:
             self.tags.append(tag)
             self.touch()
 
-    def add_reference(
-        self,
-        reference: SourceReference,
-    ) -> None:
-        """
-        Add a research reference.
-        """
+    def add_reference(self, reference: SourceReference) -> None:
+        """Add a research reference."""
         self.references.append(reference)
         self.source_count = len(self.references)
         self.touch()
 
-    def add_keyword(
-        self,
-        keyword: Keyword,
-    ) -> None:
-        """
-        Add SEO keyword.
-        """
+    def add_keyword(self, keyword: Keyword) -> None:
+        """Add SEO keyword."""
         self.keywords.append(keyword)
         self.touch()
 
     def publish(self) -> None:
-        """
-        Mark object as published.
-        """
+        """Mark object as published."""
         self.status = ContentStatus.PUBLISHED
         self.touch()
 
     def archive(self) -> None:
-        """
-        Archive object.
-        """
+        """Archive object."""
         self.status = ContentStatus.ARCHIVED
         self.touch()
 
     def reset(self) -> None:
-        """
-        Reset production status.
-        """
+        """Reset production status."""
         self.status = ContentStatus.DRAFT
         self.touch()
+
+    # ------------------------------------------------------------------
+    # Properties
+    # ------------------------------------------------------------------
 
     @property
     def is_published(self) -> bool:
@@ -308,5 +322,6 @@ class Metadata(StudioBaseModel):
         return self.updated_at
 
     @property
-    def age(self):
-        return datetime.now(UTC) - self.created_at
+    def age(self) -> float:
+        """Age of this metadata object in seconds."""
+        return (datetime.now(UTC) - self.created_at).total_seconds()

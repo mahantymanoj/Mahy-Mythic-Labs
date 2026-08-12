@@ -66,7 +66,7 @@ DEFAULT_LOG_FILE = "studio.log"
 
 DEFAULT_PROVIDER = "openai"
 
-DEFAULT_LLM_MODEL = "gpt-5.5"
+DEFAULT_LLM_MODEL = "gpt-4o"
 
 DEFAULT_IMAGE_PROVIDER = "gemini"
 

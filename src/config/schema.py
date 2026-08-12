@@ -31,15 +31,61 @@ REQUIRED_CONFIG_FILES = (
 )
 
 ###############################################################################
-# Required Top-Level Sections
+# Required Top-Level Sections (must be dicts in merged config)
 ###############################################################################
 
 REQUIRED_SECTIONS = (
-    "settings",
-    "providers",
-    "models",
-    "paths",
+    "application",
+    "repository",
+    "episode",
+    "workflow",
+    "generation",
     "logging",
+    "cache",
+    "quality",
+    "assets",
+    "youtube",
+    "documentation",
+    "security",
+    "performance",
+    "experimental",
+    "features",
+    "metadata",
+    "global",
+    "openai",
+    "anthropic",
+    "google",
+    "xai",
+    "elevenlabs",
+    "stability",
+    "replicate",
+    "runway",
+    "pika",
+    "kling",
+    "default_models",
+    "providers",
+    "image_generation",
+    "video_generation",
+    "voice_generation",
+    "routing",
+    "cost_control",
+    "root",
+    "docs",
+    "production_bible",
+    "prompts",
+    "templates",
+    "projects",
+    "assets",
+    "output",
+    "config",
+    "logs",
+    "cache",
+    "temp",
+    "archive",
+    "reports",
+    "metadata",
+    "environment",
+    "root_files",
 )
 
 ###############################################################################
@@ -47,12 +93,10 @@ REQUIRED_SECTIONS = (
 ###############################################################################
 
 OPTIONAL_SECTIONS = (
-    "generation",
     "research",
     "video",
     "image",
     "audio",
-    "cache",
     "storage",
 )
 
@@ -62,39 +106,28 @@ OPTIONAL_SECTIONS = (
 
 REQUIRED_KEYS: dict[str, tuple[str, ...]] = {
 
-    "settings": (
-        "application_name",
+    "application": (
+        "name",
         "environment",
         "debug",
     ),
 
-    "providers": (
-        "default_llm",
-        "default_image",
-        "default_video",
-        "default_audio",
-    ),
-
-    "models": (
-        "llm",
-        "image",
-        "video",
-        "audio",
-    ),
-
-    "paths": (
-        "projects",
-        "output",
-        "cache",
-        "logs",
-        "assets",
+    "repository": (
+        "root",
     ),
 
     "logging": (
+        "enabled",
         "level",
-        "format",
-        "file",
+        "log_to_file",
+        "log_directory",
     ),
+
+    # Top-level string keys (not dicts)
+    "default_llm": (),
+    "default_image": (),
+    "default_video": (),
+    "default_audio": (),
 }
 
 ###############################################################################
@@ -103,26 +136,43 @@ REQUIRED_KEYS: dict[str, tuple[str, ...]] = {
 
 EXPECTED_TYPES: dict[str, type | tuple[type, ...]] = {
 
-    # settings
+    # application
 
-    "settings.application_name": str,
-    "settings.environment": str,
-    "settings.debug": bool,
+    "application.name": str,
+    "application.environment": str,
+    "application.debug": bool,
 
-    # providers
+    # repository
 
-    "providers.default_llm": str,
-    "providers.default_image": str,
-    "providers.default_video": str,
-    "providers.default_audio": str,
+    "repository.root": str,
 
     # logging
 
+    "logging.enabled": bool,
     "logging.level": str,
-    "logging.format": str,
-    "logging.file": str,
+    "logging.log_to_file": bool,
+    "logging.log_directory": str,
 
-    # paths
+    # providers (top-level string keys from providers.yaml)
+
+    "default_llm": str,
+    "default_image": str,
+    "default_video": str,
+    "default_audio": str,
+
+    # paths (top-level dict keys from paths.yaml)
+
+    "projects.root": str,
+    "projects.images": str,
+    "projects.generated_images": str,
+    "projects.thumbnails": str,
+    "projects.reference_images": str,
+    "projects.videos": str,
+    "projects.audio": str,
+    "projects.music": str,
+    "projects.sfx": str,
+    "projects.fonts": str,
+    "projects.logos": str,
 
     "paths.projects": str,
     "paths.output": str,
@@ -137,19 +187,22 @@ EXPECTED_TYPES: dict[str, type | tuple[type, ...]] = {
 
 DEFAULT_VALUES: dict[str, Any] = {
 
-    "settings.environment": "development",
+    "application.environment": "development",
 
-    "settings.debug": False,
+    "application.debug": False,
 
+    "logging.enabled": True,
     "logging.level": "INFO",
+    "logging.log_to_file": True,
+    "logging.log_directory": "./logs",
 
-    "providers.default_llm": "openai",
+    "default_llm": "openai",
 
-    "providers.default_image": "gemini",
+    "default_image": "gemini",
 
-    "providers.default_video": "veo",
+    "default_video": "veo",
 
-    "providers.default_audio": "edge-tts",
+    "default_audio": "edge-tts",
 }
 
 ###############################################################################
@@ -244,9 +297,9 @@ SUPPORTED_CONFIG_EXTENSIONS = (
 
 READ_ONLY_KEYS = (
 
-    "application_name",
+    "application.name",
 
-    "environment",
+    "application.environment",
 )
 
 ###############################################################################

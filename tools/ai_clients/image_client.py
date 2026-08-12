@@ -17,7 +17,8 @@ class ImageClient:
             raise RuntimeError("OPENAI_API_KEY is not set.")
 
         self.client = OpenAI()
-        self.model = model or os.getenv("MAHY_IMAGE_MODEL", "gpt-image-2")
+        # gpt-image-1 is the correct current OpenAI image model name
+        self.model = model or os.getenv("MAHY_IMAGE_MODEL", "gpt-image-1")
 
     def generate(
         self,

@@ -14,6 +14,16 @@ This folder stores original, licensed, and approved music used in Mahy Mythic La
 - Cue sheets
 - License records and attribution notes
 
+## Subfolder Structure
+
+Organise music assets within this folder using the following subfolders:
+
+| Subfolder | Contents |
+| --- | --- |
+| `stems/` | Individual stem files (melody, bass, percussion, atmosphere) |
+| `loops/` | Loopable sections for flexible editorial use |
+| `cue-sheets/` | Episode cue sheets listing track names, timestamps, and attribution |
+
 ## File Naming
 
 Use:
@@ -43,6 +53,13 @@ Each music asset must record:
 - Allowed usage scope
 - License expiry date, if applicable
 
+## Required Formats
+
+| Format | Use |
+| --- | --- |
+| WAV | Master files for final production and archiving |
+| MP3 | Preview and review copies only; not for final export |
+
 ## Music Direction
 
 Mahy Mythic Labs music should feel:
@@ -63,3 +80,14 @@ Avoid overly generic trailer music, excessive drops, distracting percussion, or 
 - Do not use unverified music from social platforms or search results.
 - Record music use and timestamps in the episode cue sheet.
 - Never overwrite an approved track; create a new version.
+
+## Approval Checklist
+
+- [ ] Track source and license are verified.
+- [ ] Commercial use is permitted.
+- [ ] Attribution requirement is documented.
+- [ ] Track is recorded in the asset register.
+- [ ] WAV master is stored in this folder.
+- [ ] License proof is saved in `assets/licenses/`.
+- [ ] Track mood and pacing suit the episode context.
+- [ ] Cue sheet entry is completed for the relevant episode.

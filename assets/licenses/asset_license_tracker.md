@@ -16,7 +16,18 @@ No third-party asset may be used in a published production until its license sta
 | Expired | License is no longer valid for new use |
 | Rejected | Rights are unclear, insufficient, or unsuitable |
 | Original | Created and owned by Mahy Mythic Labs |
-| AI Generated | Generated with AI; prompt, tool, and review record required |
+| AI Generated | Generated with AI; prompt, tool, and review record required. See the AI-Generated Asset Requirements section for the full record required before this status can be approved for production use. |
+
+## Common License Types Reference
+
+| License Type | Plain-language meaning |
+| --- | --- |
+| CC0 | Public domain dedication. No rights reserved. Free to use, modify, and distribute commercially without attribution. |
+| CC-BY | Attribution required. Free to use and modify commercially, but the original creator must be credited in the agreed format. |
+| CC-BY-SA | Attribution required and any derivative work must be released under the same license. Sharing restrictions may affect commercial publishing. |
+| Royalty Free | A one-time fee grants ongoing use rights. Does not mean free of charge or free of restrictions. Always check the specific terms for commercial and broadcast use. |
+| Editorial Use Only | The asset may only be used to illustrate factual reporting. It cannot be used in branded, promotional, or commercial-production content. |
+| AI Generated | The asset was produced by an AI tool. Rights vary by tool and terms of service. A generation record, tool terms review, and editorial review are required before production use. |
 
 ## Asset License Register
 
@@ -58,6 +69,8 @@ For AI-generated images, video, audio, or voice assets, record:
 | Usage decision | Approved, restricted, or rejected |
 | Episode use | Episode and scene where used |
 
+Each AI-generated asset requires its own entry in the Asset License Register above with status `AI Generated`. The entry must be reviewed and updated before the asset is cleared for final production use.
+
 ## Approval Checklist
 
 Before using an asset in a final export:
@@ -74,8 +87,8 @@ Before using an asset in a final export:
 ## Rules
 
 - Never assume an online asset is free to use.
-- “Royalty-free” does not always mean unrestricted commercial use.
+- "Royalty-free" does not always mean unrestricted commercial use.
 - Reference images are not automatically production assets.
 - Do not use copyrighted music, stock footage, fonts, images, or sound effects without verified permission.
 - If the license is unclear, mark the asset as `Pending` or `Rejected` and do not use it.
-- Keep this tracker updated whenever an asset is acquired, approved, used, or retired.
+- Keep this tracker updated whenever an asset is acquired, approved, used, restricted, or archived.

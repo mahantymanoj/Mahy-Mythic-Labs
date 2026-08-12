@@ -1,4 +1,4 @@
-# Mythology Knowledge Base
+﻿# Mythology Knowledge Base
 
 ## Purpose
 
@@ -39,11 +39,7 @@ Covers:
 * Cosmic cycles
 * Philosophical concepts
 
-File:
-
-```text
-hindu_mythology.md
-```
+File: `hindu_mythology.md`
 
 ---
 
@@ -56,11 +52,7 @@ Covers:
 * Heroes
 * Creation myths
 
-File:
-
-```text
-greek_mythology.md
-```
+File: `greek_mythology.md`
 
 ---
 
@@ -73,11 +65,7 @@ Covers:
 * Creation stories
 * Pharaoh traditions
 
-File:
-
-```text
-egyptian_mythology.md
-```
+File: `egyptian_mythology.md`
 
 ---
 
@@ -90,11 +78,7 @@ Covers:
 * Cosmic worlds
 * Viking beliefs
 
-File:
-
-```text
-norse_mythology.md
-```
+File: `norse_mythology.md`
 
 ---
 
@@ -103,39 +87,53 @@ norse_mythology.md
 Covers:
 
 * Comparative mythology
-* Shared themes
+* Shared themes across cultures
 * Global traditions
 
-File:
-
-```text
-world_mythologies.md
-```
+File: `world_mythologies.md`
 
 ---
 
 # Research Guidelines
 
-When using mythology content:
+When using mythology content, always separate information into three distinct categories. Never merge them.
 
-## Separate:
+## Category 1 — Historical Facts
 
-Historical Facts:
+Information supported by physical evidence and scholarly documentation.
 
-* Archaeological evidence
-* Ancient texts
-* Cultural practices
+Examples:
 
-Traditional Beliefs:
+* Archaeological evidence of temple locations or ritual practices
+* Ancient manuscripts and their verified dates
+* Documented cultural practices confirmed by multiple independent sources
+* Historical figures who appear in mythological narratives (where archaeology confirms their existence)
 
-* Religious narratives
-* Oral traditions
-* Symbolic interpretations
+## Category 2 — Traditional Beliefs
 
-Modern Interpretations:
+The sacred stories, oral traditions, and spiritual teachings that communities hold as meaningful.
 
-* Popular culture
-* Fictional adaptations
+Examples:
+
+* Mythological narratives from the Vedas, Puranas, Iliad, Eddas, or other sacred texts
+* Ritual meanings and symbolic interpretations within a living tradition
+* Theological concepts such as Brahman, Dharma, or Ma'at as understood by their communities
+* Stories passed through oral tradition that have not been independently verified archaeologically
+
+These should always be presented with respect and identified as tradition — not as proven historical or scientific fact.
+
+## Category 3 — Modern Interpretations
+
+How contemporary scholars, popular writers, or filmmakers have reinterpreted ancient stories.
+
+Examples:
+
+* Comparative mythology frameworks (such as Joseph Campbell's Hero's Journey)
+* New Age or alternative readings of ancient texts
+* Pop culture adaptations
+* Academic theories about symbolic meaning
+
+These should be clearly identified as interpretation, not original tradition.
 
 ---
 
@@ -143,22 +141,34 @@ Modern Interpretations:
 
 Mahy Mythic Labs mythology content should:
 
-* Respect cultural traditions
-* Avoid mocking beliefs
-* Explain context
-* Separate mythology from proven science
-* Present multiple perspectives
+* Respect the cultural traditions being explored
+* Never mock, trivialize, or sensationalize sacred beliefs
+* Explain the cultural context before analysis begins
+* Clearly separate mythology from proven archaeological or scientific evidence
+* Present multiple scholarly perspectives where they exist
+* Acknowledge when a topic involves living religious traditions that deserve particular sensitivity
 
 ---
 
 # Cinematic Themes
 
-Common mythology themes:
+Common mythology themes well-suited to cinematic storytelling:
 
-* Creation
-* Hero journeys
-* Divine conflicts
-* Cosmic battles
-* Human destiny
-* Good vs evil
-* Transformation
+* Creation and cosmic origin
+* The hero's journey and transformation
+* Divine conflict and cosmic order
+* Destruction and renewal
+* Human destiny and free will
+* The relationship between gods and mortals
+* Sacred geography and sacred time
+
+---
+
+# Missing Topics
+
+If a production topic involves a mythology tradition not covered by an existing file, the Research Agent must:
+
+1. Research primary sources (sacred texts, academic mythology studies).
+2. Consult anthropology and comparative religion references.
+3. Document findings in the episode project folder.
+4. Flag as a candidate for a new knowledge base file after the episode is complete.

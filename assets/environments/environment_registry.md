@@ -33,6 +33,7 @@ It maintains visual continuity, historical accuracy, and efficient asset reuse a
 - Do not mix unrelated historical periods, architectural styles, or technologies.
 - Record approved generation prompts for reusable environments.
 - Maintain consistent geography, lighting, materials, atmosphere, and scale across scenes.
+- Reuse an existing environment entry when the same location appears in a new episode. Create a new entry only when a distinctly different version of a location is required—for example, the same site in a different era, season, or state of ruin.
 
 ## Status Definitions
 
@@ -55,4 +56,15 @@ Examples:
 - `ENV-001-antikythera-shipwreck`
 - `ENV-002-ancient-greek-workshop`
 - `ENV-003-cosmic-starfield`
-- `ENV-004
+- `ENV-004-bronze-age-harbor`
+
+## Reuse Guidelines
+
+To reuse an existing environment in a new episode:
+
+1. Check this registry to confirm the environment is in `Approved` or `Active` status.
+2. Open the environment's metadata file (listed in the Reference File column).
+3. Use the approved visual-generation prompt from the metadata file exactly as recorded.
+4. Do not alter materials, lighting direction, or architectural features without submitting a new metadata version.
+5. Record the new episode use in the metadata file's Related Episodes field.
+6. Update this registry's status to `Active` if the environment is being used in a new production.

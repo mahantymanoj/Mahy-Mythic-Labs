@@ -4,7 +4,17 @@
 
 The banner should establish Mahy Mythic Labs as a premium cinematic documentary channel in one glance.
 
-It must make the channel’s subject universe clear without overcrowding the design.
+It must make the channel's subject universe clear without overcrowding the design.
+
+## Dimensions
+
+| Area | Size |
+| --- | --- |
+| Total canvas | 2560 × 1440 px |
+| YouTube mobile safe area | 1546 × 423 px (centered) |
+| Text and logo safe zone | Keep all critical content within the mobile safe area |
+
+Design within the total canvas but ensure all essential content—logo, positioning line, and any supporting text—sits inside the mobile safe area.
 
 ## Required Content
 
@@ -31,7 +41,7 @@ The image should feel like a portal between human history and the universe.
 
 ## Layout Rules
 
-- Place critical text and the logo in YouTube’s mobile-safe center area.
+- Place critical text and the logo in YouTube's mobile-safe center area.
 - Keep decorative details outside the safe area.
 - Do not use more than one major symbolic object.
 - Maintain strong contrast behind all text.
@@ -46,22 +56,21 @@ The image should feel like a portal between human history and the universe.
    Cinematic AI Storytelling Laboratory
 
 [ subtle supporting visual detail ]
+```
 
-Do Not Use
-Generic futuristic neon cities
-Overly decorative fantasy symbols
-Busy multi-topic collages
-Stock-looking imagery
-Excessive text
-Low-contrast logos or slogans
-Banner Approval Checklist
+## Do Not Use
 
-Channel name is clear on desktop and mobile.
+- Generic futuristic neon cities
+- Overly decorative fantasy symbols
+- Busy multi-topic collages
+- Stock-looking imagery
+- Excessive text
+- Low-contrast logos or slogans
 
-Positioning is understandable within three seconds.
+## Banner Approval Checklist
 
-Visual style matches thumbnails and episode intros.
-
-Text remains inside the safe area.
-
-The banner feels premium, cinematic, and timeless.
+- [ ] Channel name is clear on desktop and mobile.
+- [ ] Positioning is understandable within three seconds.
+- [ ] Visual style matches thumbnails and episode intros.
+- [ ] Text remains inside the safe area.
+- [ ] The banner feels premium, cinematic, and timeless.

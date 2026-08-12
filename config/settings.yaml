@@ -1,238 +1,110 @@
-# ==============================================================================
-# Mahy Mythic Labs
-# Global Application Settings
-# File: settings.yaml
-# Version: 1.0
-# ==============================================================================
-
 version: "1.0"
 
 application:
   name: "Mahy Mythic Labs"
-
   short_name: "MML"
-
   environment: "development"
-
   debug: true
-
   production_mode: false
-
   timezone: "Asia/Kolkata"
-
   language: "en"
-
   encoding: "utf-8"
-
-# ==============================================================================
-# Repository
-# ==============================================================================
 
 repository:
   root: "."
-
   docs: "./docs"
-
   templates: "./templates"
-
   prompts: "./prompts"
-
   production_bible: "./production_bible"
-
   projects: "./projects"
-
   assets: "./assets"
-
   output: "./output"
-
   logs: "./logs"
-
   archive: "./archive"
-
-# ==============================================================================
-# Default Episode Settings
-# ==============================================================================
 
 episode:
   default_duration_minutes: 10
-
   language: "English"
-
   output_resolution: "1920x1080"
-
   aspect_ratio: "16:9"
-
   fps: 30
-
-# ==============================================================================
-# Workflow
-# ==============================================================================
 
 workflow:
   auto_save: true
-
   auto_backup: true
-
   backup_interval_minutes: 30
-
   stop_on_error: true
-
   require_human_review: true
-
   quality_gate_enabled: true
-
-# ==============================================================================
-# Generation
-# ==============================================================================
 
 generation:
   image_variations: 4
-
   save_prompts: true
-
   save_raw_response: true
-
   overwrite_existing: false
-
-# ==============================================================================
-# Logging
-# ==============================================================================
 
 logging:
   enabled: true
-
   level: INFO
-
   log_to_file: true
-
   log_directory: "./logs"
-
   keep_days: 30
-
-# ==============================================================================
-# Cache
-# ==============================================================================
 
 cache:
   enabled: true
-
   directory: "./cache"
-
   ttl_hours: 24
-
-# ==============================================================================
-# Quality
-# ==============================================================================
 
 quality:
   minimum_score: 90
-
   fail_on_critical_issue: true
-
   fail_on_major_issue: false
-
-# ==============================================================================
-# Assets
-# ==============================================================================
 
 assets:
   image_format: "png"
-
   video_format: "mp4"
-
   audio_format: "wav"
-
   thumbnail_format: "png"
-
-# ==============================================================================
-# YouTube Defaults
-# ==============================================================================
 
 youtube:
   default_visibility: "private"
-
   default_category: "Education"
-
   made_for_kids: false
-
   auto_generate_chapters: true
-
-# ==============================================================================
-# Documentation
-# ==============================================================================
 
 documentation:
   generate_project_status: true
-
   update_decisions_log: true
-
   update_metrics: true
-
-# ==============================================================================
-# Security
-# ==============================================================================
 
 security:
   read_env_file: true
-
   mask_api_keys: true
-
   verify_ssl: true
-
-# ==============================================================================
-# Performance
-# ==============================================================================
 
 performance:
   max_parallel_agents: 4
-
   max_parallel_generations: 2
-
   max_threads: 8
-
-# ==============================================================================
-# Experimental Features
-# ==============================================================================
 
 experimental:
   enable_multi_agent_mode: true
-
   enable_json_outputs: true
-
   enable_auto_retry: true
-
   enable_cost_tracking: true
-
-# ==============================================================================
-# Feature Flags
-# ==============================================================================
 
 features:
   research_agent: true
-
   script_agent: true
-
   storyboard_agent: true
-
   image_agent: true
-
   video_agent: true
-
   narration_agent: true
-
   thumbnail_agent: true
-
   seo_agent: true
-
   quality_agent: true
-
-# ==============================================================================
-# Version Information
-# ==============================================================================
 
 metadata:
   project: "Mahy Mythic Labs"
-
   repository_version: "1.0.0"
-
   production_ready: false

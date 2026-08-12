@@ -10,6 +10,15 @@ Typography should feel cinematic, intelligent, timeless, and highly legible.
 
 Use fonts to support the story—not to make the design feel decorative, futuristic, or overly complex.
 
+## Recommended Fonts
+
+| Role | Recommended Font | Notes |
+| --- | --- | --- |
+| Display | Cinzel | Serif; suited to titles, thumbnails, and episode headings |
+| Body | Inter | Sans-serif; suited to descriptions, documents, and UI text |
+
+These are placeholders. Confirm commercial license status before committing to production use.
+
 ## Font Categories
 
 | Category | Primary Use |
@@ -37,6 +46,16 @@ Examples:
 font-cinzel-bold.ttf
 font-inter-regular.ttf
 font-inter-semibold.woff2
+```
+
+## Google Fonts vs Licensed Fonts
+
+| Source | License | When to use |
+| --- | --- | --- |
+| Google Fonts | Open Font License (OFL) | Sufficient for most production use; free for commercial projects |
+| Licensed fonts | Commercial or subscription | Required when OFL fonts do not meet creative needs or when a specific typeface is part of brand identity |
+
+When a font is sourced from Google Fonts under OFL, no additional proof of license is required beyond recording the source URL. When a commercially licensed font is used, store the license agreement in `assets/licenses/`.
 
 ## Usage Rules
 

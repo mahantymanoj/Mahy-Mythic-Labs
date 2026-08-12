@@ -10,6 +10,7 @@
 | Status | Draft / Approved / Active / Archived / Restricted |
 | First Episode | |
 | Related Episodes | |
+| Version History | v01 — [date] — initial record |
 
 ## Narrative Function
 
@@ -50,17 +51,31 @@
 | Lighting style | |
 | Camera relationship | Close-up / medium / silhouette / wide-scale |
 
+## Voice Identity
+
+| Field | Details |
+| --- | --- |
+| Voice provider | |
+| Voice ID or model | |
+| Tone direction | |
+| Pacing notes | |
+| Language and accent | |
+| Usage scope | Narration / character speech / both |
+
 ## Generation Prompt
 
 ```text
 [Write the approved reusable visual prompt here.]
+```
 
-##Negative Prompt
+## Negative Prompt
+
 [State visual errors, stereotypes, anachronisms, artifacts, or prohibited details.]
 
-##Continuity Requirements
-- 
-- 
+## Continuity Requirements
+
+-
+-
 -
 
 ## Rights and Ethical Review

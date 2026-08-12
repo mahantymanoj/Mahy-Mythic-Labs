@@ -1,4 +1,4 @@
-# Final Videos
+# Published Videos
 
 ## Purpose
 
@@ -26,6 +26,13 @@ Examples:
 
 `ep001-16x9-final-captions-v01.mp4`
 
+## Export Specifications
+
+| Platform | Codec | Resolution | Aspect Ratio | Audio Codec | Audio Bitrate |
+| --- | --- | --- | --- | --- | --- |
+| YouTube (long-form) | H.264 | 1920 × 1080 minimum | 16:9 | AAC | 320 kbps |
+| YouTube Shorts | H.264 | 1080 × 1920 minimum | 9:16 | AAC | 320 kbps |
+
 ## Final Approval Requirements
 
 - [ ] Script and narration are factually verified.
@@ -37,6 +44,15 @@ Examples:
 - [ ] Thumbnail, title, and description match the final story.
 - [ ] Final export plays correctly from start to finish.
 - [ ] Final file is recorded in the episode asset manifest.
+
+## Post-Publish Checklist
+
+After the video goes live:
+
+- [ ] Confirm thumbnail is live and displaying correctly on YouTube.
+- [ ] Confirm captions are live and accurate.
+- [ ] Record the YouTube video ID in the episode manifest.
+- [ ] Update the episode status in the project tracker.
 
 ## Rules
 

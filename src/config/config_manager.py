@@ -96,34 +96,17 @@ class ConfigManager:
         # -------------------------------------------------------------- #
 
         if project_root is None:
-
-            self.project_root = (
-                Path.cwd()
-            )
-
+            self.project_root = Path.cwd()
         else:
-
-            self.project_root = (
-                Path(project_root)
-                .resolve()
-            )
+            self.project_root = Path(project_root).resolve()
 
         # -------------------------------------------------------------- #
         # Components
         # -------------------------------------------------------------- #
 
-        self.path_resolver = PathResolver(
-            self.project_root
-        )
-
-        self.env_loader = EnvironmentLoader(
-            self.project_root
-        )
-
-        self.yaml_loader = YAMLLoader(
-            self.env_loader
-        )
-
+        self.path_resolver = PathResolver(self.project_root)
+        self.env_loader = EnvironmentLoader(self.project_root)
+        self.yaml_loader = YAMLLoader(self.env_loader)
         self.validator = ConfigValidator()
 
         # -------------------------------------------------------------- #
@@ -131,26 +114,17 @@ class ConfigManager:
         # -------------------------------------------------------------- #
 
         self.config: dict[str, Any] = {}
-
         self.loaded_files: list[str] = []
-
         self.loaded = False
 
-        self.config_directory = (
-            self.path_resolver.resolve(
-                DEFAULT_CONFIG_DIRECTORY
-            )
-        )
+        self.config_directory = self.path_resolver.resolve(DEFAULT_CONFIG_DIRECTORY)
 
         self.config_files = [
-
             self.config_directory / name
-
             for name in DEFAULT_CONFIG_FILES
-
         ]
 
-        # ------------------------------------------------------------------ #
+    # ------------------------------------------------------------------ #
     # Public API
     # ------------------------------------------------------------------ #
 
@@ -170,17 +144,10 @@ class ConfigManager:
             return
 
         self._load_environment()
-
         self._load_yaml_files()
 
-        self.validator.validate_files(
-            self.loaded_files
-        )
-
-        self.validator.validate(
-            self.config
-        )
-
+        self.validator.validate_files(self.loaded_files)
+        self.validator.validate(self.config)
         self.validator.raise_if_invalid()
 
         self.loaded = True
@@ -193,13 +160,9 @@ class ConfigManager:
         """
 
         self.loaded = False
-
         self.config.clear()
-
         self.loaded_files.clear()
-
         self.env_loader.reload()
-
         self.load()
 
     # ------------------------------------------------------------------ #
@@ -207,21 +170,15 @@ class ConfigManager:
     # ------------------------------------------------------------------ #
 
     def _load_environment(self) -> None:
-        """
-        Load .env file.
-        """
-
+        """Load .env file."""
         self.env_loader.load()
 
     # ------------------------------------------------------------------ #
 
     def _load_yaml_files(self) -> None:
-        """
-        Load every configured YAML file.
-        """
+        """Load every configured YAML file."""
 
         self.loaded_files.clear()
-
         self.config.clear()
 
         for file in self.config_files:
@@ -229,50 +186,27 @@ class ConfigManager:
             if not file.exists():
                 continue
 
-            yaml_data = self.yaml_loader.load_file(
-                file
-            )
+            yaml_data = self.yaml_loader.load_file(file)
+            self.config = self.yaml_loader.merge(self.config, yaml_data)
+            self.loaded_files.append(file.name)
 
-            self.config = self.yaml_loader.merge(
-                self.config,
-                yaml_data,
-            )
-
-            self.loaded_files.append(
-                file.name
-            )
-
+    # ------------------------------------------------------------------ #
+    # Status
     # ------------------------------------------------------------------ #
 
     def is_loaded(self) -> bool:
-        """
-        Returns True if configuration has already
-        been loaded.
-        """
-
+        """Returns True if configuration has already been loaded."""
         return self.loaded
 
-    # ------------------------------------------------------------------ #
-
     def configuration_files(self) -> list[Path]:
-        """
-        Return all configured YAML files.
-        """
-
+        """Return all configured YAML files."""
         return self.config_files.copy()
 
-    # ------------------------------------------------------------------ #
-
-    def loaded_configuration_files(
-        self,
-    ) -> list[str]:
-        """
-        Return successfully loaded configuration files.
-        """
-
+    def loaded_configuration_files(self) -> list[str]:
+        """Return successfully loaded configuration files."""
         return self.loaded_files.copy()
 
-        # ------------------------------------------------------------------ #
+    # ------------------------------------------------------------------ #
     # Configuration Access
     # ------------------------------------------------------------------ #
 
@@ -322,15 +256,11 @@ class ConfigManager:
         """
 
         current = self.config
-
         parts = key.split(".")
 
         for part in parts[:-1]:
 
-            if (
-                part not in current
-                or not isinstance(current[part], dict)
-            ):
+            if part not in current or not isinstance(current[part], dict):
                 current[part] = {}
 
             current = current[part]
@@ -343,9 +273,7 @@ class ConfigManager:
         self,
         key: str,
     ) -> bool:
-        """
-        Check whether configuration key exists.
-        """
+        """Check whether configuration key exists."""
 
         current = self.config
 
@@ -377,15 +305,11 @@ class ConfigManager:
         """
 
         current = self.config
-
         parts = key.split(".")
 
         for part in parts[:-1]:
 
-            if (
-                part not in current
-                or not isinstance(current[part], dict)
-            ):
+            if part not in current or not isinstance(current[part], dict):
                 return False
 
             current = current[part]
@@ -395,211 +319,28 @@ class ConfigManager:
     # ------------------------------------------------------------------ #
 
     def all(self) -> dict[str, Any]:
-        """
-        Return complete configuration.
-        """
-
+        """Return complete configuration."""
         return self.config.copy()
 
-    # ------------------------------------------------------------------ #
-
     def keys(self) -> list[str]:
-        """
-        Return top-level configuration keys.
-        """
-
+        """Return top-level configuration keys."""
         return list(self.config.keys())
 
-    # ------------------------------------------------------------------ #
-
     def sections(self) -> list[str]:
-        """
-        Alias for keys().
-        """
-
+        """Alias for keys()."""
         return self.keys()
 
-    # ------------------------------------------------------------------ #
-
     def clear(self) -> None:
-        """
-        Clear loaded configuration.
-        """
-
+        """Clear loaded configuration."""
         self.config.clear()
-
         self.loaded_files.clear()
-
         self.loaded = False
 
-        # ------------------------------------------------------------------ #
-    # Configuration Access
     # ------------------------------------------------------------------ #
-
-    def get(
-        self,
-        key: str,
-        default: Any = None,
-    ) -> Any:
-        """
-        Get configuration value using dot notation.
-
-        Example
-        -------
-        config.get("providers.default_llm")
-        """
-
-        if not self.loaded:
-            self.load()
-
-        current = self.config
-
-        for part in key.split("."):
-
-            if not isinstance(current, dict):
-                return default
-
-            if part not in current:
-                return default
-
-            current = current[part]
-
-        return current
-
-    # ------------------------------------------------------------------ #
-
-    def set(
-        self,
-        key: str,
-        value: Any,
-    ) -> None:
-        """
-        Set configuration value.
-
-        Example
-        -------
-        config.set("providers.default_llm", "openai")
-        """
-
-        current = self.config
-
-        parts = key.split(".")
-
-        for part in parts[:-1]:
-
-            if (
-                part not in current
-                or not isinstance(current[part], dict)
-            ):
-                current[part] = {}
-
-            current = current[part]
-
-        current[parts[-1]] = value
-
-    # ------------------------------------------------------------------ #
-
-    def exists(
-        self,
-        key: str,
-    ) -> bool:
-        """
-        Check whether configuration key exists.
-        """
-
-        current = self.config
-
-        for part in key.split("."):
-
-            if not isinstance(current, dict):
-                return False
-
-            if part not in current:
-                return False
-
-            current = current[part]
-
-        return True
-
-    # ------------------------------------------------------------------ #
-
-    def remove(
-        self,
-        key: str,
-    ) -> bool:
-        """
-        Remove configuration key.
-
-        Returns
-        -------
-        bool
-            True if removed successfully.
-        """
-
-        current = self.config
-
-        parts = key.split(".")
-
-        for part in parts[:-1]:
-
-            if (
-                part not in current
-                or not isinstance(current[part], dict)
-            ):
-                return False
-
-            current = current[part]
-
-        return current.pop(parts[-1], None) is not None
-
-    # ------------------------------------------------------------------ #
-
-    def all(self) -> dict[str, Any]:
-        """
-        Return complete configuration.
-        """
-
-        return self.config.copy()
-
-    # ------------------------------------------------------------------ #
-
-    def keys(self) -> list[str]:
-        """
-        Return top-level configuration keys.
-        """
-
-        return list(self.config.keys())
-
-    # ------------------------------------------------------------------ #
-
-    def sections(self) -> list[str]:
-        """
-        Alias for keys().
-        """
-
-        return self.keys()
-
-    # ------------------------------------------------------------------ #
-
-    def clear(self) -> None:
-        """
-        Clear loaded configuration.
-        """
-
-        self.config.clear()
-
-        self.loaded_files.clear()
-
-        self.loaded = False
-
-        # ------------------------------------------------------------------ #
     # Dictionary Interface
     # ------------------------------------------------------------------ #
 
-    def __getitem__(
-        self,
-        key: str,
-    ) -> Any:
+    def __getitem__(self, key: str) -> Any:
         """
         Dictionary-style access.
 
@@ -611,19 +352,11 @@ class ConfigManager:
         value = self.get(key)
 
         if value is None:
-            raise KeyError(
-                f"Configuration key '{key}' not found."
-            )
+            raise KeyError(f"Configuration key '{key}' not found.")
 
         return value
 
-    # ------------------------------------------------------------------ #
-
-    def __setitem__(
-        self,
-        key: str,
-        value: Any,
-    ) -> None:
+    def __setitem__(self, key: str, value: Any) -> None:
         """
         Dictionary-style assignment.
 
@@ -631,15 +364,9 @@ class ConfigManager:
         -------
         config["logging.level"] = "DEBUG"
         """
-
         self.set(key, value)
 
-    # ------------------------------------------------------------------ #
-
-    def __contains__(
-        self,
-        key: str,
-    ) -> bool:
+    def __contains__(self, key: str) -> bool:
         """
         Support 'in' operator.
 
@@ -648,19 +375,11 @@ class ConfigManager:
         if "logging.level" in config:
             ...
         """
-
         return self.exists(key)
 
-    # ------------------------------------------------------------------ #
-
     def __len__(self) -> int:
-        """
-        Number of top-level sections.
-        """
-
+        """Number of top-level sections."""
         return len(self.config)
-
-    # ------------------------------------------------------------------ #
 
     def __iter__(self):
         """
@@ -671,34 +390,18 @@ class ConfigManager:
         for section in config:
             ...
         """
-
         return iter(self.config)
 
-    # ------------------------------------------------------------------ #
-
     def items(self):
-        """
-        Return configuration items.
-        """
-
+        """Return configuration items."""
         return self.config.items()
 
-    # ------------------------------------------------------------------ #
-
     def values(self):
-        """
-        Return configuration values.
-        """
-
+        """Return configuration values."""
         return self.config.values()
 
-    # ------------------------------------------------------------------ #
-
     def copy(self) -> dict[str, Any]:
-        """
-        Return shallow copy of configuration.
-        """
-
+        """Return shallow copy of configuration."""
         return self.config.copy()
 
     # ------------------------------------------------------------------ #
@@ -706,7 +409,6 @@ class ConfigManager:
     # ------------------------------------------------------------------ #
 
     def __repr__(self) -> str:
-
         return (
             f"{self.__class__.__name__}("
             f"loaded={self.loaded}, "
@@ -714,10 +416,7 @@ class ConfigManager:
             f"files={len(self.loaded_files)})"
         )
 
-    # ------------------------------------------------------------------ #
-
     def __str__(self) -> str:
-
         return (
             f"ConfigManager("
             f"loaded={self.loaded}, "

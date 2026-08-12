@@ -1,29 +1,30 @@
 # ==============================================================================
 # Mahy Mythic Labs
 # AI Model Registry
-# Version: 1.0
+# Version: 1.1  (fixed: replaced speculative model names with real ones)
 # ==============================================================================
 
-version: "1.0"
+version: "1.1"
 
 default_provider: openai
 
+# Default model assigned to each agent role
 default_models:
-  director: gpt-5.5
-  research: gpt-5.5
-  script: gpt-5.5
-  storyboard: gpt-5.5
-  image_prompt: gpt-5.5
-  video_prompt: gpt-5.5
-  narration: gpt-5.5
-  seo: gpt-5.5
-  quality: gpt-5.5
+  director: gpt-4o
+  research: gpt-4o
+  script: gpt-4o
+  storyboard: gpt-4o
+  image_prompt: gpt-4o
+  video_prompt: gpt-4o
+  narration: gpt-4o-mini
+  seo: gpt-4o-mini
+  quality: gpt-4o
 
 providers:
 
-# ==============================================================================
-# OpenAI
-# ==============================================================================
+  # ============================================================================
+  # OpenAI
+  # ============================================================================
 
   openai:
 
@@ -31,99 +32,58 @@ providers:
 
     models:
 
-      gpt-5.5:
-
+      gpt-4o:
         type: llm
-
         enabled: true
-
         default: true
-
-        context_window: 400000
-
-        max_output_tokens: 128000
-
+        context_window: 128000
+        max_output_tokens: 16384
         supports:
-
           - text
-
           - reasoning
-
           - markdown
-
           - json
-
           - code
-
           - planning
-
         best_for:
-
           - research
-
           - scripting
-
           - storyboard
-
           - seo
-
-          - narration
-
           - quality
 
-      gpt-5.5-mini:
-
+      gpt-4o-mini:
         type: llm
-
         enabled: true
-
-        context_window: 400000
-
-        max_output_tokens: 64000
-
+        context_window: 128000
+        max_output_tokens: 16384
         supports:
-
           - text
-
           - json
-
           - markdown
-
         best_for:
-
           - drafting
-
           - rewriting
-
           - formatting
+          - narration
+          - seo
 
       gpt-image-1:
-
         type: image
-
         enabled: true
-
         supports:
-
           - image_generation
-
           - image_editing
-
           - transparent_background
-
           - high_resolution
-
         best_for:
-
           - documentary_images
-
           - thumbnails
-
           - illustrations
 
-# ==============================================================================
-# Anthropic
-# ==============================================================================
+  # ============================================================================
+  # Anthropic
+  # ============================================================================
 
   anthropic:
 
@@ -131,35 +91,24 @@ providers:
 
     models:
 
-      claude-opus:
-
+      claude-opus-4:
         enabled: false
-
         type: llm
-
         best_for:
-
           - long_reasoning
-
           - planning
-
           - documentation
 
-      claude-sonnet:
-
+      claude-sonnet-4-5:
         enabled: false
-
         type: llm
-
         best_for:
-
           - scripting
-
           - summarization
 
-# ==============================================================================
-# Google
-# ==============================================================================
+  # ============================================================================
+  # Google
+  # ============================================================================
 
   google:
 
@@ -168,22 +117,23 @@ providers:
     models:
 
       gemini-2.5-pro:
-
         enabled: false
-
         type: llm
-
         best_for:
-
           - reasoning
-
           - multimodal
-
           - research
 
-# ==============================================================================
-# xAI
-# ==============================================================================
+      gemini-2.5-flash:
+        enabled: false
+        type: llm
+        best_for:
+          - fast_generation
+          - drafting
+
+  # ============================================================================
+  # xAI
+  # ============================================================================
 
   xai:
 
@@ -191,20 +141,15 @@ providers:
 
     models:
 
-      grok-4:
-
+      grok-3:
         enabled: false
-
         type: llm
-
         best_for:
-
           - brainstorming
-
           - creativity
 
 # ==============================================================================
-# Image Providers
+# Image Generation
 # ==============================================================================
 
 image_generation:
@@ -212,86 +157,73 @@ image_generation:
   default: gpt-image-1
 
   fallback:
-
     - flux
+    - pollinations
 
-    - sdxl
+  providers:
 
-    - midjourney
+    gpt-image-1:
+      enabled: true
 
-providers:
+    flux:
+      enabled: false
 
-  flux:
+    pollinations:
+      enabled: true
 
-    enabled: false
-
-  sdxl:
-
-    enabled: false
-
-  midjourney:
-
-    enabled: false
-
-  ideogram:
-
-    enabled: false
+    ideogram:
+      enabled: false
 
 # ==============================================================================
-# Video Providers
+# Video Generation
 # ==============================================================================
 
 video_generation:
 
-  default: veo3
+  default: runway
 
   fallback:
-
-    - runway
-
     - kling
+    - hailuo
 
-    - pika
+  providers:
 
-providers:
+    veo3:
+      enabled: false
 
-  veo3:
+    runway:
+      enabled: false
 
-    enabled: false
+    kling:
+      enabled: false
 
-  runway:
-
-    enabled: false
-
-  kling:
-
-    enabled: false
-
-  pika:
-
-    enabled: false
+    hailuo:
+      enabled: false
 
 # ==============================================================================
-# Narration
+# Voice / Narration
 # ==============================================================================
 
 voice_generation:
 
-  default: elevenlabs
+  default: openai-tts
 
   fallback:
+    - edge-tts
 
-    - openai
+  providers:
 
-providers:
+    elevenlabs:
+      enabled: false
 
-  elevenlabs:
+    openai-tts:
+      enabled: true
+      model: tts-1-hd
+      default_voice: onyx
 
-    enabled: false
-
-  openai:
-
-    enabled: true
+    edge-tts:
+      enabled: true
+      default_voice: en-US-ChristopherNeural
 
 # ==============================================================================
 # Agent Routing
@@ -300,99 +232,63 @@ providers:
 routing:
 
   research_agent:
-
-    primary: gpt-5.5
-
+    primary: gpt-4o
     fallback:
-
-      - claude-opus
-
+      - claude-opus-4
       - gemini-2.5-pro
 
   script_writer:
-
-    primary: gpt-5.5
-
+    primary: gpt-4o
     fallback:
-
-      - claude-sonnet
+      - claude-sonnet-4-5
 
   storyboard_generator:
-
-    primary: gpt-5.5
-
+    primary: gpt-4o
     fallback:
-
-      - claude-sonnet
+      - claude-sonnet-4-5
 
   image_generator:
-
     primary: gpt-image-1
-
     fallback:
-
       - flux
-
-      - sdxl
+      - pollinations
 
   video_generator:
-
-    primary: veo3
-
+    primary: runway
     fallback:
-
-      - runway
-
       - kling
 
   narration_generator:
-
-    primary: elevenlabs
-
+    primary: openai-tts
     fallback:
-
-      - openai
+      - edge-tts
 
   thumbnail_generator:
-
     primary: gpt-image-1
-
     fallback:
-
       - flux
 
   seo_optimizer:
-
-    primary: gpt-5.5
-
+    primary: gpt-4o-mini
     fallback:
-
-      - claude-sonnet
+      - claude-sonnet-4-5
 
   quality_agent:
-
-    primary: gpt-5.5
-
+    primary: gpt-4o
     fallback:
-
-      - claude-opus
+      - claude-opus-4
 
 # ==============================================================================
-# Global Parameters
+# Global Generation Parameters
 # ==============================================================================
 
 generation:
 
   temperature: 0.7
-
   top_p: 0.95
-
   max_retries: 3
-
   timeout_seconds: 120
-
   save_prompts: true
-
   save_outputs: true
 
 # ==============================================================================
@@ -402,11 +298,8 @@ generation:
 logging:
 
   log_requests: true
-
   log_responses: true
-
   log_tokens: true
-
   log_cost: true
 
 # ==============================================================================
@@ -416,7 +309,6 @@ logging:
 cost_control:
 
   warn_after_usd: 10
-
   stop_after_usd: 50
 
 # ==============================================================================
@@ -426,7 +318,5 @@ cost_control:
 repository:
 
   name: Mahy Mythic Labs
-
   version: 1.0.0
-
   production_ready: false

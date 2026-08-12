@@ -2,13 +2,28 @@
 
 ## Purpose
 
-This database is the central index for all Mahy Mythic Labs assets.
-
-Use it to find reusable assets, track their production status, confirm rights, and identify where each asset has been used.
+This database is the central index for all Mahy Mythic Labs assets. It exists to make reusable assets easy to find, track their production status, confirm rights, and record where each asset has been used across episodes.
 
 Detailed license information belongs in:
 
 `assets/licenses/asset_license_tracker.md`
+
+## Folder Structure
+
+| Category | Primary Folder |
+| --- | --- |
+| Branding | `assets/branding/` |
+| Logos | `assets/logos/` |
+| Characters | `assets/characters/` |
+| Environments | `assets/environments/` |
+| Images | `assets/images/` (subfolders: `generated/`, `approved/`, `archive/`, `rejected/`) |
+| Videos | `assets/videos/` (subfolders: `generated/`, `edited/`, `export/`, `published/`) |
+| Music | `assets/audio/music/` |
+| Narration | `assets/audio/narration/` |
+| SFX | `assets/audio/sfx/` |
+| Fonts | `assets/fonts/` |
+| References | `assets/references_media/` |
+| Licenses | `assets/licenses/` |
 
 ## Asset Categories
 
@@ -87,7 +102,7 @@ Use this section to track where an approved asset appears.
 
 | Asset ID | Episode ID | Scene / Timestamp | Usage Type | Version Used | Approved By | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| AST-001 | — | — | Background / Hero Asset / Audio / Overlay | — | — | — |
+| AST-001 | — | — | Background \| Hero Asset \| Audio \| Overlay \| Watermark | — | — | — |
 
 ## Asset Intake Checklist
 
@@ -127,6 +142,7 @@ ep001-antikythera-gear-image-v01.png
 ep001-aegean-storm-video-v02.mp4
 brand-mahy-wordmark-light-v01.svg
 sfx-bronze-gear-turn-v01.wav
+```
 
 ## Rules
 

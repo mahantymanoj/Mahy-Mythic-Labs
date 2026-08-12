@@ -40,6 +40,16 @@ brand-mahy-primary-light-v01.svg
 brand-mahy-wordmark-dark-v01.png
 brand-mahy-icon-monochrome-v01.svg
 brand-mahy-watermark-light-v01.png
+```
+
+## Export Specifications
+
+| Format | Resolution | DPI | Color Space | Use |
+| --- | --- | --- | --- | --- |
+| SVG | Scalable | N/A | sRGB | Master logo; web and design use |
+| PNG (transparent) | 2000 px wide minimum | 72 dpi | sRGB | Video overlays, thumbnails, social graphics |
+| PNG (social avatar) | 800 × 800 px | 72 dpi | sRGB | YouTube and social profile images |
+| ICO | 256 × 256 px | N/A | sRGB | Favicon or app icon |
 
 ## Required Formats
 
