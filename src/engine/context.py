@@ -296,45 +296,6 @@ class EngineContext:
         episode_id: str | None = None,
     ) -> None:
         """
-        Initialize a new workflow context.
-
-        Remaining implementation will be added in Part 2.
-        """
-
-        self.workflow_id = (
-            workflow_id
-            or str(uuid.uuid4())
-        )
-
-        self.project_id = project_id
-
-        self.episode_id = episode_id
-
-        self.created_at = datetime.now(
-            timezone.utc
-        )
-
-        self.updated_at = self.created_at
-
-        # Part 2 will initialize:
-        #
-        # self.variables
-        # self.outputs
-        # self.metadata
-        # self.events
-        # self.metrics
-        # self.artifacts
-        # self.configuration
-        # self.runtime
-        # self.state
-        def __init__(
-        self,
-        *,
-        workflow_id: str | None = None,
-        project_id: str | None = None,
-        episode_id: str | None = None,
-    ) -> None:
-        """
         Initialize a new EngineContext.
         """
 

@@ -44,6 +44,7 @@ from src.agents.base_agent import (
 
 from src.engine.context import (
     EngineContext,
+    StageResult,
 )
 
 from src.engine.events import (
@@ -272,10 +273,9 @@ class Director:
             ↓
         Publishing
 
-    Actual implementation begins in Part 2.
     """
 
-        def __init__(
+    def __init__(
         self,
         *,
         context: EngineContext | None = None,
@@ -806,7 +806,11 @@ class Director:
                 if result.success:
 
                     self.context.set_stage_result(
-                        result=result,
+                        result=StageResult(
+                            stage=definition.stage.value,
+                            success=result.success,
+                            output=result.output,
+                        ),
                     )
 
                     self.context.set_output(
