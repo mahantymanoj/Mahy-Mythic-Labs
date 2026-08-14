@@ -279,6 +279,46 @@ class PathResolver:
 
     # ------------------------------------------------------------------ #
 
+    def knowledge_base_directory(self) -> Path:
+        """
+        Return the root knowledge base directory.
+        """
+
+        return self.join("knowledge_base")
+
+    # ------------------------------------------------------------------ #
+
+    def research_cache_directory(self) -> Path:
+        """
+        Return the directory where reusable per-topic research is cached.
+        """
+
+        return self.join("knowledge_base", "research")
+
+    # ------------------------------------------------------------------ #
+
+    def characters_directory(self) -> Path:
+        """
+        Return the directory where reusable character sheets live.
+        """
+
+        return self.join("assets", "characters")
+
+    # ------------------------------------------------------------------ #
+
+    def character_registry_file(self) -> Path:
+        """
+        Return the character registry markdown file.
+        """
+
+        return self.join(
+            "assets",
+            "characters",
+            "character_registry.md",
+        )
+
+    # ------------------------------------------------------------------ #
+
     def cache_directory(self) -> Path:
         """
         Return cache directory.

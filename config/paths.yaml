@@ -58,11 +58,17 @@ templates:
   youtube_upload: "./templates/youtube_upload_template.md"
   social_media: "./templates/social_media_template.md"
 
+knowledge_base:
+  root: "./knowledge_base"
+  research: "./knowledge_base/research"
+
 projects:
   root: "./projects"
 
 assets:
   root: "./assets"
+  characters: "./assets/characters"
+  character_registry: "./assets/characters/character_registry.md"
   images: "./assets/images"
   generated_images: "./assets/images/generated"
   thumbnails: "./assets/images/thumbnails"
